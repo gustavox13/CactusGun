@@ -17,5 +17,7 @@ public class WinDefeat : MonoBehaviour {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+   
+
   
 }

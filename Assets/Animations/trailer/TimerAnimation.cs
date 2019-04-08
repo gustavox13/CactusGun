@@ -110,4 +110,9 @@ public class TimerAnimation : MonoBehaviour {
         currentTime += Time.deltaTime;
     }
 
+    public void SkitBtn()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }

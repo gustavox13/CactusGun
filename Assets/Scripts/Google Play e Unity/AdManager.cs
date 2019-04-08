@@ -11,9 +11,10 @@ public class AdManager : MonoBehaviour
 	void Start ()
     {
 
-      
+        //Time.timeScale = 0;
         Ads();//Verifica se é a primeira vez
 
+        
        
     }
 
@@ -21,8 +22,18 @@ public class AdManager : MonoBehaviour
     {
         if (Advertisement.IsReady())
         {
-            if(GetComponent<AcountController>().RemoveADS == 0)
-              Advertisement.Show("rewardedVideo");
+           // if(GetComponent<AcountController>().RemoveADS == 0)
+              Advertisement.Show("rewardedVideo", new ShowOptions() { resultCallback = HandleAdResult});
+        }
+    }
+
+    private void HandleAdResult(ShowResult result)
+    {
+        switch(result)
+        {
+            case ShowResult.Finished:
+                Time.timeScale = 1;
+                break;
         }
     }
 	

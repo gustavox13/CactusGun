@@ -14,9 +14,15 @@ public class ButtonMenu : MonoBehaviour {
     private Animator animatorButtonHiden;
     [SerializeField]
     private Animator animatorButtonShopHiden;
+ 
+    
 
     [SerializeField]
     private Canvas canvasShop;
+
+  
+
+
 
   
 
@@ -26,6 +32,7 @@ public class ButtonMenu : MonoBehaviour {
         animatorSaloonSelectStage.SetBool("MoveSaloon", true);
         animatorButtonHiden.SetBool("ButtonHiden", true);
         animatorButtonShopHiden.SetBool("ButtonShopHiden", true);
+     
     }
 
     public void BackSelectStagePress()
@@ -34,13 +41,20 @@ public class ButtonMenu : MonoBehaviour {
         animatorSaloonSelectStage.SetBool("MoveSaloon", false);
         animatorButtonHiden.SetBool("ButtonHiden", false);
         animatorButtonShopHiden.SetBool("ButtonShopHiden", false);
+       
+       
+
         //Test Git
     }
+
+    
 
     public void ShopPress()
     {
         
         animatorButtonShopHiden.SetBool("ButtonShopHiden", false);
+     
+
         canvasShop.gameObject.SetActive(true);
     }
 
@@ -50,6 +64,7 @@ public class ButtonMenu : MonoBehaviour {
         
     }
 
+   
 
     public void GoPress()
     {
@@ -59,14 +74,27 @@ public class ButtonMenu : MonoBehaviour {
 
     private IEnumerator Timer()
     {
-       yield return new WaitForSeconds(1f);
+       yield return new WaitForSeconds(0.7f);
         SceneManager.LoadScene("Lvl1");
+        
     }
 
-    public void ShowAchievementsUI()
+    public void ShowLeaderBoardUI()
     {
-        PlayServices.ShowAchivement();
+        PlayServices.ShowLeaderboard(CactusGunServices.leaderboard_ranking);
     }
 
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+   
+
+   
+
+  
+
+   
 
 }

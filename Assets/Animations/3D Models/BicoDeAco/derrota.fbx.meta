@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: dd38a8231c56e214ea591b9cd9fb2557
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: AsaDir1
+    100004: AsaDir2
+    100006: AsaDir3
+    100008: AsaDir3_end
+    100010: AsaEsq1
+    100012: AsaEsq2
+    100014: AsaEsq3
+    100016: AsaEsq3_end
+    100018: Base
+    100020: BasePernaDir
+    100022: BasePernaEsq
+    100024: Bico
+    100026: Bico_end
+    100028: Cabeca1
+    100030: Cabeca2
+    100032: Cauda
+    100034: Cauda_end
+    100036: Chapeu
+    100038: Chapeu_end
+    100040: Corpo
+    100042: Cube
+    100044: //RootNode
+    100046: OmbroDir
+    100048: OmbroEsq
+    100050: PeDir1
+    100052: PeDir1_end
+    100054: PeDir2
+    100056: PeDir2_end
+    100058: PeDir3
+    100060: PeDir3_end
+    100062: PeDir4
+    100064: PeDir4_end
+    100066: PeEsq1
+    100068: PeEsq1_end
+    100070: PeEsq2
+    100072: PeEsq2_end
+    100074: PeEsq3
+    100076: PeEsq3_end
+    100078: PeEsq4
+    100080: PeEsq4_end
+    100082: PernaDir1
+    100084: PernaDir2
+    100086: PernaEsq1
+    100088: PernaEsq2
+    100090: Pescoco1
+    100092: Pescoco2
+    400000: Armature
+    400002: AsaDir1
+    400004: AsaDir2
+    400006: AsaDir3
+    400008: AsaDir3_end
+    400010: AsaEsq1
+    400012: AsaEsq2
+    400014: AsaEsq3
+    400016: AsaEsq3_end
+    400018: Base
+    400020: BasePernaDir
+    400022: BasePernaEsq
+    400024: Bico
+    400026: Bico_end
+    400028: Cabeca1
+    400030: Cabeca2
+    400032: Cauda
+    400034: Cauda_end
+    400036: Chapeu
+    400038: Chapeu_end
+    400040: Corpo
+    400042: Cube
+    400044: //RootNode
+    400046: OmbroDir
+    400048: OmbroEsq
+    400050: PeDir1
+    400052: PeDir1_end
+    400054: PeDir2
+    400056: PeDir2_end
+    400058: PeDir3
+    400060: PeDir3_end
+    400062: PeDir4
+    400064: PeDir4_end
+    400066: PeEsq1
+    400068: PeEsq1_end
+    400070: PeEsq2
+    400072: PeEsq2_end
+    400074: PeEsq3
+    400076: PeEsq3_end
+    400078: PeEsq4
+    400080: PeEsq4_end
+    400082: PernaDir1
+    400084: PernaDir2
+    400086: PernaEsq1
+    400088: PernaEsq2
+    400090: Pescoco1
+    400092: Pescoco2
+    2100000: bicodeaco
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    7400002: Armature|ArmatureAction.001
+    9500000: //RootNode
+    13700000: Cube
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature|ArmatureAction.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation DOF
+      on avatar to improve retargeting quality.\n\t'Cabeca1' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton:
+    - name: derrota(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: derrota(Clone)
+      position: {x: -0, y: 1.0310016, z: -1.0017998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Base
+      parentName: Armature
+      position: {x: -0.000114464165, y: 0.0017002928, z: 0.000018003508}
+      rotation: {x: 0.7071067, y: -0.0000000037686787, z: 0.000000016186927, w: 0.7071068}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999976}
+    - name: Cauda
+      parentName: Base
+      position: {x: -2.6077032e-10, y: 0.009999998, z: 1.03609635e-10}
+      rotation: {x: 0.000000079057855, y: 0.3959647, z: 0.91826576, w: 0.000000050321347}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000005}
+    - name: Cauda_end
+      parentName: Cauda
+      position: {x: -0, y: 0.00624594, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Corpo
+      parentName: Base
+      position: {x: -2.6077032e-10, y: 0.009999998, z: 1.03609635e-10}
+      rotation: {x: -0.58076537, y: 0.000000009251816, z: -0.000000028083564, w: 0.814071}
+      scale: {x: 1, y: 1.0000001, z: 1.0000004}
+    - name: Pescoco1
+      parentName: Corpo
+      position: {x: -7.4505804e-11, y: 0.0069134776, z: 1.0244548e-10}
+      rotation: {x: 0.03519863, y: -0.000000008460116, z: 0.000000007950563, w: 0.99938035}
+      scale: {x: 1, y: 1.0000007, z: 1.0000004}
+    - name: Pescoco2
+      parentName: Pescoco1
+      position: {x: -1.11758706e-10, y: 0.0018449508, z: 7.4505804e-11}
+      rotation: {x: 0.17303872, y: 0.000000009233145, z: 0.0000000018548061, w: 0.984915}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1.0000005}
+    - name: Cabeca1
+      parentName: Pescoco2
+      position: {x: 5.5879353e-11, y: 0.0016819737, z: 3.236346e-10}
+      rotation: {x: 0.007646755, y: 0.000000058825513, z: -0.000000022394868, w: 0.9999708}
+      scale: {x: 1.000001, y: 1, z: 0.99999964}
+    - name: Bico
+      parentName: Cabeca1
+      position: {x: 1.5832484e-10, y: 0.0014710933, z: -4.0978193e-10}
+      rotation: {x: -0.000000052881997, y: 0.8784629, z: 0.47781068, w: -0.000000038463785}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000007}
+    - name: Bico_end
+      parentName: Bico
+      position: {x: -0, y: 0.006052389, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabeca2
+      parentName: Cabeca1
+      position: {x: 1.5832484e-10, y: 0.0014710933, z: -4.0978193e-10}
+      rotation: {x: -0.25502184, y: -0.000000021230303, z: -0.000000008287141, w: 0.96693534}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000008}
+    - name: Chapeu
+      parentName: Cabeca2
+      position: {x: -7.4505804e-11, y: 0.0024091527, z: -2.2351741e-10}
+      rotation: {x: -0.120978564, y: 0.028559119, z: 0.22797103, w: 0.96570075}
+      scale: {x: 1, y: 1, z: 0.9999995}
+    - name: Chapeu_end
+      parentName: Chapeu
+      position: {x: -0, y: 0.0019933018, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: OmbroEsq
+      parentName: Corpo
+      position: {x: -7.4505804e-11, y: 0.0069134776, z: 1.0244548e-10}
+      rotation: {x: -0.049552202, y: 0.19988203, z: 0.7753773, w: 0.5969773}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000005}
+    - name: AsaEsq1
+      parentName: OmbroEsq
+      position: {x: 2.7706845e-10, y: 0.0025799864, z: -2.9802322e-10}
+      rotation: {x: -0.08824431, y: -0.016833901, z: -0.1821281, w: 0.9791624}
+      scale: {x: 0.99999964, y: 0.99999976, z: 0.9999996}
+    - name: AsaEsq2
+      parentName: AsaEsq1
+      position: {x: 5.2154064e-10, y: 0.0042161644, z: -4.4703483e-10}
+      rotation: {x: 0.004041537, y: -0.00060229556, z: 0.0067393696, w: 0.99996895}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000004}
+    - name: AsaEsq3
+      parentName: AsaEsq2
+      position: {x: -1.1757947e-10, y: 0.003925569, z: -4.0978193e-10}
+      rotation: {x: 0.019831164, y: 0.0018526849, z: 0.051700372, w: 0.998464}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
+    - name: AsaEsq3_end
+      parentName: AsaEsq3
+      position: {x: -0, y: 0.010223546, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: OmbroDir
+      parentName: Corpo
+      position: {x: -7.4505804e-11, y: 0.0069134776, z: 1.0244548e-10}
+      rotation: {x: 0.43575937, y: 0.47446185, z: 0.64198786, w: -0.4157539}
+      scale: {x: 1.0000012, y: 1.0000005, z: 1.000001}
+    - name: AsaDir1
+      parentName: OmbroDir
+      position: {x: 5.587935e-10, y: 0.002795813, z: -1.4901161e-10}
+      rotation: {x: -0.020012408, y: -0.51102495, z: -0.19617508, w: -0.8366412}
+      scale: {x: 1.0000001, y: 1.0000007, z: 0.9999996}
+    - name: AsaDir2
+      parentName: AsaDir1
+      position: {x: -8.1956386e-10, y: 0.004216165, z: 2.2351741e-10}
+      rotation: {x: 0.00000012665984, y: 0.000000029802315, z: -0.0062008384, w: 0.9999808}
+      scale: {x: 1, y: 0.99999934, z: 1.0000004}
+    - name: AsaDir3
+      parentName: AsaDir2
+      position: {x: 2.2351741e-10, y: 0.0039255703, z: -5.5879353e-11}
+      rotation: {x: -0.020737078, y: 0.0010738444, z: 0.051721893, w: -0.99844563}
+      scale: {x: 1.0000004, y: 1.0000012, z: 1}
+    - name: AsaDir3_end
+      parentName: AsaDir3
+      position: {x: -0, y: 0.010223546, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BasePernaEsq
+      parentName: Base
+      position: {x: -2.6077032e-10, y: 0.009999998, z: 1.03609635e-10}
+      rotation: {x: 0.01338236, y: 0.72120976, z: 0.66820365, w: 0.18215737}
+      scale: {x: 1.0000011, y: 1.0000007, z: 1.0000007}
+    - name: PernaEsq1
+      parentName: BasePernaEsq
+      position: {x: -1.9557773e-10, y: 0.003577332, z: 2.3283064e-10}
+      rotation: {x: -0.16572945, y: 0.065836675, z: 0.24578317, w: 0.9527801}
+      scale: {x: 1.0000013, y: 1.0000005, z: 1.0000008}
+    - name: PernaEsq2
+      parentName: PernaEsq1
+      position: {x: -7.4505804e-11, y: 0.0052060355, z: -2.0489097e-10}
+      rotation: {x: 0.20858654, y: 0.050317243, z: -0.11034828, w: 0.9704551}
+      scale: {x: 1.0000011, y: 1.0000011, z: 1.0000008}
+    - name: PeEsq3
+      parentName: PernaEsq2
+      position: {x: -1.4901161e-10, y: 0.0033751742, z: 0.0000000014528632}
+      rotation: {x: -0.6843859, y: -0.0000010518123, z: -0.0000012919771, w: 0.7291201}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.99999976}
+    - name: PeEsq3_end
+      parentName: PeEsq3
+      position: {x: -0, y: 0.0012073781, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeEsq1
+      parentName: PernaEsq2
+      position: {x: -1.4901161e-10, y: 0.0033751742, z: 0.0000000014528632}
+      rotation: {x: 0.58610433, y: -0.0000011795781, z: 0.0000010422663, w: 0.81023556}
+      scale: {x: 0.99999887, y: 0.99999976, z: 0.99999917}
+    - name: PeEsq1_end
+      parentName: PeEsq1
+      position: {x: -0, y: 0.003338403, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeEsq2
+      parentName: PernaEsq2
+      position: {x: -1.4901161e-10, y: 0.0033751742, z: 0.0000000014528632}
+      rotation: {x: 0.091505535, y: -0.2335473, z: -0.53047144, w: 0.80974215}
+      scale: {x: 0.9999993, y: 0.99999934, z: 0.99999934}
+    - name: PeEsq2_end
+      parentName: PeEsq2
+      position: {x: -0, y: 0.0021816588, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeEsq4
+      parentName: PernaEsq2
+      position: {x: -1.4901161e-10, y: 0.0033751742, z: 0.0000000014528632}
+      rotation: {x: -0.060099535, y: -0.16968666, z: -0.5921325, w: -0.7854767}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: PeEsq4_end
+      parentName: PeEsq4
+      position: {x: -0, y: 0.0011044673, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BasePernaDir
+      parentName: Base
+      position: {x: 0.00022892875, y: 0.009999998, z: 1.1408701e-10}
+      rotation: {x: 0.42926767, y: 0.66316265, z: 0.5122545, w: 0.3369569}
+      scale: {x: 1.0000012, y: 1.0000007, z: 1.0000006}
+    - name: PernaDir1
+      parentName: BasePernaDir
+      position: {x: -2.2351741e-10, y: 0.003577332, z: 7.4505804e-11}
+      rotation: {x: -0.28698412, y: 0.571673, z: -0.07426732, w: 0.76505846}
+      scale: {x: 1.000002, y: 1.000001, z: 1.0000004}
+    - name: PernaDir2
+      parentName: PernaDir1
+      position: {x: -7.4505804e-11, y: 0.005206036, z: -7.45058e-10}
+      rotation: {x: 0.209331, y: -0.04371777, z: 0.10892965, w: 0.97077477}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000004}
+    - name: PeDir3
+      parentName: PernaDir2
+      position: {x: 7.4505804e-11, y: 0.003375173, z: 0.0000000010058283}
+      rotation: {x: -0.68438584, y: -0.0000019525173, z: -0.000002098153, w: 0.72912}
+      scale: {x: 1.0000005, y: 1.0000012, z: 1.0000002}
+    - name: PeDir3_end
+      parentName: PeDir3
+      position: {x: -0, y: 0.0012073781, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeDir1
+      parentName: PernaDir2
+      position: {x: 7.4505804e-11, y: 0.003375173, z: 0.0000000010058283}
+      rotation: {x: 0.58610445, y: -0.0000021345913, z: 0.0000017834827, w: 0.81023556}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000006}
+    - name: PeDir1_end
+      parentName: PeDir1
+      position: {x: -0, y: 0.003338403, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeDir2
+      parentName: PernaDir2
+      position: {x: 7.4505804e-11, y: 0.003375173, z: 0.0000000010058283}
+      rotation: {x: 0.4885389, y: -0.53370744, z: 0.22605929, w: 0.6522142}
+      scale: {x: 0.9999998, y: 1, z: 0.99999964}
+    - name: PeDir2_end
+      parentName: PeDir2
+      position: {x: -0, y: 0.0021816588, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PeDir4
+      parentName: PernaDir2
+      position: {x: 7.4505804e-11, y: 0.003375173, z: 0.0000000010058283}
+      rotation: {x: 0.51681626, y: 0.5406276, z: -0.29518443, w: 0.5945493}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.9999997}
+    - name: PeDir4_end
+      parentName: PeDir4
+      position: {x: -0, y: 0.0011044673, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: derrota(Clone)
+      position: {x: -0, y: 1.154104, z: 0.0000000053809774}
+      rotation: {x: 0.000018850878, y: 0.7071068, z: 0.70710677, w: -0.00001885088}
+      scale: {x: 30.038616, y: 30.038616, z: 16.577147}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

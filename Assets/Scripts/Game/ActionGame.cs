@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActionGame : MonoBehaviour {
+public class ActionGame : MonoBehaviour
+{
 
     //PLAYER ATRIBUTES
     private int playerLocalToJump = 1;
-
     public int PlayerLocalToAtk
     {
         get { return playerLocalToAtk; }
@@ -14,8 +14,9 @@ public class ActionGame : MonoBehaviour {
     }
     private int playerLocalToAtk;
     private int playerSkill;
-
     private Animator animPlayer;
+
+    
 
     //ENEMY ATRIBUTES
     private int enemyLocalToJump = 1;
@@ -28,9 +29,13 @@ public class ActionGame : MonoBehaviour {
 
     private GameObject player;
     private GameObject enemy;
-    private bool runEndTurn;
-
     private Animator animEnemy;
+
+
+    private bool runEndTurn;
+    public float myTime;
+    public float tempoTiro;
+    
 
     private bool enemyIsArrested;
 
@@ -48,10 +53,8 @@ public class ActionGame : MonoBehaviour {
 
     private void Start()
     {
-        PlayServices.UnlockAnchivement(CactusGunServices.achievement_novo_aventureiro);
-       
-      
-
+        // PlayServices.UnlockAnchivement(CactusGunServices.achievement_novo_aventureiro);
+        
         LoadResources();
     }
 
@@ -59,9 +62,11 @@ public class ActionGame : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player");
         enemy = GameObject.FindGameObjectWithTag("Enemy");
-
+  
         animPlayer = player.GetComponentInChildren<Animator>(); 
         animEnemy = enemy.GetComponentInChildren<Animator>();
+
+        getTimeAnimationClip();
     }
 
     public void Action()
@@ -75,7 +80,12 @@ public class ActionGame : MonoBehaviour {
     {
         animPlayer.SetBool("Desviando", true);
         animEnemy.SetBool("Desviando", true);
-        yield return new WaitForSeconds(0.8f); // <--------- TEMPO DA ANIMACAO DE MOVIMENTO
+        //Pegar tempo animação Desviando
+        Animator myAnimator = animPlayer;
+
+        
+        yield return new WaitForSeconds(myTime); // <--------- TEMPO DA ANIMACAO DE MOVIMENTO 0.8
+
         animPlayer.SetBool("Desviando", false);
         animEnemy.SetBool("Desviando", false);
 
@@ -87,11 +97,12 @@ public class ActionGame : MonoBehaviour {
 
     private void Update()
     {
-            MoveCharacters(); 
+            MoveCharacters();
     }
 
     private void GetAllConfig()
     {
+        
         playerLocalToJump = gameObject.GetComponent<PlayerActions>().PlayerPosition;
         playerLocalToAtk = gameObject.GetComponent<PlayerActions>().PlayerAtk;
         playerSkill = gameObject.GetComponent<TamborRotate>().CurrentAtk;
@@ -168,10 +179,12 @@ public class ActionGame : MonoBehaviour {
              {
                 //ANIMACAO DA BOMBA STARTA AQUI
                 StartCoroutine(TempoTNT());
-                // enemy.GetComponent<Health>().TakeDamange(50);
+            // enemy.GetComponent<Health>().TakeDamange(50);
+          
              }
              if (playerSkill == 1)
              {
+        
                 //ANIMACAO DO ATK BASICO STARTA AQUI
                 StartCoroutine(TempoTiro());
                //  enemy.GetComponent<Health>().TakeDamange(25);
@@ -203,14 +216,16 @@ public class ActionGame : MonoBehaviour {
 
     IEnumerator TempoTiro()
     {
-       
-        StartCoroutine(Timer(1f));
-        yield return new WaitForSeconds(0.5f);
+
+        //
+         StartCoroutine(Timer(1f));
+        
+        yield return new WaitForSeconds(0.5f); //TempoTiro 0.5f
         //enemy.GetComponent<Bullet>().Atirar();
         player.GetComponent<Bullet>().Atirar();
         if (playerLocalToAtk == enemyLocalToJump)
         {
-            enemy.GetComponent<Health>().TakeDamange(25);
+            enemy.GetComponent<Health>().TakeDamange(-25);
             animEnemy.SetBool("Dano", true);
         }
        
@@ -219,21 +234,22 @@ public class ActionGame : MonoBehaviour {
     IEnumerator TempoTiroInimigo()
     {
         StartCoroutine(Timer(1f));
-        
 
-        yield return new WaitForSeconds(0.5f);
+        
+        yield return new WaitForSeconds(0.5f); //0.5
        // enemyIsArrested = true;
         enemy.GetComponent<Bullet>().Atirar();
         if (enemyLocalToAtk == playerLocalToJump)
         {
             animPlayer.SetBool("Dano", true);
-            player.GetComponent<Health>().TakeDamange(25);
+            player.GetComponent<Health>().TakeDamange(-25);
         }
 
     }
 
     IEnumerator TempoTNT()
     {
+        //tempo da animação da BOMBA
         StartCoroutine(Timer(2.5f));
         GameObject cloneTNT = Instantiate(animWeapons[0], new Vector3(0,0,0), transform.rotation);
         cloneTNT.transform.localPosition = new Vector3(plataforms[PlayerLocalToAtk].transform.position.x, 7.02f, 3.11f);
@@ -243,26 +259,60 @@ public class ActionGame : MonoBehaviour {
         if (playerLocalToAtk == enemyLocalToJump)
         {
             animEnemy.SetBool("Dano", true);
-            enemy.GetComponent<Health>().TakeDamange(50);
+            enemy.GetComponent<Health>().TakeDamange(-50);
         }
         Destroy(cloneTNT);
     }
 
     IEnumerator TempoTrap()
     {
+
+        //Pegar tempo armadilha
         StartCoroutine(Timer(1.6f));
         GameObject cloneTrap = Instantiate(animWeapons[1], new Vector3(0, 0, 0), transform.rotation);
         cloneTrap.transform.position = new Vector3(plataforms[PlayerLocalToAtk].transform.position.x, plataforms[PlayerLocalToAtk].transform.position.y, plataforms[PlayerLocalToAtk].transform.position.z);
         cloneTrap.transform.Rotate(new Vector3(0, 41.22f, 0));
         yield return new WaitForSeconds(1f);
-       
+
         if (playerLocalToAtk == enemyLocalToJump)
         {
             animEnemy.SetBool("Dano", true);
-            enemy.GetComponent<Health>().TakeDamange(10);
+            enemy.GetComponent<Health>().TakeDamange(-10);
+            enemyIsArrested = true;
+            Destroy(cloneTrap);
         }
-        Destroy(cloneTrap);
+        else
+            Destroy(cloneTrap);
+
+
     }
+
+    void getTimeAnimationClip()
+    {
+
+       
+
+        RuntimeAnimatorController ac = animPlayer.runtimeAnimatorController;
+
+        for(int i = 0; i < ac.animationClips.Length;i++)
+        {
+
+            if(ac.animationClips[i].name == "Jump (1)")
+            {
+
+                myTime = ac.animationClips[i].length;
+            }
+        }
+
+    }
+
+    
+
+   
+
+}
+
+
 /*
     private void Shot2()
     {
@@ -306,4 +356,4 @@ public class ActionGame : MonoBehaviour {
 
 
 
-}
+

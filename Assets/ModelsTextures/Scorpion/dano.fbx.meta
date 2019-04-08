@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 0d8cf0f53dfcbb349a723d90a7dadd66
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Base
+    100004: BasePernaDir1
+    100006: BasePernaDir2
+    100008: BasePernaDir3
+    100010: BasePernaEsq1
+    100012: BasePernaEsq2
+    100014: BasePernaEsq3
+    100016: BracoDir1
+    100018: BracoDir2
+    100020: BracoEsq1
+    100022: Cabeca
+    100024: Canhao
+    100026: Canhao_end
+    100028: Cauda1
+    100030: Cauda2
+    100032: Cauda3
+    100034: Cauda4
+    100036: Chapeu
+    100038: Chapeu_end
+    100040: Corpo1
+    100042: Corpo2
+    100044: Corpo3
+    100046: Corpo4
+    100048: Corpo5
+    100050: Corpo6
+    100052: Cube
+    100054: //RootNode
+    100056: Ferrao
+    100058: Ferrao_end
+    100060: MaoDir
+    100062: MaoDir_end
+    100064: OmbroDir
+    100066: OmbroEsq
+    100068: PernaDir1_1
+    100070: PernaDir1_2
+    100072: PernaDir1_3
+    100074: PernaDir1_3_end
+    100076: PernaDir2_1
+    100078: PernaDir2_2
+    100080: PernaDir2_3
+    100082: PernaDir2_3_end
+    100084: PernaDir3_1
+    100086: PernaDir3_2
+    100088: PernaDir3_3
+    100090: PernaDir3_3_end
+    100092: PernaEsq1_1
+    100094: PernaEsq1_2
+    100096: PernaEsq1_3
+    100098: PernaEsq1_3_end
+    100100: PernaEsq2_1
+    100102: PernaEsq2_2
+    100104: PernaEsq2_3
+    100106: PernaEsq2_3_end
+    100108: PernaEsq3_1
+    100110: PernaEsq3_2
+    100112: PernaEsq3_3
+    100114: PernaEsq3_3_end
+    400000: Armature
+    400002: Base
+    400004: BasePernaDir1
+    400006: BasePernaDir2
+    400008: BasePernaDir3
+    400010: BasePernaEsq1
+    400012: BasePernaEsq2
+    400014: BasePernaEsq3
+    400016: BracoDir1
+    400018: BracoDir2
+    400020: BracoEsq1
+    400022: Cabeca
+    400024: Canhao
+    400026: Canhao_end
+    400028: Cauda1
+    400030: Cauda2
+    400032: Cauda3
+    400034: Cauda4
+    400036: Chapeu
+    400038: Chapeu_end
+    400040: Corpo1
+    400042: Corpo2
+    400044: Corpo3
+    400046: Corpo4
+    400048: Corpo5
+    400050: Corpo6
+    400052: Cube
+    400054: //RootNode
+    400056: Ferrao
+    400058: Ferrao_end
+    400060: MaoDir
+    400062: MaoDir_end
+    400064: OmbroDir
+    400066: OmbroEsq
+    400068: PernaDir1_1
+    400070: PernaDir1_2
+    400072: PernaDir1_3
+    400074: PernaDir1_3_end
+    400076: PernaDir2_1
+    400078: PernaDir2_2
+    400080: PernaDir2_3
+    400082: PernaDir2_3_end
+    400084: PernaDir3_1
+    400086: PernaDir3_2
+    400088: PernaDir3_3
+    400090: PernaDir3_3_end
+    400092: PernaEsq1_1
+    400094: PernaEsq1_2
+    400096: PernaEsq1_3
+    400098: PernaEsq1_3_end
+    400100: PernaEsq2_1
+    400102: PernaEsq2_2
+    400104: PernaEsq2_3
+    400106: PernaEsq2_3_end
+    400108: PernaEsq3_1
+    400110: PernaEsq3_2
+    400112: PernaEsq3_3
+    400114: PernaEsq3_3_end
+    2100000: escorpiao
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Cube
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

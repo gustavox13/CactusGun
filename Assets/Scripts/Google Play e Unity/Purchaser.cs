@@ -16,10 +16,17 @@ using UnityEngine.Purchasing;
         public static string kProductIDConsumable = "consumable";
         public static string kProductIDNonConsumable = "nonconsumable";
         public static string kProductIDSubscription = "subscription";
-        public static string kitbasico = "kitbasico"; //remove anuncios e 10 dinamites
-        public static string dinamite50 = "dinamite25";
-        public static string armadilha100 = "armadilha50";
-       // public static string bau1 = "bau1";
+       
+
+    //novas variaveis
+    public static string ruby30 = "ruby30";
+    public static string ruby50 = "ruby50";
+    public static string ruby100 = "ruby100";
+    public static string ruby200 = "ruby200";
+    public static string ruby500 = "ruby500";
+
+    [SerializeField]
+    private Variables variables;
 
 
     // Google Play Store-specific product identifier subscription product.
@@ -51,11 +58,13 @@ using UnityEngine.Purchasing;
             
             builder.AddProduct(kProductIDConsumable, ProductType.Consumable);
             builder.AddProduct(kProductIDNonConsumable, ProductType.NonConsumable);
-            builder.AddProduct("kitbasico", ProductType.Consumable);
-            builder.AddProduct("armadilha50", ProductType.Consumable);
-            builder.AddProduct("dinamite25", ProductType.Consumable);
-          //  builder.AddProduct("bau1", ProductType.Consumable);
-            builder.AddProduct(kProductIDSubscription, ProductType.Subscription, new IDs()
+            builder.AddProduct("ruby30", ProductType.Consumable);
+            builder.AddProduct("ruby50", ProductType.Consumable);
+            builder.AddProduct("ruby100", ProductType.Consumable);
+            builder.AddProduct("ruby200", ProductType.Consumable);
+            builder.AddProduct("ruby500", ProductType.Consumable);
+        //  builder.AddProduct("bau1", ProductType.Consumable);
+        builder.AddProduct(kProductIDSubscription, ProductType.Subscription, new IDs()
             {
        
                 { kProductNameGooglePlaySubscription, GooglePlay.Name },
@@ -174,29 +183,60 @@ using UnityEngine.Purchasing;
                 // TODO: The subscription item has been successfully purchased, grant this to the player.
             }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
-           else if (String.Equals(args.purchasedProduct.definition.id, "kitbasico", StringComparison.Ordinal))
+           else if (String.Equals(args.purchasedProduct.definition.id, "ruby30", StringComparison.Ordinal))
             {
                 Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            GetComponent<AcountController>().CompraDinamite += 5;
-            GetComponent<AcountController>().RemoveADS = 1;
-            int noADS = GetComponent<AcountController>().RemoveADS;
-            PlayerPrefs.SetInt("noADS", 1);
+            // GetComponent<AcountController>().CompraDinamite += 5;
+            // GetComponent<AcountController>().RemoveADS = 1;
+            ///int noADS = GetComponent<AcountController>().RemoveADS;
+            //PlayerPrefs.SetInt("noADS", 1);
+           // GetComponent<Variables>().CompraRuby += 30;
+            variables.CompraRuby += 30;
+            variables.SaveVariables();
             // TODO: The subscription item has been successfully purchased, grant this to the player.
             //Chamar a função pra remover o anuncio, e liberar skin1
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
-        else if (String.Equals(args.purchasedProduct.definition.id, "armadilha50", StringComparison.Ordinal))
+        else if (String.Equals(args.purchasedProduct.definition.id, "ruby50", StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            GetComponent<AcountController>().CompraArmadilha += 50;
+            // GetComponent<AcountController>().CompraArmadilha += 50;
+            // GetComponent<Variables>().CompraRuby += 50;
+            variables.CompraRuby += 50;
+            variables.SaveVariables();
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
-        else if (String.Equals(args.purchasedProduct.definition.id, "dinamite25", StringComparison.Ordinal))
+        else if (String.Equals(args.purchasedProduct.definition.id, "ruby100", StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            GetComponent<AcountController>().CompraDinamite += 25;
-            Debug.Log(GetComponent<AcountController>().CompraDinamite);
+            // GetComponent<AcountController>().CompraDinamite += 25;
+            // Debug.Log(GetComponent<AcountController>().CompraDinamite);
+            // GetComponent<Variables>().CompraRuby += 100;
+            variables.CompraRuby += 100;
+            variables.SaveVariables();
+            // TODO: The subscription item has been successfully purchased, grant this to the player.
+        }
+        // Or ... an unknown product has been purchased by this user. Fill in additional products here....
+        else if (String.Equals(args.purchasedProduct.definition.id, "ruby200", StringComparison.Ordinal))
+        {
+            Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+            //GetComponent<AcountController>().CompraDinamite += 25;
+            // Debug.Log(GetComponent<AcountController>().CompraDinamite);
+            // GetComponent<Variables>().CompraRuby += 200;
+            variables.CompraRuby += 200;
+            variables.SaveVariables();
+            // TODO: The subscription item has been successfully purchased, grant this to the player.
+        }
+        // Or ... an unknown product has been purchased by this user. Fill in additional products here....
+        else if (String.Equals(args.purchasedProduct.definition.id, "ruby500", StringComparison.Ordinal))
+        {
+            Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+            // GetComponent<AcountController>().CompraDinamite += 25;
+            // Debug.Log(GetComponent<AcountController>().CompraDinamite);
+            // GetComponent<Variables>().CompraRuby += 500;
+            variables.CompraRuby += 500;
+            variables.SaveVariables();
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....

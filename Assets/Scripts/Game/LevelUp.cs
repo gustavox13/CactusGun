@@ -10,19 +10,17 @@ public class LevelUp : MonoBehaviour
     [SerializeField]
     private float dinheiro = 0f;
 
-	// Use this for initialization
-	void Start ()
-    {
-       
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-      
-	}
+    //Levels
+    private int currentLevel = 1;
+    public int[] level = new int[10];
 
+
+
+    public void AddLevel()
+    {
+        level[currentLevel - 1] += 1; 
+    }
     public void AddDinheiro(float valor)
     {
         dinheiro += valor;

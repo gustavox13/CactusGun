@@ -24,7 +24,7 @@
 
 public static class CactusGunServices
 {
-        public const string achievement_novo_aventureiro = "CgkImprrr_UYEAIQAQ"; // <GPGSID>
+        public const string leaderboard_ranking = "CgkImprrr_UYEAIQAg"; // <GPGSID>
 
 }
 

@@ -37,19 +37,34 @@ public class CanvasControler : MonoBehaviour
     private bool fimPardida;
     private bool somVitoria;
 
+    [SerializeField]
+    private GameObject ac;
+
+    [SerializeField]
+    private Variables variables;
+ 
+
+
+
     
 
     private void Awake ()
     {
+
+        variables.LoadSave();
         fimPardida = false;
         somVitoria = false;
         source = GetComponent<AudioSource>();
+      
         
         LoadResources();
         
 
-	}
 
+
+    }
+
+   
     private void LoadResources()
     {
         moneyB.SetActive(false);
@@ -64,29 +79,31 @@ public class CanvasControler : MonoBehaviour
         defeatScreen.SetActive(false);
         player = GameObject.FindGameObjectWithTag("Player");
         enemy = GameObject.FindGameObjectWithTag("Enemy");
+       
 
-        
+
     }
 
 
     private void Update()
     {
+     
        
-            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth > 0)
+            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth > 0 && !fimPardida)
             {
             StartCoroutine("DeathEnemyOrPlayer", false);
              
             }
 
-            if (enemy.GetComponent<Health>().CurrentHealth <= 0 && player.GetComponent<Health>().CurrentHealth > 0)
+            if (enemy.GetComponent<Health>().CurrentHealth <= 0 && player.GetComponent<Health>().CurrentHealth > 0 && !fimPardida)
             {
               StartCoroutine("DeathEnemyOrPlayer", true);
            
             }
 
-            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth <= 0)
+            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth <= 0 && !fimPardida)
             {
-            StartCoroutine("DeathEnemyOrPlayer", false);
+             StartCoroutine("DeathEnemyOrPlayer", false);
             
             }
         
@@ -126,15 +143,21 @@ public class CanvasControler : MonoBehaviour
 
     private void Victory()
     {
+        fimPardida = true;
         Hud.SetActive(false);
         winScreen.SetActive(true);
         source.PlayOneShot(audios[1]);
+       // if(!fimPardida)
+       
         PlayerRank();
+       //variables.AddLevel(); //Venceu, acrescentar +1 no level atual, depois limitar até 10/10
+       //variables.SaveVariables(); //Salva
+
 
         //VErifica o inimigo para dar recompensa em dinheiro
 
-        GetComponent<LevelUp>().AddDinheiro(50f);
-        Debug.Log(GetComponent<LevelUp>().GetDinheiro());
+       // GetComponent<LevelUp>().AddDinheiro(50f);
+      //  Debug.Log(GetComponent<LevelUp>().GetDinheiro());
       //  GetComponent<LevelUp>().AddExp(10);
         
     }
@@ -154,20 +177,61 @@ public class CanvasControler : MonoBehaviour
         {
             moneyG.SetActive(true);
             emblemG.SetActive(true);
-            GetComponent<LevelUp>().AddMedalha(0);
+            // GetComponent<LevelUp>().AddMedalha(0);
+            //ac.GetComponent<AcountController>().SetScore(20);
+            variables.AddGolden(20);
+            variables.AddLevel(1);
+            variables.SaveVariables();
+            
+            
+
+            //  float score = ac.GetComponent<AcountController>().GetScore();
+            //  Debug.Log("Score: " + score);
+
+            //  if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
+            //  {
+            //  PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
+            //  }
+
 
         } else if (player.GetComponent<Health>().CurrentHealth < 100 && player.GetComponent<Health>().CurrentHealth > 74) //Prata
         {
             moneyP.SetActive(true);
             emblemP.SetActive(true);
-            GetComponent<LevelUp>().AddMedalha(1);
+           // GetComponent<LevelUp>().AddMedalha(1);
+
+            //ac.GetComponent<AcountController>().SetScore(10);
+            variables.AddGolden(10);
+            variables.AddLevel(1);
+            variables.SaveVariables();
+            
+            
+
+            // float score = ac.GetComponent<AcountController>().GetScore();
+            // Debug.Log("Score: " + score);
+            //  if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
+            //  {
+            // PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
+            //  }
 
         }
         else if (player.GetComponent<Health>().CurrentHealth < 75 && player.GetComponent<Health>().CurrentHealth > 0) //Bronze
         {
             moneyB.SetActive(true);
             emblemB.SetActive(true);
-            GetComponent<LevelUp>().AddMedalha(2);
+           // GetComponent<LevelUp>().AddMedalha(2);
+            // ac.GetComponent<AcountController>().SetScore(5);
+            variables.AddGolden(5);
+            variables.AddLevel(1);
+            variables.SaveVariables();
+            
+
+            //float score = ac.GetComponent<AcountController>().GetScore();
+            //Debug.Log("Score: " + score);
+            // if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
+            // {
+            // PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
+            // }
 
         }
 

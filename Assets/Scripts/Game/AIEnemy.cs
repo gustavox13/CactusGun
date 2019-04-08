@@ -5,7 +5,6 @@ using UnityEngine;
 public class AIEnemy : MonoBehaviour {
 
     private int lastPosition;
-
     private int randomPosition;
     private int randomAtk;
 
