@@ -30,24 +30,21 @@ public class TamborRotate : MonoBehaviour {
     private GameObject[] weapons;
     private AudioSource source;
 
-    [SerializeField]
-    private Text[] qtd; //0 armadilha // 1 dinamite
+   // [SerializeField]
+    //private Text[] qtd; //0 armadilha // 1 dinamite
    
 
 
 
     private void Awake()
     {
-        qtd[2].enabled = true;
+        //qtd[2].enabled = true;
         
         source = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-       
-     
-
         if (SwipeField.GetComponent<SwipeField>().InField)
         {
             WhenInputTouch();
@@ -125,20 +122,20 @@ public class TamborRotate : MonoBehaviour {
         {
             Debug.Log("bomba");
             weapons[0].SetActive(true);
-            qtd[1].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraDinamite);
-            qtd[1].enabled = true;
+            //qtd[1].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraDinamite);
+            //qtd[1].enabled = true;
             //item.transform. = itens[0];
         }
         if (currentAtk == 1)
         {
-            qtd[2].enabled = true;
+           //// qtd[2].enabled = true;
             Debug.Log("atk basico");
             weapons[1].SetActive(true);
         }
         if (currentAtk == 2)
         {
-            qtd[2].enabled = true;
-            qtd[2].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraArmadilha);
+           // qtd[2].enabled = true;
+           // qtd[2].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraArmadilha);
 
             Debug.Log("armadilha");
             weapons[2].SetActive(true);
@@ -150,9 +147,9 @@ public class TamborRotate : MonoBehaviour {
         weapons[0].SetActive(false);
         weapons[1].SetActive(false);
         weapons[2].SetActive(false);
-        qtd[0].enabled = false;
-        qtd[1].enabled = false;
-        qtd[2].enabled = false;
+        //qtd[0].enabled = false;
+        //qtd[1].enabled = false;
+        //qtd[2].enabled = false;
     }
 
 }

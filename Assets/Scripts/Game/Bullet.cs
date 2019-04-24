@@ -29,8 +29,6 @@ public class Bullet : MonoBehaviour
 
         GameObject bullet = Instantiate(bulletPrefab);
 
-        //Physics.IgnoreCollision(bullet.GetComponent<Collider>(), bulletSpawn.parent.GetComponent<Collider>());
-
         bullet.transform.position = bulletSpawn.position;
 
         var rot = bullet.transform.rotation.eulerAngles;

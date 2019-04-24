@@ -49,7 +49,6 @@ public class ActionGame : MonoBehaviour
     private Transform[] plataforms = new Transform[3];
 
 
-   
 
     private void Start()
     {
@@ -213,7 +212,7 @@ public class ActionGame : MonoBehaviour
 
     }
 
-
+    //DANO ATK BASICO PLAYER
     IEnumerator TempoTiro()
     {
 
@@ -225,12 +224,13 @@ public class ActionGame : MonoBehaviour
         player.GetComponent<Bullet>().Atirar();
         if (playerLocalToAtk == enemyLocalToJump)
         {
-            enemy.GetComponent<Health>().TakeDamange(-25);
+            enemy.GetComponent<Health>().TakeDamange(player.GetComponent<PlayerAtkStats>().BasicAtk);
             animEnemy.SetBool("Dano", true);
         }
        
     }
 
+    //DANO ATK BASICO INIMIGO
     IEnumerator TempoTiroInimigo()
     {
         StartCoroutine(Timer(1f));
@@ -242,11 +242,12 @@ public class ActionGame : MonoBehaviour
         if (enemyLocalToAtk == playerLocalToJump)
         {
             animPlayer.SetBool("Dano", true);
-            player.GetComponent<Health>().TakeDamange(-25);
+            player.GetComponent<Health>().TakeDamange(enemy.GetComponent<CactoMinion>().BasicAtk);
         }
 
     }
 
+    //DANO TNT
     IEnumerator TempoTNT()
     {
         //tempo da animação da BOMBA
@@ -259,11 +260,13 @@ public class ActionGame : MonoBehaviour
         if (playerLocalToAtk == enemyLocalToJump)
         {
             animEnemy.SetBool("Dano", true);
-            enemy.GetComponent<Health>().TakeDamange(-50);
+            enemy.GetComponent<Health>().TakeDamange(player.GetComponent<PlayerAtkStats>().TNTAtk);
         }
         Destroy(cloneTNT);
     }
 
+
+    //DANO TRAP
     IEnumerator TempoTrap()
     {
 
@@ -277,7 +280,7 @@ public class ActionGame : MonoBehaviour
         if (playerLocalToAtk == enemyLocalToJump)
         {
             animEnemy.SetBool("Dano", true);
-            enemy.GetComponent<Health>().TakeDamange(-10);
+            enemy.GetComponent<Health>().TakeDamange(player.GetComponent<PlayerAtkStats>().TrapAtk);
             enemyIsArrested = true;
             Destroy(cloneTrap);
         }

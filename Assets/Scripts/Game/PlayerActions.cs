@@ -19,6 +19,13 @@ public class PlayerActions : MonoBehaviour {
     }
     private int playerPosition = 1;
 
+    private void Awake()
+    {
+        PlayerPosition = -5;
+        playerAtk = -5;
+    }
+
+
 
     public void SetLocalToJump(int var)
     {

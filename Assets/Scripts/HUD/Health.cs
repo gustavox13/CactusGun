@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private int maxHealth = 100;
 
-    private int currentHealth;
+    
 
     public event Action<float> OnHealthPctChanged = delegate { };
 
@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
         get { return currentHealth; }
         set { currentHealth = value; }
     }
+    private int currentHealth;
 
     private void OnEnable()
     {
@@ -27,17 +28,11 @@ public class Health : MonoBehaviour
 
     }
 
-   /* public void ModifyHealth(int amount)
-    {
-        currentHealth += amount;
-
-        float currentHealthPct = (float)currentHealth / (float)maxHealth;
-        OnHealthPctChanged(currentHealthPct);
-    }*/
-
+    
     public void TakeDamange(int amount)
     {
         currentHealth += amount;
+        
 
         float currentHealthPct = (float)currentHealth / (float)maxHealth;
         OnHealthPctChanged(currentHealthPct);
@@ -46,14 +41,13 @@ public class Health : MonoBehaviour
         {
             currentHealth = 0;
             anim.SetBool("Morrendo", true);
-            // Debug.Log("E morreu");
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            TakeDamange(-10);
+       // if (Input.GetKeyDown(KeyCode.Space))
+         //   TakeDamange(-10);
     }
 
 }

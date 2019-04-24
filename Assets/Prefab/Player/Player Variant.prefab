@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1400779951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5324670295546677738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363b358835394484cb51664453105a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicAtk: -25
+  tntAtk: -50
+  trapAtk: -10
+--- !u!1001 &4132024238533494802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8120800790965486072, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790965486073, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790774981533, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: gameControler
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790774981533, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: plataforms.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790774981533, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: plataforms.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790774981533, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: plataforms.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790395270826, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120800790395270831, guid: b2408a38dfcd61c40af0b955785471cd,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8120800790395270831, guid: b2408a38dfcd61c40af0b955785471cd, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: b2408a38dfcd61c40af0b955785471cd, type: 3}
+--- !u!1 &5324670295546677738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8120800790965486072, guid: b2408a38dfcd61c40af0b955785471cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4132024238533494802}
+  m_PrefabAsset: {fileID: 0}
