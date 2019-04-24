@@ -242,7 +242,7 @@ public class ActionGame : MonoBehaviour
         if (enemyLocalToAtk == playerLocalToJump)
         {
             animPlayer.SetBool("Dano", true);
-            player.GetComponent<Health>().TakeDamange(enemy.GetComponent<CactoMinion>().BasicAtk);
+            player.GetComponent<Health>().TakeDamange(enemy.GetComponent<EnemyAtkDamange>().BasicAtk);
         }
 
     }
