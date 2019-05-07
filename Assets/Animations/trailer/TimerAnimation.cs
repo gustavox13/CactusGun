@@ -110,7 +110,7 @@ public class TimerAnimation : MonoBehaviour {
         currentTime += Time.deltaTime;
     }
 
-    public void SkitBtn()
+    public void SkipBtn()
     {
         SceneManager.LoadScene("MainMenu");
     }

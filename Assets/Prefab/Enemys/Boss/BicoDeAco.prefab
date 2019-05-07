@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 1805815065664924379}
   - component: {fileID: 1805815065664924378}
   m_Layer: 0
-  m_Name: EnemyBicoDeAco
+  m_Name: BicoDeAco
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

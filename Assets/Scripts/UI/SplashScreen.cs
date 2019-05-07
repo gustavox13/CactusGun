@@ -17,8 +17,7 @@ public class SplashScreen : MonoBehaviour {
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
-        
+    
         StartCoroutine("Countdown");
     }
 
@@ -26,26 +25,15 @@ public class SplashScreen : MonoBehaviour {
     private IEnumerator Countdown()
     {
         yield return new WaitForSeconds(secondsToChange);
-        VerifyIntro();
+        GoToAnimation();
     }
 
 
 
-    private void VerifyIntro()
+    private void GoToAnimation()
     {
-        if (PlayerPrefs.HasKey("HasOpened"))
-        {
-            gameStats = PlayerPrefs.GetInt("HasOpened");
-            SceneManager.LoadScene("MainMenu");
-        }
-        else
-        {
-            gameStats = 1;
-            PlayerPrefs.SetInt("HasOpened", gameStats);
             SceneManager.LoadScene("AnimationScene");
-        }
-
-
+    
     }
 
 
