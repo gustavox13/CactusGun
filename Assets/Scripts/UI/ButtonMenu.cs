@@ -6,35 +6,86 @@ using UnityEngine.SceneManagement;
 
 public class ButtonMenu : MonoBehaviour {
 
+    //MENU SCREEN
     [SerializeField]
-    private Animator animatorSelectStage;
+    private Animator duelButton;
     [SerializeField]
-    private Animator animatorSaloonSelectStage;
+    private Animator shopButton;
     [SerializeField]
-    private Animator animatorButtonHiden;
-    [SerializeField]
-    private Animator animatorButtonShopHiden;
- 
-    
-
-    [SerializeField]
-    private Canvas canvasShop;
-
-  
+    private GameObject mapButtons;
 
 
+    //MAP SCREEN
+    [SerializeField]
+    private Animator mapScreen;
+    [SerializeField]
+    private Animator map;
 
-  
+    [SerializeField]
+    private Animator backButton;
+
+    //WANTED SCREEN
+    [SerializeField]
+    private Animator wantedScreen;
+    [SerializeField]
+    private Animator goButton;
+
+
+    private void Awake()
+    {
+        mapButtons.SetActive(false);
+    }
+
+
 
     public void DuelPress()
     {
-        animatorSelectStage.SetBool("SelectStage", true);
-        animatorSaloonSelectStage.SetBool("MoveSaloon", true);
-        animatorButtonHiden.SetBool("ButtonHiden", true);
-        animatorButtonShopHiden.SetBool("ButtonShopHiden", true);
-     
+        //MENU ACTIONS
+        duelButton.SetBool("ButtonFade", false);
+        shopButton.SetBool("ButtonFade", false);
+
+
+        //MAP SCREEN ACTIONS
+        mapScreen.SetBool("ScreenMapFade", true);
+        map.SetBool("OpenMap", true);
+        backButton.SetBool("ButtonFade", true);
+        StartCoroutine(ShowMapButtons());
     }
 
+    private IEnumerator ShowMapButtons()
+    {
+        yield return new WaitForSeconds(1.5f);
+        mapButtons.SetActive(true);
+    }
+
+
+    public void LevelSelectAnim()
+    {
+        mapButtons.SetActive(false);
+        map.SetBool("OpenMap", false);
+        wantedScreen.SetBool("WantedMapFade", true);
+        goButton.SetBool("ButtonFade", true);
+    }
+
+    public void BackButton()
+    {
+        //WANTED SCREEN ACTIONS
+        wantedScreen.SetBool("WantedMapFade", false);
+        goButton.SetBool("ButtonFade", false);
+
+        //MAP SCREEN ACTIONS
+        mapButtons.SetActive(false);
+        mapScreen.SetBool("ScreenMapFade", false);
+        map.SetBool("OpenMap", false);
+        backButton.SetBool("ButtonFade", false);
+
+        //MENU SCREEN ACTIONS
+        duelButton.SetBool("ButtonFade", true);
+        shopButton.SetBool("ButtonFade", true);
+    }
+
+
+    /*
     public void BackSelectStagePress()
     {
         animatorSelectStage.SetBool("SelectStage", false);
@@ -90,11 +141,11 @@ public class ButtonMenu : MonoBehaviour {
     }
 
    
+    */
 
-   
 
-  
 
-   
+
+
 
 }
