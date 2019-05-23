@@ -15,27 +15,27 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 67e67bf707169d64287e607804ee91a0
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl1.unity
-    guid: 80853efc7af884f428bd7400854cd42c
+    path: Assets/Scenes/Lvls/cidadela.unity
+    guid: fda5b624b5bbd7c438fb6a828bf0014a
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl2.unity
-    guid: b0d1b31255c20804899ecc3fb4261742
+    path: Assets/Scenes/Lvls/deserto silencioso.unity
+    guid: 0ebda73de8bc4bd408427e125a9422c8
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl3.unity
-    guid: 4a4453961040d2b499bd0d9c4b947d4d
+    path: Assets/Scenes/Lvls/floresta noturna.unity
+    guid: 8af06a310489201499f61a80d45bf2f9
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl4.unity
-    guid: 7604dc8eabe23884ebee936835e93871
+    path: Assets/Scenes/Lvls/mina abandonada.unity
+    guid: db8dd5887546ddf46b21a7a556d470c0
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl5.unity
-    guid: 7df8c6f8566ae554cb692eed023fb275
+    path: Assets/Scenes/Lvls/montanhas do sul.unity
+    guid: 014684bfd4164734d80447b525d94662
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl6.unity
-    guid: b8c6e433c66235a4393290b9bfe09f3b
+    path: Assets/Scenes/Lvls/pantano dos mortos.unity
+    guid: 47e6531f62de9964b8afd7171ef7da15
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl7.unity
-    guid: abf51bdc6d19cd946bd81251a472cf3d
+    path: Assets/Scenes/Lvls/vale do desespero.unity
+    guid: f6bcc5b5b73b0f24c8beed081f732a60
   - enabled: 1
-    path: Assets/Scenes/Lvls/old/Lvl8.unity
-    guid: 4d2cf0c477072ae44b66c55372e28f13
+    path: Assets/Scenes/Lvls/vilarejo fantasma.unity
+    guid: 9e9ea17482e1c614b82ed2ff0cdd0234
   m_configObjects: {}

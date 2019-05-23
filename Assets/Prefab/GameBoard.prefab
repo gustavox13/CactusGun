@@ -4650,7 +4650,6 @@ GameObject:
   - component: {fileID: 5123777856984944963}
   - component: {fileID: 5123777856984944964}
   - component: {fileID: 5123777856984944965}
-  - component: {fileID: 5123777856984944966}
   m_Layer: 5
   m_Name: Hud(Canvas)
   m_TagString: Untagged
@@ -4745,18 +4744,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5123777856984944966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5123777856984945016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53c8212d55aa16d4c910fd83023a1019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5123777856985231953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 95752013995757110, guid: 95112debb13dda7428ce466f84e97a5e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95112debb13dda7428ce466f84e97a5e, type: 3}
