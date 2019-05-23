@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ButtonMenu : MonoBehaviour {
+public class AnimationsButtonMenu : MonoBehaviour {
 
     //MENU SCREEN
     [SerializeField]
@@ -30,13 +30,16 @@ public class ButtonMenu : MonoBehaviour {
     [SerializeField]
     private Animator goButton;
 
+    //STORE SCREEN
+    [SerializeField]
+    private GameObject storeScreen;
+
 
     private void Awake()
     {
+        storeScreen.SetActive(false);
         mapButtons.SetActive(false);
     }
-
-
 
     public void DuelPress()
     {
@@ -84,68 +87,15 @@ public class ButtonMenu : MonoBehaviour {
         shopButton.SetBool("ButtonFade", true);
     }
 
-
-    /*
-    public void BackSelectStagePress()
+    public void StoreButton()
     {
-        animatorSelectStage.SetBool("SelectStage", false);
-        animatorSaloonSelectStage.SetBool("MoveSaloon", false);
-        animatorButtonHiden.SetBool("ButtonHiden", false);
-        animatorButtonShopHiden.SetBool("ButtonShopHiden", false);
-       
-       
-
-        //Test Git
+        storeScreen.SetActive(true);
     }
 
-    
-
-    public void ShopPress()
+    public void StoreBackButton()
     {
-        
-        animatorButtonShopHiden.SetBool("ButtonShopHiden", false);
-     
-
-        canvasShop.gameObject.SetActive(true);
+        storeScreen.SetActive(false);
     }
-
-    public void MenuPress()
-    {
-        canvasShop.gameObject.SetActive(false);
-        
-    }
-
    
-
-    public void GoPress()
-    {
-        StartCoroutine(Timer());
-       
-    }
-
-    private IEnumerator Timer()
-    {
-       yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene("Lvl1");
-        
-    }
-
-    public void ShowLeaderBoardUI()
-    {
-        PlayServices.ShowLeaderboard(CactusGunServices.leaderboard_ranking);
-    }
-
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-   
-    */
-
-
-
-
-
 
 }
