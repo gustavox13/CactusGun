@@ -608,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4676211, y: 0.1717919}
   m_AnchorMax: {x: 0.82348436, y: 0.58739597}
-  m_AnchoredPosition: {x: -0.3899994, y: 0.8899994}
+  m_AnchoredPosition: {x: -0.39001465, y: 0.8899994}
   m_SizeDelta: {x: 1.0800018, y: -1.5999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142965280
@@ -1463,7 +1463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19937637, y: 0.42641622}
   m_AnchorMax: {x: 0.80987096, y: 0.8634162}
-  m_AnchoredPosition: {x: 0.44999695, y: 2}
+  m_AnchoredPosition: {x: 0.4500122, y: 2}
   m_SizeDelta: {x: -0.9000001, y: -0.29999924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352540057
@@ -2123,7 +2123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26932883, y: 0.078419656}
   m_AnchorMax: {x: 0.72549325, y: 0.47762948}
-  m_AnchoredPosition: {x: 1.5, y: 3.500515}
+  m_AnchoredPosition: {x: 1.5, y: 3.5005302}
   m_SizeDelta: {x: -13.899994, y: -8.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450612319
@@ -2794,7 +2794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18572645, y: 0.17162256}
   m_AnchorMax: {x: 0.82800007, y: 0.37049583}
-  m_AnchoredPosition: {x: 0.02999878, y: 0.5}
+  m_AnchoredPosition: {x: 0.030029297, y: 0.5}
   m_SizeDelta: {x: -3.5800018, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543287439
@@ -2849,7 +2849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 556742070}
   m_Layer: 5
-  m_Name: Minions
+  m_Name: Capangas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3280,7 +3280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19938728, y: 0.24239595}
   m_AnchorMax: {x: 0.80987096, y: 0.7392081}
-  m_AnchoredPosition: {x: 0.44999695, y: -1.0999985}
+  m_AnchoredPosition: {x: 0.4500122, y: -1.0999985}
   m_SizeDelta: {x: -0.8999939, y: -1.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704581997
@@ -3763,7 +3763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24100001, y: 0.39264458}
   m_AnchorMax: {x: 0.7402421, y: 0.89100003}
-  m_AnchoredPosition: {x: 0.5000305, y: 0.5}
+  m_AnchoredPosition: {x: 0.50006104, y: 0.5}
   m_SizeDelta: {x: -4, y: -3.4000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764263061
@@ -4656,7 +4656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6596668, y: 0.61200005}
   m_AnchorMax: {x: 0.9596668, y: 0.7798124}
-  m_AnchoredPosition: {x: -2.5999756, y: 2}
+  m_AnchoredPosition: {x: -2.6000977, y: 2}
   m_SizeDelta: {x: 0.3999939, y: 2.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990969719
@@ -4840,6 +4840,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 854013263}
         m_MethodName: DuelPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2078226664}
+        m_MethodName: LoadLvlStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6322,7 +6333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.84186333, y: 0.0374986}
-  m_AnchoredPosition: {x: -0.45999146, y: -23.804733}
+  m_AnchoredPosition: {x: -0.45996094, y: -23.804733}
   m_SizeDelta: {x: -0.91000366, y: 44.74009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1354513817
@@ -6482,7 +6493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18572645, y: 0.17162256}
   m_AnchorMax: {x: 0.82800007, y: 0.37049583}
-  m_AnchoredPosition: {x: 2.600006, y: 0.22894287}
+  m_AnchoredPosition: {x: 2.5999756, y: 0.22894287}
   m_SizeDelta: {x: -3.503006, y: 0.30111694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378094625
@@ -7131,7 +7142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16251571, y: 0.43100002}
   m_AnchorMax: {x: 0.5877578, y: 0.78060406}
-  m_AnchoredPosition: {x: 0.19999695, y: 0.70000076}
+  m_AnchoredPosition: {x: 0.2000122, y: 0.70000076}
   m_SizeDelta: {x: -1.4000015, y: -2.0099983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581682387
@@ -7878,7 +7889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.84186333, y: 0.0374986}
-  m_AnchoredPosition: {x: 0.94003296, y: -23.8}
+  m_AnchoredPosition: {x: 0.9400635, y: -23.8}
   m_SizeDelta: {x: -0.91000366, y: 44.74009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1697431015
@@ -8031,7 +8042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.177, y: 0.25553665}
   m_AnchorMax: {x: 0.30053598, y: 0.75500005}
-  m_AnchoredPosition: {x: -0.000030517578, y: -0.14999962}
+  m_AnchoredPosition: {x: 0, y: -0.14999962}
   m_SizeDelta: {x: -1.5797999, y: -0.4699993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713781382
@@ -8608,7 +8619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05566667, y: 0.61200005}
   m_AnchorMax: {x: 0.35566667, y: 0.7798124}
-  m_AnchoredPosition: {x: -1.7999268, y: -327.5}
+  m_AnchoredPosition: {x: -1.7998047, y: -327.5}
   m_SizeDelta: {x: 0.3999939, y: 1.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793781780
@@ -9057,7 +9068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7346667, y: 0.95778126}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.10003662, y: -2.2999878}
+  m_AnchoredPosition: {x: -0.100097656, y: -2.2999878}
   m_SizeDelta: {x: 0.5, y: 4.700012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879914466
@@ -9729,6 +9740,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab93508dd4d85e4a95c4f4cc736c54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minaAbandonada: {fileID: 391113698}
+  montanhasDoSul: {fileID: 1103968707}
+  cidadela: {fileID: 722519280}
+  florestaNoturna: {fileID: 1267885512}
+  pantanoDosMortos: {fileID: 1768537576}
+  desertoSilencioso: {fileID: 2007534215}
+  vilarejoFantasma: {fileID: 275050393}
+  valeDoDesespero: {fileID: 264443032}
+  Coiote: {fileID: 210546230}
+  BicoDeAco: {fileID: 2052703694}
+  Zilda: {fileID: 1239826677}
+  Urubu: {fileID: 1678427539}
+  ManyMorcego: {fileID: 790104228}
+  PorcoEspinho: {fileID: 373637904}
+  Escorpiao: {fileID: 269148344}
+  Cacto: {fileID: 836296137}
+  Espantalho: {fileID: 657990444}
+  EsqueletoNvl1: {fileID: 1059568906}
+  EsqueletoNvl2: {fileID: 864911945}
 --- !u!1 &2083919020
 GameObject:
   m_ObjectHideFlags: 0
