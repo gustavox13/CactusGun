@@ -42,10 +42,14 @@ public class CanvasControler : MonoBehaviour
         //fimPardida = false;
         somVitoria = false;
         source = GetComponent<AudioSource>();
+        
+    }
+
+    private void Start()
+    {
         LoadResources();
     }
 
-   
     private void LoadResources()
     {
         moneyB.SetActive(false);
@@ -127,7 +131,7 @@ public class CanvasControler : MonoBehaviour
         winScreen.SetActive(true);
         source.PlayOneShot(audios[1]);
 
-       
+        SetLvlSave();
         PlayerRank();
 
        // GetComponent<LevelUp>().AddDinheiro(50f);
@@ -190,10 +194,83 @@ public class CanvasControler : MonoBehaviour
             // }
 
         }
-
     }
 
   
-   
+
+    private void SetLvlSave()
+    {
+
+        switch (PlayerStats.LvlStats.CurrentMap)
+        {
+            case "cidadela":
+                if (PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.Cidadela += 1;
+                }
+
+                break;
+
+            case "deserto silencioso":
+                if (PlayerStats.LvlStats.DesertoSilencioso < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.DesertoSilencioso += 1;
+                }
+
+                break;
+
+
+            case "floresta noturna":
+                if (PlayerStats.LvlStats.FlorestaNoturna < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.FlorestaNoturna += 1;
+                }
+
+                break;
+
+            case "mina abandonada":
+                if (PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.MinaAbandonada += 1;
+                }
+
+                break;
+
+            case "montanhas do sul":
+                if (PlayerStats.LvlStats.MontanhasDoSul < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.MontanhasDoSul += 1;
+                }
+
+                break;
+
+            case "pantano dos mortos":
+                if (PlayerStats.LvlStats.PantanoDosMortos < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.PantanoDosMortos += 1;
+                }
+
+                break;
+
+            case "vale do desespero":
+                if (PlayerStats.LvlStats.ValeDoDesespero < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.ValeDoDesespero += 1;
+                }
+
+                break;
+
+            case "vilarejo fantasma":
+                if (PlayerStats.LvlStats.VilarejoFantasma < PlayerStats.LvlStats.MaxLvlRepeat)
+                {
+                    PlayerStats.LvlStats.VilarejoFantasma += 1;
+                }
+                break;
+
+        }
+
+    }
+
+
 
 }

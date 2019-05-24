@@ -8,6 +8,10 @@ public class PlayerStats : MonoBehaviour
 
     public class LvlStats
     {
+        public static bool TimeToBoss;
+        public static string CurrentMap;
+
+        public static int MaxLvlRepeat = 3;
 
         public static int Cidadela = 0;
         public static int DesertoSilencioso = 0;

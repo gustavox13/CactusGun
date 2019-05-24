@@ -58,14 +58,14 @@ public class GoToLvl : MonoBehaviour
 
     public void LoadLvlStats()
     {
-     minaAbandonada.text = PlayerStats.LvlStats.MinaAbandonada + "/10";
-     montanhasDoSul.text = PlayerStats.LvlStats.MontanhasDoSul + "/10";
-     cidadela.text = PlayerStats.LvlStats.Cidadela + "/10";
-     florestaNoturna.text = PlayerStats.LvlStats.FlorestaNoturna + "/10";
-     pantanoDosMortos.text = PlayerStats.LvlStats.PantanoDosMortos + "/10";
-     desertoSilencioso.text = PlayerStats.LvlStats.DesertoSilencioso + "/10";
-     vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/10";
-     valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/10";
+     minaAbandonada.text = PlayerStats.LvlStats.MinaAbandonada + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     montanhasDoSul.text = PlayerStats.LvlStats.MontanhasDoSul + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     cidadela.text = PlayerStats.LvlStats.Cidadela + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     florestaNoturna.text = PlayerStats.LvlStats.FlorestaNoturna + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     pantanoDosMortos.text = PlayerStats.LvlStats.PantanoDosMortos + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     desertoSilencioso.text = PlayerStats.LvlStats.DesertoSilencioso + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+     valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
 
 
      Coiote.SetActive(false);
@@ -86,104 +86,127 @@ public class GoToLvl : MonoBehaviour
     public void LevelPresses(string currentLvl)
     {
         nameScene = currentLvl;
+        SetCurrentEnemy();
+        PlayerStats.LvlStats.CurrentMap = nameScene;
+    }
+
+    public void GoPress()
+    {
+        SceneManager.LoadScene(nameScene);
+
+    }
+
+  
+
+    private void SetCurrentEnemy()
+    {
         switch (nameScene)
         {
             case "cidadela":
-                if (PlayerStats.LvlStats.Cidadela < 10)
+                if (PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat - 1)
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     Cacto.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     Urubu.SetActive(true);
                 }
                 break;
 
             case "deserto silencioso":
-                if (PlayerStats.LvlStats.DesertoSilencioso < 10)
+                if (PlayerStats.LvlStats.DesertoSilencioso < PlayerStats.LvlStats.MaxLvlRepeat -1 )
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     EsqueletoNvl2.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     Escorpiao.SetActive(true);
                 }
                 break;
 
 
             case "floresta noturna":
-                if (PlayerStats.LvlStats.FlorestaNoturna < 10)
+                if (PlayerStats.LvlStats.FlorestaNoturna < PlayerStats.LvlStats.MaxLvlRepeat -1 )
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     EsqueletoNvl1.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     ManyMorcego.SetActive(true);
                 }
                 break;
 
             case "mina abandonada":
-                if(PlayerStats.LvlStats.MinaAbandonada < 10)
+                if (PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat -1 )
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     Espantalho.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     Coiote.SetActive(true);
                 }
                 break;
 
             case "montanhas do sul":
-                if (PlayerStats.LvlStats.MontanhasDoSul < 10)
+                if (PlayerStats.LvlStats.MontanhasDoSul < PlayerStats.LvlStats.MaxLvlRepeat -1)
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     EsqueletoNvl2.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     PorcoEspinho.SetActive(true);
                 }
                 break;
 
             case "pantano dos mortos":
-                if (PlayerStats.LvlStats.PantanoDosMortos < 10)
+                if (PlayerStats.LvlStats.PantanoDosMortos < PlayerStats.LvlStats.MaxLvlRepeat -1)
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     Espantalho.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     Zilda.SetActive(true);
                 }
                 break;
 
             case "vale do desespero":
-                if (PlayerStats.LvlStats.ValeDoDesespero < 10)
+                if (PlayerStats.LvlStats.ValeDoDesespero < PlayerStats.LvlStats.MaxLvlRepeat -1)
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     EsqueletoNvl1.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     BicoDeAco.SetActive(true);
                 }
                 break;
 
             case "vilarejo fantasma":
-                if (PlayerStats.LvlStats.VilarejoFantasma < 10)
+                if (PlayerStats.LvlStats.VilarejoFantasma < PlayerStats.LvlStats.MaxLvlRepeat -1)
                 {
+                    PlayerStats.LvlStats.TimeToBoss = false;
                     Cacto.SetActive(true);
                 }
                 else
                 {
+                    PlayerStats.LvlStats.TimeToBoss = true;
                     Coiote.SetActive(true);
                 }
                 break;
 
         }
-
     }
-
-    public void GoPress()
-    {
-        SceneManager.LoadScene(nameScene);
-    }
-
 }
