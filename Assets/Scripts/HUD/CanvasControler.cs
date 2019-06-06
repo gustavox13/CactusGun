@@ -1,9 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasControler : MonoBehaviour
 {
+    [SerializeField]
+    private int moneyGold;
+    [SerializeField]
+    private int moneySilver;
+    [SerializeField]
+    private int moneyBronze;
+
+
+
+    [SerializeField]
+    private Text goldText;
+    [SerializeField]
+    private Text silverText;
+    [SerializeField]
+    private Text bronzeText;
+
 
     [SerializeField]
     private GameObject winScreen;
@@ -28,17 +45,19 @@ public class CanvasControler : MonoBehaviour
     [SerializeField]
     private GameObject emblemG;
 
-
+    private bool addVictoryPoint;
     
     private AudioSource source;
     [SerializeField]
     private AudioClip[] audios = new AudioClip[3];
    // private bool fimPardida;
     private bool somVitoria;
-    
+
+    private bool endLvl = false;
 
     private void Awake ()
     {
+        addVictoryPoint = false;
         //fimPardida = false;
         somVitoria = false;
         source = GetComponent<AudioSource>();
@@ -131,9 +150,14 @@ public class CanvasControler : MonoBehaviour
         winScreen.SetActive(true);
         source.PlayOneShot(audios[1]);
 
-        SetLvlSave();
         PlayerRank();
+        if (addVictoryPoint == false)
+        {
+            SetLvlSave();
+        }
 
+        
+        Debug.Log(PlayerStats.PlayerItens.Coins);
        // GetComponent<LevelUp>().AddDinheiro(50f);
        // GetComponent<LevelUp>().AddExp(10);
         
@@ -155,7 +179,20 @@ public class CanvasControler : MonoBehaviour
             moneyG.SetActive(true);
             emblemG.SetActive(true);
 
-
+            if (endLvl == false)
+            {
+                if (PlayerStats.LvlStats.TimeToBoss == true)
+                {
+                    PlayerStats.PlayerItens.Coins += (moneyGold * 2);
+                    goldText.text = (moneyGold * 2).ToString();
+                }
+                else
+                {
+                    PlayerStats.PlayerItens.Coins += moneyGold;
+                    goldText.text = moneyGold.ToString();
+                }
+                endLvl = true;
+            }
             // GetComponent<LevelUp>().AddMedalha(0);
             // ac.GetComponent<AcountController>().SetScore(20);
             //  float score = ac.GetComponent<AcountController>().GetScore();
@@ -169,7 +206,21 @@ public class CanvasControler : MonoBehaviour
         {
             moneyP.SetActive(true);
             emblemP.SetActive(true);
-         
+
+            if (endLvl == false)
+            {
+                if (PlayerStats.LvlStats.TimeToBoss == true)
+            {
+                PlayerStats.PlayerItens.Coins += (moneySilver * 2);
+                silverText.text = (moneySilver * 2).ToString();
+            }
+            else
+            {
+                PlayerStats.PlayerItens.Coins += moneySilver;
+                silverText.text = moneySilver.ToString();
+            }
+                endLvl = true;
+            }
             // GetComponent<LevelUp>().AddMedalha(1);
             // ac.GetComponent<AcountController>().SetScore(10);
             // float score = ac.GetComponent<AcountController>().GetScore();
@@ -184,7 +235,20 @@ public class CanvasControler : MonoBehaviour
             moneyB.SetActive(true);
             emblemB.SetActive(true);
 
-
+            if (endLvl == false)
+            {
+                if (PlayerStats.LvlStats.TimeToBoss == true)
+            {
+                PlayerStats.PlayerItens.Coins += (moneyBronze * 2);
+                bronzeText.text = (moneyBronze * 2).ToString();
+            }
+            else
+            {
+                PlayerStats.PlayerItens.Coins += moneyBronze;
+                bronzeText.text = moneyBronze.ToString();
+            }
+                endLvl = true;
+            }
             // GetComponent<LevelUp>().AddMedalha(2);
             // ac.GetComponent<AcountController>().SetScore(5);
             // float score = ac.GetComponent<AcountController>().GetScore();
@@ -269,8 +333,26 @@ public class CanvasControler : MonoBehaviour
 
         }
 
+        SaveLevel();
+
+        addVictoryPoint = true;
+
     }
 
+    //---------------- Salvar nivel e recompensa aqui ------------------
+    private void SaveLevel()
+    {
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
 
+        //levels
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.CIDADELA, PlayerStats.LvlStats.Cidadela);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.DESERTO_SILENCIOSO, PlayerStats.LvlStats.DesertoSilencioso);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.FLORESTA_NOTURNA, PlayerStats.LvlStats.FlorestaNoturna);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.MINA_ABANDONADA, PlayerStats.LvlStats.MinaAbandonada);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.MONTANHAS_DO_SUL, PlayerStats.LvlStats.MontanhasDoSul);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.PANTANO_DOS_MORTOS, PlayerStats.LvlStats.PantanoDosMortos);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VALE_DO_DESESPERO, PlayerStats.LvlStats.ValeDoDesespero);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
+    }
 
 }

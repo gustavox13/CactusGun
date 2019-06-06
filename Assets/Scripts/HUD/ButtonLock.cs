@@ -24,9 +24,13 @@ public class ButtonLock : MonoBehaviour {
 
     private void Update()
     {
-        if (playerActions.GetComponent<PlayerActions>().PlayerAtk != -5 && playerActions.GetComponent<PlayerActions>().PlayerPosition != -5 && buttons[0].interactable == true)
+        if (playerActions.GetComponent<PlayerActions>().PlayerAtk != -5 && playerActions.GetComponent<PlayerActions>().PlayerPosition != -5 && buttons[0].interactable == true && playerActions.GetComponent<TamborRotate>().HaveItens == true)
         {
             buttons[6].interactable = true;
+        }
+        else
+        {
+            buttons[6].interactable = false;
         }
  
     }

@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActionGame : MonoBehaviour
 {
+
+    [SerializeField]
+    private Text quantItens;
 
     //PLAYER ATRIBUTES
     private int playerLocalToJump = 1;
@@ -16,7 +20,7 @@ public class ActionGame : MonoBehaviour
     private int playerSkill;
     private Animator animPlayer;
 
-    
+
 
     //ENEMY ATRIBUTES
     private int enemyLocalToJump = 1;
@@ -35,7 +39,7 @@ public class ActionGame : MonoBehaviour
     private bool runEndTurn;
     public float myTime;
     public float tempoTiro;
-    
+
 
     private bool enemyIsArrested;
 
@@ -53,7 +57,7 @@ public class ActionGame : MonoBehaviour
     private void Start()
     {
         // PlayServices.UnlockAnchivement(CactusGunServices.achievement_novo_aventureiro);
-        
+
         LoadResources();
     }
 
@@ -61,13 +65,14 @@ public class ActionGame : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         enemy = GameObject.FindGameObjectWithTag("Enemy");
-  
-        animPlayer = player.GetComponentInChildren<Animator>(); 
+
+        animPlayer = player.GetComponentInChildren<Animator>();
         animEnemy = enemy.GetComponentInChildren<Animator>();
 
         getTimeAnimationClip();
     }
 
+    //INICIA O DUELO
     public void Action()
     {
         GetAllConfig();
@@ -82,26 +87,26 @@ public class ActionGame : MonoBehaviour
         //Pegar tempo animação Desviando
         Animator myAnimator = animPlayer;
 
-        
+
         yield return new WaitForSeconds(myTime); // <--------- TEMPO DA ANIMACAO DE MOVIMENTO 0.8
 
         animPlayer.SetBool("Desviando", false);
         animEnemy.SetBool("Desviando", false);
 
 
-       // StartCoroutine(TempoTiro());
+        // StartCoroutine(TempoTiro());
         Shot();
     }
 
 
     private void Update()
     {
-            MoveCharacters();
+        MoveCharacters();
     }
 
     private void GetAllConfig()
     {
-        
+
         playerLocalToJump = gameObject.GetComponent<PlayerActions>().PlayerPosition;
         playerLocalToAtk = gameObject.GetComponent<PlayerActions>().PlayerAtk;
         playerSkill = gameObject.GetComponent<TamborRotate>().CurrentAtk;
@@ -111,8 +116,34 @@ public class ActionGame : MonoBehaviour
         {
             enemyLocalToJump = gameObject.GetComponent<AIEnemy>().SetLocalToJump();
         }
-       
+
+        UpdatePlayerItens();
+
     }
+
+
+    private void UpdatePlayerItens()
+    {
+        if (playerSkill == 0)
+        {
+            PlayerStats.PlayerItens.Tnt -= 1;
+            quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
+
+            SaveInventory();
+        }
+
+        if (playerSkill == 2)
+        {
+            PlayerStats.PlayerItens.Trap -= 1;
+            quantItens.text = PlayerStats.PlayerItens.Trap.ToString();
+
+            SaveInventory();
+        }
+    }
+
+   
+
+
 
     private void MoveCharacters()
     {
@@ -309,9 +340,16 @@ public class ActionGame : MonoBehaviour
 
     }
 
-    
 
-   
+    //------------------------ Salvar inventario ------------------------------
+    private void SaveInventory()
+    {
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TNT, PlayerStats.PlayerItens.Tnt);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TRAP, PlayerStats.PlayerItens.Trap);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+
+    }
+
 
 }
 

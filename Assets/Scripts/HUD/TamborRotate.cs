@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class TamborRotate : MonoBehaviour {
 
+    [SerializeField]
+    private Text quantItens;
+
 
     public int CurrentAtk
     {
@@ -13,6 +16,13 @@ public class TamborRotate : MonoBehaviour {
         set { currentAtk = value; }
     }
     private int currentAtk = 1;
+
+    public bool HaveItens
+    {
+        get { return haveItens; }
+        set { haveItens = value; }
+    }
+    private bool haveItens;
 
 
 
@@ -39,7 +49,7 @@ public class TamborRotate : MonoBehaviour {
     private void Awake()
     {
         //qtd[2].enabled = true;
-        
+        haveItens = true;
         source = GetComponent<AudioSource>();
     }
 
@@ -49,6 +59,8 @@ public class TamborRotate : MonoBehaviour {
         {
             WhenInputTouch();
         }
+
+        CheckItens();
     }
 
     private void WhenInputTouch()
@@ -72,7 +84,7 @@ public class TamborRotate : MonoBehaviour {
                     RightMove();
                     source.Play();
                     //UmDebug();
-
+                  
 
 
                 }
@@ -81,11 +93,49 @@ public class TamborRotate : MonoBehaviour {
                 {
                     LeftMove();
                     source.Play();
+                    
                    // UmDebug();
                 }
             }
         }
     }
+
+
+    private void CheckItens()
+    {
+        if(currentAtk == 0)
+        {
+            if(PlayerStats.PlayerItens.Tnt > 0)
+            {
+                haveItens = true;
+            }
+            else
+            {
+                haveItens = false;
+            }
+            quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
+        }
+        if(currentAtk == 1)
+        {
+            haveItens = true;
+            quantItens.text = "--";
+        }
+        if(currentAtk == 2)
+        {
+            if(PlayerStats.PlayerItens.Trap > 0)
+            {
+                haveItens = true;
+            }
+            else
+            {
+                haveItens = false;
+            }
+            quantItens.text = PlayerStats.PlayerItens.Trap.ToString();
+        }
+    }
+
+
+
 
     public void RightMove()
     {
@@ -98,6 +148,8 @@ public class TamborRotate : MonoBehaviour {
             currentAtk = firstHability;
         }
         tamborAnim.SetTrigger("right");
+        //CheckItens();
+        Debug.Log(haveItens);
     }
 
     public void LeftMove()
@@ -111,6 +163,8 @@ public class TamborRotate : MonoBehaviour {
             currentAtk = lastHability;
         }
         tamborAnim.SetTrigger("left");
+       // CheckItens();
+        Debug.Log(haveItens);
     }
 
 
