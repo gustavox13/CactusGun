@@ -22,6 +22,10 @@ public class DataControler : MonoBehaviour
 
     [SerializeField]
     private Text moneyInfo;
+    [SerializeField]
+    private Text tntInfo;
+    [SerializeField]
+    private Text trapInfo;
 
     [SerializeField]
     private Button minaAbandonada;
@@ -117,7 +121,8 @@ public class DataControler : MonoBehaviour
 
 
         moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
-        Debug.Log("a quantidade de coins eh: " + PlayerStats.PlayerItens.Coins);
+        tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
+        trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
     }
 
 
