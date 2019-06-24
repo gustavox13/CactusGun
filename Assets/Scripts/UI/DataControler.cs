@@ -6,6 +6,14 @@ using UnityEngine.UI;
 public class DataControler : MonoBehaviour
 {
     [SerializeField]
+    private int moneyMin;
+    [SerializeField]
+    private int moneyMed;
+    [SerializeField]
+    private int moneyMax;
+
+
+    [SerializeField]
     private int tntPrice;
     [SerializeField]
     private int trapPrice;
@@ -190,6 +198,27 @@ public class DataControler : MonoBehaviour
             PlayerStats.PlayerItens.Tnt += kitQuant;
             SaveInventory();
         }
+        LoadValues();
+    }
+
+    public void BuyMoneyMin()
+    {
+        PlayerStats.PlayerItens.Coins += moneyMin;
+        SaveInventory();
+        LoadValues();
+    }
+
+    public void BuyMoneyMed()
+    {
+        PlayerStats.PlayerItens.Coins += moneyMed;
+        SaveInventory();
+        LoadValues();
+    }
+
+    public void BuyMoneyMax()
+    {
+        PlayerStats.PlayerItens.Coins += moneyMax;
+        SaveInventory();
         LoadValues();
     }
 

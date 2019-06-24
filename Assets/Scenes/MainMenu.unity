@@ -996,7 +996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35566667, y: 0.6237187}
   m_AnchorMax: {x: 0.6596668, y: 0.768}
-  m_AnchoredPosition: {x: -1.5001, y: 2.5}
+  m_AnchoredPosition: {x: -1.5001221, y: 2.5}
   m_SizeDelta: {x: -2.6, y: 1.2000008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289857970
@@ -1325,7 +1325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.28177735, y: 0}
   m_AnchorMax: {x: 0.37100002, y: 0.9165738}
-  m_AnchoredPosition: {x: 0.19999695, y: 2.0700073}
+  m_AnchoredPosition: {x: 0.2000122, y: 2.0700073}
   m_SizeDelta: {x: -1.0126953, y: -2.8000488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &371825819
@@ -1446,11 +1446,22 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 373603544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097904206}
+        m_MethodName: BuyMoneyMax
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &373603544
@@ -1836,7 +1847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6293789, y: 0.094000004}
   m_AnchorMax: {x: 0.7495157, y: 0.23472603}
-  m_AnchoredPosition: {x: 0.95001006, y: -1.2009001}
+  m_AnchoredPosition: {x: 0.9500122, y: -1.2008972}
   m_SizeDelta: {x: -0.099998474, y: 1.0159988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424252680
@@ -1910,7 +1921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8086114, y: 0.11119129}
   m_AnchorMax: {x: 0.9332227, y: 0.9165738}
-  m_AnchoredPosition: {x: 0.070999146, y: -0.642395}
+  m_AnchoredPosition: {x: 0.07098389, y: -0.642395}
   m_SizeDelta: {x: 0.42999268, y: 1.1999998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445630823
@@ -2378,11 +2389,22 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 509498762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097904206}
+        m_MethodName: BuyMoneyMed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &509498762
@@ -3071,7 +3093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11516668, y: 0.4561289}
   m_AnchorMax: {x: 0.8805555, y: 0.8736581}
-  m_AnchoredPosition: {x: -12.899994, y: -3.0000916}
+  m_AnchoredPosition: {x: -12.900024, y: -3.0000916}
   m_SizeDelta: {x: -133.1, y: -141.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657990446
@@ -3705,7 +3727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7327223, y: 0.01725}
   m_AnchorMax: {x: 0.96375, y: 0.11078126}
-  m_AnchoredPosition: {x: -0.2501068, y: -1}
+  m_AnchoredPosition: {x: -0.25012207, y: -1}
   m_SizeDelta: {x: 0.29999924, y: -1.9000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796293066
@@ -3852,7 +3874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11516668, y: 0.4561289}
   m_AnchorMax: {x: 0.8805555, y: 0.8736581}
-  m_AnchoredPosition: {x: 0.000030517578, y: -3}
+  m_AnchoredPosition: {x: 0, y: -3}
   m_SizeDelta: {x: -107.3, y: -111.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836296139
@@ -4051,7 +4073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11516668, y: 0.4561289}
   m_AnchorMax: {x: 0.8805555, y: 0.8736581}
-  m_AnchoredPosition: {x: 0.000030517578, y: -15.899994}
+  m_AnchoredPosition: {x: 0, y: -15.899994}
   m_SizeDelta: {x: -116.35, y: -167.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &864911947
@@ -4293,7 +4315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.51538867, y: 0.11119129}
   m_AnchorMax: {x: 0.61200005, y: 0.9165738}
-  m_AnchoredPosition: {x: -0.33733368, y: 0.070007324}
+  m_AnchoredPosition: {x: -0.3373413, y: 0.070007324}
   m_SizeDelta: {x: -0.38659668, y: 1.1999512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &917472415
@@ -6372,7 +6394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1025087, y: 0.07}
   m_AnchorMax: {x: 0.74012905, y: 0.28937835}
-  m_AnchoredPosition: {x: 0.9000015, y: -1.9000015}
+  m_AnchoredPosition: {x: 0.8999939, y: -1.9000015}
   m_SizeDelta: {x: -2.5, y: 0.4699993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378094625
@@ -6751,7 +6773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05566667, y: 0.61200005}
   m_AnchorMax: {x: 0.35566667, y: 0.7798124}
-  m_AnchoredPosition: {x: -1.1, y: 2}
+  m_AnchoredPosition: {x: -1.0999756, y: 2}
   m_SizeDelta: {x: -1.0001, y: -29.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527902994
@@ -7442,7 +7464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.11516668, y: 0.48746452}
   m_AnchorMax: {x: 0.83750004, y: 0.82100004}
-  m_AnchoredPosition: {x: 6.600006, y: -0.8999939}
+  m_AnchoredPosition: {x: 6.5999756, y: -0.8999939}
   m_SizeDelta: {x: -18.8, y: 5.9000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678427541
@@ -7781,7 +7803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24577732, y: 0.11119129}
   m_AnchorMax: {x: 0.28738868, y: 0.83319134}
-  m_AnchoredPosition: {x: 0.26716614, y: 0.9406738}
+  m_AnchoredPosition: {x: 0.26715088, y: 0.9406738}
   m_SizeDelta: {x: 0.8247528, y: -1.8800049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699587278
@@ -7929,7 +7951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.613}
   m_AnchorMin: {x: 0.7763887, y: 0}
   m_AnchorMax: {x: 0.8086114, y: 1}
-  m_AnchoredPosition: {x: 0.19999695, y: -0.059326172}
+  m_AnchoredPosition: {x: 0.2000122, y: -0.059326172}
   m_SizeDelta: {x: -1.3320618, y: -7.05896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713781382
@@ -8431,7 +8453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05566667, y: 0.61200005}
   m_AnchorMax: {x: 0.35566667, y: 0.7798124}
-  m_AnchoredPosition: {x: 0.19998, y: -330.8}
+  m_AnchoredPosition: {x: 0.19995117, y: -330.8}
   m_SizeDelta: {x: 0.4, y: -37.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793781780
@@ -8469,11 +8491,22 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1793781781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097904206}
+        m_MethodName: BuyMoneyMin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1793781781
@@ -8621,7 +8654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.107136786, y: 0.0374986}
   m_AnchorMax: {x: 0.731, y: 0.274274}
-  m_AnchoredPosition: {x: -0.3000002, y: 0.077199936}
+  m_AnchoredPosition: {x: -0.30000305, y: 0.07720184}
   m_SizeDelta: {x: 0.39999962, y: -1.2999992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823998779
@@ -8884,7 +8917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.9722188}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.019989014, y: -0.2000122}
+  m_AnchoredPosition: {x: -0.020019531, y: -0.2000122}
   m_SizeDelta: {x: 0.11999512, y: 0.39999998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879914466
@@ -9823,6 +9856,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca990ba4521cfc42af4f3028c1cce1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyMin: 100
+  moneyMed: 700
+  moneyMax: 2000
   tntPrice: 500
   trapPrice: 500
   kitPrice: 900
