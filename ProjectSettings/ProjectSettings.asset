@@ -118,7 +118,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.20
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -155,7 +155,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.tripyd.cactusgun
   buildNumber: {}
-  AndroidBundleVersionCode: 30
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -241,13 +241,13 @@ PlayerSettings:
   clonedFromGUID: 56e7a2d3a00f33d44bdd161b773c35b5
   templatePackageId: 
   templateDefaultScene: 
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Jean/Downloads/key.keystore
-  AndroidKeyaliasName: tripydgamestudio
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
-  AndroidTVCompatibility: 0
+  AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
