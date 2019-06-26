@@ -206,6 +206,12 @@ PrefabInstance:
       objectReference: {fileID: 1780865677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d2294c91d06ce64fab5e530863170e9, type: 3}
+--- !u!1 &973611196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4900406043818751465, guid: 4d2294c91d06ce64fab5e530863170e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 973611195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1648025548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -335,6 +341,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuantIten
       objectReference: {fileID: 0}
+    - target: {fileID: 2613944160132298758, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: capanga
+      value: 
+      objectReference: {fileID: 973611196}
+    - target: {fileID: 2613944160132298758, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: chefe
+      value: 
+      objectReference: {fileID: 5057295841355669894}
     - target: {fileID: 5123777855486445662, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,6 +441,26 @@ PrefabInstance:
       propertyPath: weapons.Array.data[2]
       value: 
       objectReference: {fileID: 1648025549}
+    - target: {fileID: 5123777855841813609, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.6000977
+      objectReference: {fileID: 0}
+    - target: {fileID: 926288715216146191, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9999962
+      objectReference: {fileID: 0}
+    - target: {fileID: 462067521253508180, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 462067521253508180, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9999962
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5123777856984944966, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}
@@ -564,6 +600,12 @@ PrefabInstance:
       objectReference: {fileID: 1780865681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d453048a8b4781745a91839f9247e7b4, type: 3}
+--- !u!1 &5057295841355669894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8856644222418851357, guid: d453048a8b4781745a91839f9247e7b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5057295841355669893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7788595189414856395
 PrefabInstance:
   m_ObjectHideFlags: 0
