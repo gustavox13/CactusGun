@@ -9723,6 +9723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097904205}
   - component: {fileID: 2097904206}
+  - component: {fileID: 2097904207}
   m_Layer: 0
   m_Name: DataControler
   m_TagString: Untagged
@@ -9776,6 +9777,18 @@ MonoBehaviour:
   desertoSilencioso: {fileID: 615900341}
   vilarejoFantasma: {fileID: 1725379550}
   valeDoDesespero: {fileID: 1260748934}
+--- !u!114 &2097904207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097904204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fd9dfa174b9d84e992ccf8aaeb400b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2103494508
 PrefabInstance:
   m_ObjectHideFlags: 0

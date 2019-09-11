@@ -56,7 +56,7 @@ public class ActionGame : MonoBehaviour
 
     private void Start()
     {
-        // PlayServices.UnlockAnchivement(CactusGunServices.achievement_novo_aventureiro);
+      
 
         LoadResources();
     }
@@ -94,7 +94,7 @@ public class ActionGame : MonoBehaviour
         animEnemy.SetBool("Desviando", false);
 
 
-        // StartCoroutine(TempoTiro());
+       
         Shot();
     }
 
@@ -199,9 +199,7 @@ public class ActionGame : MonoBehaviour
 
         if (enemyLocalToAtk == playerLocalToJump)
         {
-           // StartCoroutine(TempoTiroInimigo());
-           // player.GetComponent<Health>().TakeDamange(25);
-           
+          
           
         }
 
@@ -209,7 +207,7 @@ public class ActionGame : MonoBehaviour
              {
                 //ANIMACAO DA BOMBA STARTA AQUI
                 StartCoroutine(TempoTNT());
-            // enemy.GetComponent<Health>().TakeDamange(50);
+            
           
              }
              if (playerSkill == 1)
@@ -217,9 +215,7 @@ public class ActionGame : MonoBehaviour
         
                 //ANIMACAO DO ATK BASICO STARTA AQUI
                 StartCoroutine(TempoTiro());
-               //  enemy.GetComponent<Health>().TakeDamange(25);
-                // animEnemy.SetBool("Dano", true);
-                // StartCoroutine(Timer());
+         
                
 
             }
@@ -227,8 +223,7 @@ public class ActionGame : MonoBehaviour
              {
             //ANIMACAO DA ARMADILHA STARTA  AQUI
                     StartCoroutine(TempoTrap());
-                 //enemy.GetComponent<Health>().TakeDamange(10);
-              //  enemyIsArrested = true;
+                
              }
         
     }
@@ -247,11 +242,11 @@ public class ActionGame : MonoBehaviour
     IEnumerator TempoTiro()
     {
 
-        //
+        
          StartCoroutine(Timer(1f));
         
         yield return new WaitForSeconds(0.5f); //TempoTiro 0.5f
-        //enemy.GetComponent<Bullet>().Atirar();
+       
         player.GetComponent<Bullet>().Atirar();
         if (playerLocalToAtk == enemyLocalToJump)
         {
@@ -268,7 +263,7 @@ public class ActionGame : MonoBehaviour
 
         
         yield return new WaitForSeconds(0.5f); //0.5
-       // enemyIsArrested = true;
+      
         enemy.GetComponent<Bullet>().Atirar();
         if (enemyLocalToAtk == playerLocalToJump)
         {
@@ -344,55 +339,19 @@ public class ActionGame : MonoBehaviour
     //------------------------ Salvar inventario ------------------------------
     private void SaveInventory()
     {
+        /*
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TNT, PlayerStats.PlayerItens.Tnt);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TRAP, PlayerStats.PlayerItens.Trap);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
-
+        */
+        gameObject.GetComponent<SaveFunctions>().SaveInventory();
     }
 
 
 }
 
 
-/*
-    private void Shot2()
-    {
-        enemyIsArrested = false;
 
-        if (enemyLocalToAtk == playerLocalToJump)
-        {
-            player.GetComponent<Health>().TakeDamange(25);
-
-
-        }
-
-        if (PlayerLocalToAtk == enemyLocalToJump)
-        {
-
-            if (playerSkill == 0)
-            {
-                //ANIMACAO DA BOMBA STARTA AQUI
-                StartCoroutine(TempoTNT());
-                // enemy.GetComponent<Health>().TakeDamange(50);
-            }
-            if (playerSkill == 1)
-            {
-                //ANIMACAO DO ATK BASICO STARTA AQUI
-                StartCoroutine(TempoTiro());
-                //  enemy.GetComponent<Health>().TakeDamange(25);
-                // animEnemy.SetBool("Dano", true);
-                // StartCoroutine(Timer());
-
-
-            }
-            if (playerSkill == 2)
-            {
-                //ANIMACAO DA ARMADILHA STARTA  AQUI
-                enemy.GetComponent<Health>().TakeDamange(10);
-                enemyIsArrested = true;
-            }
-        }
-    }*/
 
 
 

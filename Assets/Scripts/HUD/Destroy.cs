@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-	// Use this for initialization
+	
 	void Start ()
     {
         StartCoroutine(Tempo());

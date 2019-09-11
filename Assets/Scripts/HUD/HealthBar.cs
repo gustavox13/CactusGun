@@ -24,7 +24,7 @@ public class HealthBar : MonoBehaviour
     private void HandleHealthChanged(float pct)
     {
 
-        //foregroundImage.fillAmount = pct;
+       
        StartCoroutine(ChangeToPct(pct));
 
     }
@@ -37,7 +37,7 @@ public class HealthBar : MonoBehaviour
         while(elapsed < updateSpeedSeconds)
         {
             elapsed += Time.deltaTime;
-            Mathf.Lerp(preChangePct, pct, 0); // =preChangePct
+            Mathf.Lerp(preChangePct, pct, 0); 
             foregroundImage.fillAmount = Mathf.Lerp(preChangePct, pct, elapsed / updateSpeedSeconds);
             yield return null;
         }

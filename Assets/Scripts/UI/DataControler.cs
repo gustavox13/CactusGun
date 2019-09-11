@@ -62,12 +62,14 @@ public class DataControler : MonoBehaviour
         
     }
 
-    //--------------------- Resgata valores salvos ------------------------
+    //--------------------- Resgatar valores salvos ------------------------
     private void LoadValues()
     {
-        
-       
 
+        gameObject.GetComponent<SaveFunctions>().LoadInventory();
+        gameObject.GetComponent<SaveFunctions>().LoadLevel();
+       
+        /*
         //Get inventory
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.TNT))
         {
@@ -126,7 +128,7 @@ public class DataControler : MonoBehaviour
 
             PlayerStats.LvlStats.VilarejoFantasma = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA);
         }
-
+        */
 
         moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
         tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
@@ -222,13 +224,16 @@ public class DataControler : MonoBehaviour
         LoadValues();
     }
 
-    // ---------------- SALVAR INVENTARIO ----------------
+    // ---------------- Salvar Inventario ----------------
     private void SaveInventory()
     {
+        gameObject.GetComponent<SaveFunctions>().SaveInventory();
+        /*
         //inventory
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TNT, PlayerStats.PlayerItens.Tnt);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TRAP, PlayerStats.PlayerItens.Trap);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+    */
     }
 
 }

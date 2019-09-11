@@ -9,7 +9,7 @@ public class ClickSound : MonoBehaviour
 {
     [SerializeField]
     public AudioClip sound;
-	// Use this for initialization
+	
 
     private Button button { get { return GetComponent<Button>(); } }
     private AudioSource source { get { return GetComponent<AudioSource>(); } }

@@ -50,7 +50,7 @@ public class CanvasControler : MonoBehaviour
     private AudioSource source;
     [SerializeField]
     private AudioClip[] audios = new AudioClip[3];
-   // private bool fimPardida;
+  
     private bool somVitoria;
 
     private bool endLvl = false;
@@ -58,7 +58,7 @@ public class CanvasControler : MonoBehaviour
     private void Awake ()
     {
         addVictoryPoint = false;
-        //fimPardida = false;
+        
         somVitoria = false;
         source = GetComponent<AudioSource>();
         
@@ -91,19 +91,19 @@ public class CanvasControler : MonoBehaviour
     {
      
             //derrota
-            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth > 0 /*&& !fimPardida*/)
+            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth > 0 )
             {
             StartCoroutine("DeathEnemyOrPlayer", false);
              
             }
             //vitoria
-            if (enemy.GetComponent<Health>().CurrentHealth <= 0 && player.GetComponent<Health>().CurrentHealth > 0 /*&& !fimPardida*/)
+            if (enemy.GetComponent<Health>().CurrentHealth <= 0 && player.GetComponent<Health>().CurrentHealth > 0 )
         {
               StartCoroutine("DeathEnemyOrPlayer", true);
            
             }
             //derrota empate
-            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth <= 0 /*&& !fimPardida*/)
+            if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth <= 0)
         {
              StartCoroutine("DeathEnemyOrPlayer", false);
             
@@ -113,7 +113,7 @@ public class CanvasControler : MonoBehaviour
 
     IEnumerator DeathEnemyOrPlayer(bool value)
     {
-        if(value == true /*&& !fimPardida*/)
+        if(value == true )
         {
             if(!somVitoria)
             source.PlayOneShot(audios[3]);
@@ -123,20 +123,20 @@ public class CanvasControler : MonoBehaviour
             player.GetComponentInChildren<Animator>().SetBool("Vitoria", true);
 
         }
-        else /*if(!fimPardida)*/
+        else 
             enemy.GetComponentInChildren<Animator>().SetBool("Vitoria", true);
 
-        yield return new WaitForSeconds(5.0f);  //4
+        yield return new WaitForSeconds(5.0f);  
 
-        if(value == true /*&& !fimPardida*/)
+        if(value == true )
         {
            
             Victory();
-          //  fimPardida = true;
-        } else /*if(!fimPardida)*/
+         
+        } else 
         {
            
-          //  fimPardida = true;
+          
             Defeat();
         }
 
@@ -145,7 +145,7 @@ public class CanvasControler : MonoBehaviour
 
     private void Victory()
     {
-       // fimPardida = true;
+       
         Hud.SetActive(false);
         winScreen.SetActive(true);
         source.PlayOneShot(audios[1]);
@@ -158,8 +158,7 @@ public class CanvasControler : MonoBehaviour
 
         
         Debug.Log(PlayerStats.PlayerItens.Coins);
-       // GetComponent<LevelUp>().AddDinheiro(50f);
-       // GetComponent<LevelUp>().AddExp(10);
+     
         
     }
 
@@ -193,13 +192,7 @@ public class CanvasControler : MonoBehaviour
                 }
                 endLvl = true;
             }
-            // GetComponent<LevelUp>().AddMedalha(0);
-            // ac.GetComponent<AcountController>().SetScore(20);
-            //  float score = ac.GetComponent<AcountController>().GetScore();
-            //  if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
-            //  {
-            //  PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
-            //  }
+            
 
 
         } else if (player.GetComponent<Health>().CurrentHealth < 99 && player.GetComponent<Health>().CurrentHealth >= 50) //PRATA TIER
@@ -221,13 +214,7 @@ public class CanvasControler : MonoBehaviour
             }
                 endLvl = true;
             }
-            // GetComponent<LevelUp>().AddMedalha(1);
-            // ac.GetComponent<AcountController>().SetScore(10);
-            // float score = ac.GetComponent<AcountController>().GetScore();
-            //  if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
-            //  {
-            // PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
-            //  }
+            
 
         }
         else if (player.GetComponent<Health>().CurrentHealth < 50 && player.GetComponent<Health>().CurrentHealth > 0) //BRONZE TIER
@@ -249,13 +236,7 @@ public class CanvasControler : MonoBehaviour
             }
                 endLvl = true;
             }
-            // GetComponent<LevelUp>().AddMedalha(2);
-            // ac.GetComponent<AcountController>().SetScore(5);
-            // float score = ac.GetComponent<AcountController>().GetScore();
-            // if (score > PlayServices.GetPlayerScore(CactusGunServices.leaderboard_ranking))
-            // {
-            // PlayServices.PostScore((long)score, CactusGunServices.leaderboard_ranking);
-            // }
+           
 
         }
     }
@@ -339,9 +320,12 @@ public class CanvasControler : MonoBehaviour
 
     }
 
-    //---------------- Salvar nivel e recompensa aqui ------------------
+    //---------------- Salvar fase e recompensa aqui ------------------
     private void SaveLevel()
     {
+        gameObject.GetComponent<SaveFunctions>().SaveInventory();
+        gameObject.GetComponent<SaveFunctions>().SaveLevel();
+        /*
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
 
         //levels
@@ -353,6 +337,7 @@ public class CanvasControler : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.PANTANO_DOS_MORTOS, PlayerStats.LvlStats.PantanoDosMortos);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VALE_DO_DESESPERO, PlayerStats.LvlStats.ValeDoDesespero);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
+        */
     }
 
 }

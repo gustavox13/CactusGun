@@ -12,7 +12,7 @@ public class SplashScreen : MonoBehaviour {
 
     private void Awake()
     {
-       // PlayServices.LogIn(); //logar play games
+       // logar na play games
     }
 
     private void Start()

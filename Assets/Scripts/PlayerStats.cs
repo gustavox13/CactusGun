@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
         public static bool TimeToBoss;
         public static string CurrentMap;
 
-        //Num repeticoes por nivel
+        //Numero de repeticoes por nivel
         public static int MaxLvlRepeat = 3;
 
 
@@ -36,7 +36,7 @@ public class PlayerStats : MonoBehaviour
 
     public sealed class DataBaseInfo
     {
-        //inventory
+        //inventario
         public const string TNT = "tnt";
         public const string TRAP = "trap";
         public const string COINS = "coins";
