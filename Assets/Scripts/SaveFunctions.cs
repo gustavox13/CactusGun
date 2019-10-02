@@ -1,19 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CloudOnce;
 
 public class SaveFunctions : MonoBehaviour
 {
+
+    private void Start()
+    {
+        Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
+        Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
+        Cloud.Initialize(true, true);
+    }
+
+    void CloudOnceInitializeComplete()
+    {
+        Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
+        Cloud.Storage.Load();
+    }
+
+    void CloudOnceLoadComplete(bool success)
+    {
+        //update our UI
+    }
+
+    void Save()
+    {
+        Cloud.Storage.Save();
+    }
+
     //------------------------------------ SALVAR -----------------------------
     public void SaveInventory()
     {
+
+        Save();
+
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TNT, PlayerStats.PlayerItens.Tnt);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TRAP, PlayerStats.PlayerItens.Trap);
-        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+        //PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+
+        //Salvar Nuvem
+
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, CloudVariables.Coins);
+
+
     }
 
     public void SaveLevel()
     {
+        
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.CIDADELA, PlayerStats.LvlStats.Cidadela);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.DESERTO_SILENCIOSO, PlayerStats.LvlStats.DesertoSilencioso);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.FLORESTA_NOTURNA, PlayerStats.LvlStats.FlorestaNoturna);
@@ -22,6 +57,8 @@ public class SaveFunctions : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.PANTANO_DOS_MORTOS, PlayerStats.LvlStats.PantanoDosMortos);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VALE_DO_DESESPERO, PlayerStats.LvlStats.ValeDoDesespero);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
+
+        Save();
     }
 
     //----------------------------------- CARREGAR ----------------------------
@@ -35,7 +72,8 @@ public class SaveFunctions : MonoBehaviour
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.COINS))
         {
 
-            PlayerStats.PlayerItens.Coins = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.COINS);
+            //PlayerStats.PlayerItens.Coins = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.COINS);
+            PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
         }
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.TRAP))
         {
@@ -50,6 +88,7 @@ public class SaveFunctions : MonoBehaviour
         {
 
             PlayerStats.LvlStats.Cidadela = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.CIDADELA);
+            
         }
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.DESERTO_SILENCIOSO))
         {

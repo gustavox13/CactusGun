@@ -591,6 +591,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
     4: NO_GPGS
+    7: CLOUDONCE_GOOGLE
   platformArchitecture: {}
   scriptingBackend:
     Android: 1

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class DataControler : MonoBehaviour
 {
@@ -130,9 +131,13 @@ public class DataControler : MonoBehaviour
         }
         */
 
-        moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
-        tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
-        trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
+       // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
+        //tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
+        //trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
+
+         moneyInfo.text = CloudVariables.Coins.ToString();
+         tntInfo.text = CloudVariables.Tnt.ToString();
+        trapInfo.text = CloudVariables.Trap.ToString();
     }
 
 
@@ -175,6 +180,7 @@ public class DataControler : MonoBehaviour
             PlayerStats.PlayerItens.Coins -= trapPrice;
             PlayerStats.PlayerItens.Trap += trapQuant;
             SaveInventory();
+            
 
         }
         LoadValues();
@@ -196,6 +202,7 @@ public class DataControler : MonoBehaviour
         if (PlayerStats.PlayerItens.Coins >= kitPrice)
         {
             PlayerStats.PlayerItens.Coins -= kitPrice;
+            CloudVariables.Coins -= kitPrice;
             PlayerStats.PlayerItens.Trap += kitQuant;
             PlayerStats.PlayerItens.Tnt += kitQuant;
             SaveInventory();
@@ -206,13 +213,16 @@ public class DataControler : MonoBehaviour
     public void BuyMoneyMin()
     {
         PlayerStats.PlayerItens.Coins += moneyMin;
+        CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         SaveInventory();
         LoadValues();
+        
     }
 
     public void BuyMoneyMed()
     {
         PlayerStats.PlayerItens.Coins += moneyMed;
+        CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         SaveInventory();
         LoadValues();
     }
@@ -220,6 +230,7 @@ public class DataControler : MonoBehaviour
     public void BuyMoneyMax()
     {
         PlayerStats.PlayerItens.Coins += moneyMax;
+        CloudVariables.Coins += PlayerStats.PlayerItens.Coins;
         SaveInventory();
         LoadValues();
     }
