@@ -29,26 +29,25 @@ public class SaveFunctions : MonoBehaviour
         Cloud.Storage.Save();
     }
 
+
     //------------------------------------ SALVAR -----------------------------
     public void SaveInventory()
     {
-
-        Save();
-
+        /* //SAVE LOCAL
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TNT, PlayerStats.PlayerItens.Tnt);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.TRAP, PlayerStats.PlayerItens.Trap);
-        //PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
+        */
 
-        //Salvar Nuvem
-
-        PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, CloudVariables.Coins);
-
-
+        CloudVariables.Tnt = PlayerStats.PlayerItens.Tnt;
+        CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
+        CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
+        Save();
     }
 
     public void SaveLevel()
     {
-        
+        /* SAVE LOCAL
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.CIDADELA, PlayerStats.LvlStats.Cidadela);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.DESERTO_SILENCIOSO, PlayerStats.LvlStats.DesertoSilencioso);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.FLORESTA_NOTURNA, PlayerStats.LvlStats.FlorestaNoturna);
@@ -57,13 +56,25 @@ public class SaveFunctions : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.PANTANO_DOS_MORTOS, PlayerStats.LvlStats.PantanoDosMortos);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VALE_DO_DESESPERO, PlayerStats.LvlStats.ValeDoDesespero);
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
+        */
 
+
+        CloudVariables.Cidadela = PlayerStats.LvlStats.Cidadela;
+        CloudVariables.DesertoSilencioso = PlayerStats.LvlStats.DesertoSilencioso;
+        CloudVariables.FlorestaNoturna = PlayerStats.LvlStats.FlorestaNoturna;
+        CloudVariables.MinaAbandonada = PlayerStats.LvlStats.MinaAbandonada;
+        CloudVariables.MontanhasDoSul = PlayerStats.LvlStats.MontanhasDoSul;
+        CloudVariables.PantanoDosMortos = PlayerStats.LvlStats.PantanoDosMortos;
+        CloudVariables.ValeDoDesespero = PlayerStats.LvlStats.ValeDoDesespero;
+        CloudVariables.VilarejoFantasma = PlayerStats.LvlStats.VilarejoFantasma;
         Save();
     }
 
     //----------------------------------- CARREGAR ----------------------------
     public void LoadInventory()
     {
+
+        /* LOAD LOCAL
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.TNT))
         {
 
@@ -72,18 +83,26 @@ public class SaveFunctions : MonoBehaviour
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.COINS))
         {
 
-            //PlayerStats.PlayerItens.Coins = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.COINS);
-            PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
+            PlayerStats.PlayerItens.Coins = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.COINS);
+            
         }
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.TRAP))
         {
 
             PlayerStats.PlayerItens.Trap = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.TRAP);
         }
+        */
+
+        PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
+        PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
+        PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
+
     }
 
     public void LoadLevel()
     {
+
+        /* LOAD LOCAL
         if (PlayerPrefs.HasKey(PlayerStats.DataBaseInfo.CIDADELA))
         {
 
@@ -125,6 +144,18 @@ public class SaveFunctions : MonoBehaviour
 
             PlayerStats.LvlStats.VilarejoFantasma = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA);
         }
+        */
+
+        PlayerStats.LvlStats.Cidadela = CloudVariables.Cidadela;
+        PlayerStats.LvlStats.DesertoSilencioso = CloudVariables.DesertoSilencioso;
+        PlayerStats.LvlStats.FlorestaNoturna = CloudVariables.FlorestaNoturna;
+        PlayerStats.LvlStats.MinaAbandonada = CloudVariables.MinaAbandonada;
+        PlayerStats.LvlStats.MontanhasDoSul = CloudVariables.MontanhasDoSul;
+        PlayerStats.LvlStats.PantanoDosMortos = CloudVariables.PantanoDosMortos;
+        PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
+        PlayerStats.LvlStats.VilarejoFantasma = CloudVariables.VilarejoFantasma;
+
+
     }
 
 

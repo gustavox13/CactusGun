@@ -13,7 +13,7 @@ namespace CloudOnce
     /// </summary>
     public static class CloudVariables
     {
-        private static readonly CloudCurrencyInt s_coins = new CloudCurrencyInt("Coins", 0, false);
+        private static readonly CloudInt s_coins = new CloudInt("Coins", PersistenceType.Latest, 0);
 
         public static int Coins
         {
