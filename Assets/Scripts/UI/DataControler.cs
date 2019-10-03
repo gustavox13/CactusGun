@@ -71,7 +71,8 @@ public class DataControler : MonoBehaviour
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
 
 
-        moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
+       // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString(); retornar somente para teste
+        moneyInfo.text = CloudVariables.Coins.ToString();
         tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
         trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
 
