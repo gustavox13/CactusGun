@@ -4,79 +4,79 @@
 	"CloudVariables":[
 		{
 			"Key":"Coins",
-			"Type":"0",
+			"Type":"1",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"Trap",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"Tnt",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"Cidadela",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"DesertoSilencioso",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"FlorestaNoturna",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"MinaAbandonada",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"MontanhasDoSul",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"PantanoDosMortos",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"ValeDoDesespero",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"VilarejoFantasma",
 			"Type":"0",
 			"DefaultValue":"0",
-			"PersistenceType":"0",
+			"PersistenceType":"1",
 			"AllowNegative":false
 		}
 	],

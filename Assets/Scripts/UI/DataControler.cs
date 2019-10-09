@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using CloudOnce;
 
+
 public class DataControler : MonoBehaviour
 {
     [SerializeField]
@@ -53,7 +54,7 @@ public class DataControler : MonoBehaviour
     [SerializeField]
     private Button valeDoDesespero;
 
-    private void Start()
+    private void Awake()
     {
         
         LoadValues();
@@ -66,18 +67,22 @@ public class DataControler : MonoBehaviour
     //--------------------- Resgatar valores salvos ------------------------
     private void LoadValues()
     {
+        Cloud.Storage.Load();//Teste
 
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
 
 
-       // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString(); retornar somente para teste
-        moneyInfo.text = CloudVariables.Coins.ToString();
+        
+
+        moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
         tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
         trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
 
 
     }
+
+
 
 
     private void CheckAndUnlockLvls()

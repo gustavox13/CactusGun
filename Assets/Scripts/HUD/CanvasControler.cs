@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class CanvasControler : MonoBehaviour
 {
@@ -98,17 +99,22 @@ public class CanvasControler : MonoBehaviour
             }
             //vitoria
             if (enemy.GetComponent<Health>().CurrentHealth <= 0 && player.GetComponent<Health>().CurrentHealth > 0 )
-        {
+           {
               StartCoroutine("DeathEnemyOrPlayer", true);
            
             }
             //derrota empate
             if (player.GetComponent<Health>().CurrentHealth <= 0 && enemy.GetComponent<Health>().CurrentHealth <= 0)
-        {
+           {
              StartCoroutine("DeathEnemyOrPlayer", false);
             
             }
-        
+
+
+
+     
+
+
     }
 
     IEnumerator DeathEnemyOrPlayer(bool value)
@@ -148,25 +154,32 @@ public class CanvasControler : MonoBehaviour
        
         Hud.SetActive(false);
         winScreen.SetActive(true);
-        source.PlayOneShot(audios[1]);
+        
 
         PlayerRank();
         if (addVictoryPoint == false)
         {
+            source.PlayOneShot(audios[1]);
             SetLvlSave();
+           // Debug.Log("OKOK");
         }
 
         
-        Debug.Log(PlayerStats.PlayerItens.Coins);
-     
-        
+      //  Debug.Log(PlayerStats.PlayerItens.Coins);
+     //   Debug.Log("Valor atual fase: " + PlayerStats.LvlStats.MinaAbandonada);
+
+
     }
 
     private void Defeat()
     {
-        source.PlayOneShot(audios[2]);
-        Hud.SetActive(false);
-        defeatScreen.SetActive(true);
+        if (!somVitoria)
+        {
+            somVitoria = true;
+            source.PlayOneShot(audios[2]);
+            Hud.SetActive(false);
+            defeatScreen.SetActive(true);
+        }
         
     }
 
@@ -252,6 +265,7 @@ public class CanvasControler : MonoBehaviour
                 if (PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
                     PlayerStats.LvlStats.Cidadela += 1;
+                    
                 }
 
                 break;

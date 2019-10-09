@@ -8,9 +8,14 @@ public class SaveFunctions : MonoBehaviour
 
     private void Start()
     {
+
+      
+
         Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
         Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
         Cloud.Initialize(true, true);
+
+ 
     }
 
     void CloudOnceInitializeComplete()
@@ -21,12 +26,18 @@ public class SaveFunctions : MonoBehaviour
 
     void CloudOnceLoadComplete(bool success)
     {
-        //update our UI
+        
+       
     }
 
     void Save()
     {
         Cloud.Storage.Save();
+    }
+
+    public void Load()
+    {
+        Cloud.Storage.Load();
     }
 
 
@@ -43,6 +54,7 @@ public class SaveFunctions : MonoBehaviour
         CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
         CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         Save();
+        
     }
 
     public void SaveLevel()
@@ -68,6 +80,7 @@ public class SaveFunctions : MonoBehaviour
         CloudVariables.ValeDoDesespero = PlayerStats.LvlStats.ValeDoDesespero;
         CloudVariables.VilarejoFantasma = PlayerStats.LvlStats.VilarejoFantasma;
         Save();
+        
     }
 
     //----------------------------------- CARREGAR ----------------------------
@@ -91,11 +104,16 @@ public class SaveFunctions : MonoBehaviour
 
             PlayerStats.PlayerItens.Trap = PlayerPrefs.GetInt(PlayerStats.DataBaseInfo.TRAP);
         }
+
+
         */
 
         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
         PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
+        
+
+       
 
     }
 
@@ -157,6 +175,15 @@ public class SaveFunctions : MonoBehaviour
 
 
     }
+
+    public void DeleteAllCloud()
+    {
+        Cloud.Storage.DeleteAll();
+     
+
+    }
+
+   
 
 
 }

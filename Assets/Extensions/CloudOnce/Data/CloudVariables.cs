@@ -13,7 +13,7 @@ namespace CloudOnce
     /// </summary>
     public static class CloudVariables
     {
-        private static readonly CloudInt s_coins = new CloudInt("Coins", PersistenceType.Latest, 0);
+        private static readonly CloudCurrencyInt s_coins = new CloudCurrencyInt("Coins", 0, false);
 
         public static int Coins
         {
@@ -21,7 +21,7 @@ namespace CloudOnce
             set { s_coins.Value = value; }
         }
 
-        private static readonly CloudInt s_trap = new CloudInt("Trap", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_trap = new CloudInt("Trap", PersistenceType.Highest, 0);
 
         public static int Trap
         {
@@ -29,7 +29,7 @@ namespace CloudOnce
             set { s_trap.Value = value; }
         }
 
-        private static readonly CloudInt s_tnt = new CloudInt("Tnt", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_tnt = new CloudInt("Tnt", PersistenceType.Highest, 0);
 
         public static int Tnt
         {
@@ -37,7 +37,7 @@ namespace CloudOnce
             set { s_tnt.Value = value; }
         }
 
-        private static readonly CloudInt s_cidadela = new CloudInt("Cidadela", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_cidadela = new CloudInt("Cidadela", PersistenceType.Highest, 0);
 
         public static int Cidadela
         {
@@ -45,7 +45,7 @@ namespace CloudOnce
             set { s_cidadela.Value = value; }
         }
 
-        private static readonly CloudInt s_desertoSilencioso = new CloudInt("DesertoSilencioso", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_desertoSilencioso = new CloudInt("DesertoSilencioso", PersistenceType.Highest, 0);
 
         public static int DesertoSilencioso
         {
@@ -53,7 +53,7 @@ namespace CloudOnce
             set { s_desertoSilencioso.Value = value; }
         }
 
-        private static readonly CloudInt s_florestaNoturna = new CloudInt("FlorestaNoturna", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_florestaNoturna = new CloudInt("FlorestaNoturna", PersistenceType.Highest, 0);
 
         public static int FlorestaNoturna
         {
@@ -61,7 +61,7 @@ namespace CloudOnce
             set { s_florestaNoturna.Value = value; }
         }
 
-        private static readonly CloudInt s_minaAbandonada = new CloudInt("MinaAbandonada", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_minaAbandonada = new CloudInt("MinaAbandonada", PersistenceType.Highest, 0);
 
         public static int MinaAbandonada
         {
@@ -69,7 +69,7 @@ namespace CloudOnce
             set { s_minaAbandonada.Value = value; }
         }
 
-        private static readonly CloudInt s_montanhasDoSul = new CloudInt("MontanhasDoSul", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_montanhasDoSul = new CloudInt("MontanhasDoSul", PersistenceType.Highest, 0);
 
         public static int MontanhasDoSul
         {
@@ -77,7 +77,7 @@ namespace CloudOnce
             set { s_montanhasDoSul.Value = value; }
         }
 
-        private static readonly CloudInt s_pantanoDosMortos = new CloudInt("PantanoDosMortos", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_pantanoDosMortos = new CloudInt("PantanoDosMortos", PersistenceType.Highest, 0);
 
         public static int PantanoDosMortos
         {
@@ -85,7 +85,7 @@ namespace CloudOnce
             set { s_pantanoDosMortos.Value = value; }
         }
 
-        private static readonly CloudInt s_valeDoDesespero = new CloudInt("ValeDoDesespero", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_valeDoDesespero = new CloudInt("ValeDoDesespero", PersistenceType.Highest, 0);
 
         public static int ValeDoDesespero
         {
@@ -93,7 +93,7 @@ namespace CloudOnce
             set { s_valeDoDesespero.Value = value; }
         }
 
-        private static readonly CloudInt s_vilarejoFantasma = new CloudInt("VilarejoFantasma", PersistenceType.Latest, 0);
+        private static readonly CloudInt s_vilarejoFantasma = new CloudInt("VilarejoFantasma", PersistenceType.Highest, 0);
 
         public static int VilarejoFantasma
         {
