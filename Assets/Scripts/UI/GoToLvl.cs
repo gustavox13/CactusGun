@@ -88,6 +88,8 @@ public class GoToLvl : MonoBehaviour
         nameScene = currentLvl;
         SetCurrentEnemy();
         PlayerStats.LvlStats.CurrentMap = nameScene;
+        UpdateTextLvl();
+     
     }
 
     public void GoPress()
@@ -96,7 +98,20 @@ public class GoToLvl : MonoBehaviour
 
     }
 
-  
+    //Teste
+    private void UpdateTextLvl()
+    {
+        minaAbandonada.text = PlayerStats.LvlStats.MinaAbandonada + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        montanhasDoSul.text = PlayerStats.LvlStats.MontanhasDoSul + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        cidadela.text = PlayerStats.LvlStats.Cidadela + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        florestaNoturna.text = PlayerStats.LvlStats.FlorestaNoturna + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        pantanoDosMortos.text = PlayerStats.LvlStats.PantanoDosMortos + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        desertoSilencioso.text = PlayerStats.LvlStats.DesertoSilencioso + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+        valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
+    }
+
+
 
     private void SetCurrentEnemy()
     {

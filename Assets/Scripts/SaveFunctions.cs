@@ -22,6 +22,9 @@ public class SaveFunctions : MonoBehaviour
     {
         Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
         Cloud.Storage.Load();
+
+        LoadLevel();
+        LoadInventory();
     }
 
     void CloudOnceLoadComplete(bool success)
@@ -70,16 +73,21 @@ public class SaveFunctions : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
         */
 
+        
 
         CloudVariables.Cidadela = PlayerStats.LvlStats.Cidadela;
         CloudVariables.DesertoSilencioso = PlayerStats.LvlStats.DesertoSilencioso;
-        CloudVariables.FlorestaNoturna = PlayerStats.LvlStats.FlorestaNoturna;
+        CloudVariables.FlorestaNoturna = PlayerStats.LvlStats.FlorestaNoturna; 
         CloudVariables.MinaAbandonada = PlayerStats.LvlStats.MinaAbandonada;
         CloudVariables.MontanhasDoSul = PlayerStats.LvlStats.MontanhasDoSul;
         CloudVariables.PantanoDosMortos = PlayerStats.LvlStats.PantanoDosMortos;
         CloudVariables.ValeDoDesespero = PlayerStats.LvlStats.ValeDoDesespero;
         CloudVariables.VilarejoFantasma = PlayerStats.LvlStats.VilarejoFantasma;
         Save();
+
+
+     
+        
         
     }
 
