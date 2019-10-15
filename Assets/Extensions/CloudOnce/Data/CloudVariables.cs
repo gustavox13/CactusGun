@@ -29,7 +29,7 @@ namespace CloudOnce
             set { s_trap.Value = value; }
         }
 
-        private static readonly CloudInt s_tnt = new CloudInt("Tnt", PersistenceType.Highest, 0);
+        private static readonly CloudInt s_tnt = new CloudInt("Tnt", PersistenceType.Highest, 5);
 
         public static int Tnt
         {

@@ -19,7 +19,7 @@
 		{
 			"Key":"Tnt",
 			"Type":"0",
-			"DefaultValue":"0",
+			"DefaultValue":"5",
 			"PersistenceType":"1",
 			"AllowNegative":false
 		},

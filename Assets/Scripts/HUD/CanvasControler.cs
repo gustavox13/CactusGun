@@ -161,12 +161,11 @@ public class CanvasControler : MonoBehaviour
         {
             source.PlayOneShot(audios[1]);
             SetLvlSave();
-           // Debug.Log("OKOK");
+          
         }
 
         
-      //  Debug.Log(PlayerStats.PlayerItens.Coins);
-     //   Debug.Log("Valor atual fase: " + PlayerStats.LvlStats.MinaAbandonada);
+     
 
 
     }
@@ -264,8 +263,8 @@ public class CanvasControler : MonoBehaviour
             case "cidadela":
                 if (PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    //PlayerStats.LvlStats.Cidadela += 1;
-                    CloudVariables.Cidadela++;
+                    PlayerStats.LvlStats.Cidadela += 1;
+                    //CloudVariables.Cidadela++;
                     
                 }
 
@@ -274,8 +273,8 @@ public class CanvasControler : MonoBehaviour
             case "deserto silencioso":
                 if (PlayerStats.LvlStats.DesertoSilencioso < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    //PlayerStats.LvlStats.DesertoSilencioso += 1;
-                    CloudVariables.DesertoSilencioso++;
+                    PlayerStats.LvlStats.DesertoSilencioso += 1;
+                   // CloudVariables.DesertoSilencioso++;
                 }
 
                 break;
@@ -284,8 +283,8 @@ public class CanvasControler : MonoBehaviour
             case "floresta noturna":
                 if (PlayerStats.LvlStats.FlorestaNoturna < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    // PlayerStats.LvlStats.FlorestaNoturna += 1;
-                    CloudVariables.FlorestaNoturna++;
+                    PlayerStats.LvlStats.FlorestaNoturna += 1;
+                   // CloudVariables.FlorestaNoturna++;
                 }
 
                 break;
@@ -293,8 +292,8 @@ public class CanvasControler : MonoBehaviour
             case "mina abandonada":
                 if (PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    //PlayerStats.LvlStats.MinaAbandonada += 1;
-                    CloudVariables.MinaAbandonada++;
+                    PlayerStats.LvlStats.MinaAbandonada += 1;
+                    //CloudVariables.MinaAbandonada++;
                 }
 
                 break;
@@ -302,8 +301,8 @@ public class CanvasControler : MonoBehaviour
             case "montanhas do sul":
                 if (PlayerStats.LvlStats.MontanhasDoSul < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                   // PlayerStats.LvlStats.MontanhasDoSul += 1;
-                    CloudVariables.MontanhasDoSul++;
+                   PlayerStats.LvlStats.MontanhasDoSul += 1;
+                   // CloudVariables.MontanhasDoSul++;
                 }
 
                 break;
@@ -311,8 +310,8 @@ public class CanvasControler : MonoBehaviour
             case "pantano dos mortos":
                 if (PlayerStats.LvlStats.PantanoDosMortos < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    //PlayerStats.LvlStats.PantanoDosMortos += 1;
-                    CloudVariables.PantanoDosMortos++;
+                    PlayerStats.LvlStats.PantanoDosMortos += 1;
+                    //CloudVariables.PantanoDosMortos++;
                 }
 
                 break;
@@ -320,8 +319,8 @@ public class CanvasControler : MonoBehaviour
             case "vale do desespero":
                 if (PlayerStats.LvlStats.ValeDoDesespero < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    // PlayerStats.LvlStats.ValeDoDesespero += 1;
-                    CloudVariables.ValeDoDesespero++;
+                    PlayerStats.LvlStats.ValeDoDesespero += 1;
+                    //CloudVariables.ValeDoDesespero++;
                 }
 
                 break;
@@ -329,8 +328,8 @@ public class CanvasControler : MonoBehaviour
             case "vilarejo fantasma":
                 if (PlayerStats.LvlStats.VilarejoFantasma < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    // PlayerStats.LvlStats.VilarejoFantasma += 1;
-                    CloudVariables.VilarejoFantasma++;
+                    PlayerStats.LvlStats.VilarejoFantasma += 1;
+                    //CloudVariables.VilarejoFantasma++;
                 }
                 break;
 

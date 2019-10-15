@@ -3594,6 +3594,7 @@ MonoBehaviour:
   - {fileID: 1672075373}
   - {fileID: 1108361032}
   - {fileID: 916486185}
+  playerActions: {fileID: 0}
 --- !u!1 &880158302
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,16 +7710,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0584448292c72754295689c87355e845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quantItens: {fileID: 0}
   tamborAnim: {fileID: 573151802}
   SwipeField: {fileID: 1375130714}
   weapons:
   - {fileID: 695351725}
   - {fileID: 387704047}
   - {fileID: 1949660002}
-  qtd:
-  - {fileID: 741736594}
-  - {fileID: 1325611969}
-  - {fileID: 1386373571}
 --- !u!114 &1977724172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7731,6 +7729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfea913696db3134fa6f0664db42b74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quantItens: {fileID: 0}
   myTime: 0
   tempoTiro: 0
   animWeapons:
@@ -7765,6 +7764,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00aded1e789960b44a057fe89ed451c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyGold: 0
+  moneySilver: 0
+  moneyBronze: 0
+  goldText: {fileID: 0}
+  silverText: {fileID: 0}
+  bronzeText: {fileID: 0}
   winScreen: {fileID: 1647469899}
   defeatScreen: {fileID: 39140299}
   Hud: {fileID: 1827043168}
@@ -7779,8 +7784,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 55ceb44016efdf84c8a54cb99d881cc7, type: 3}
   - {fileID: 8300000, guid: 4a27d446eca923848a47d1d057afb60f, type: 3}
   - {fileID: 8300000, guid: c83137a3b86912b4ebe3c24b8da48a77, type: 3}
-  ac: {fileID: 1205142035}
-  variables: {fileID: 1977724178}
 --- !u!82 &1977724175
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7916,9 +7919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c2f134b728f24db6854e47b8288ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  currentLevel: 0
-  golden: 0
 --- !u!1 &1991698728
 GameObject:
   m_ObjectHideFlags: 0

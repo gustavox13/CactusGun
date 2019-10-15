@@ -125,7 +125,7 @@ public class ActionGame : MonoBehaviour
     private void UpdatePlayerItens()
     {
         if (playerSkill == 0)
-        {
+        { 
             PlayerStats.PlayerItens.Tnt -= 1;
             quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
 
@@ -345,6 +345,7 @@ public class ActionGame : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
         */
         gameObject.GetComponent<SaveFunctions>().SaveInventory();
+        
     }
 
 

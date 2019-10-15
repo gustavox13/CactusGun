@@ -9,8 +9,6 @@ public class SaveFunctions : MonoBehaviour
     private void Start()
     {
 
-      
-
         Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
         Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
         Cloud.Initialize(true, true);
@@ -23,8 +21,8 @@ public class SaveFunctions : MonoBehaviour
         Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
         Cloud.Storage.Load();
 
-        LoadLevel();
-        LoadInventory();
+        //LoadLevel();// carregar variaveis apos initialização completa  -Jean
+        //LoadInventory();// // carregar variaveis - Jean
     }
 
     void CloudOnceLoadComplete(bool success)
@@ -57,6 +55,7 @@ public class SaveFunctions : MonoBehaviour
         CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
         CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         Save();
+        //LoadInventory();//Teste Carregar Inventario  Jean
         
     }
 

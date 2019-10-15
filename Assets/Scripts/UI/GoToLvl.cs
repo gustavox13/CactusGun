@@ -88,7 +88,7 @@ public class GoToLvl : MonoBehaviour
         nameScene = currentLvl;
         SetCurrentEnemy();
         PlayerStats.LvlStats.CurrentMap = nameScene;
-        UpdateTextLvl();
+       // UpdateTextLvl();//Adicionado para atualizar texto Jean
      
     }
 
@@ -98,7 +98,7 @@ public class GoToLvl : MonoBehaviour
 
     }
 
-    //Teste
+    //Teste rotina para atualizar texto Jean
     private void UpdateTextLvl()
     {
         minaAbandonada.text = PlayerStats.LvlStats.MinaAbandonada + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();

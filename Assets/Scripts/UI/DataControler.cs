@@ -67,7 +67,7 @@ public class DataControler : MonoBehaviour
     //--------------------- Resgatar valores salvos ------------------------
     private void LoadValues()
     {
-        Cloud.Storage.Load();//Teste
+        //Cloud.Storage.Load();//Teste
 
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
