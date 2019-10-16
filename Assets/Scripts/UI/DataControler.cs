@@ -87,6 +87,51 @@ public class DataControler : MonoBehaviour
 
     private void CheckAndUnlockLvls()
     {
+
+        //1 - Vilarejo Fantasma
+        //2 - Vale do Desespero
+        //3 - Pantano dos Mortos
+        //4 - Mina Abandonada
+        //5 - Cidadela
+        //6 - Floresta Noturna
+        //7 - Montanhas do Sul
+        //8 - Deserto Silencioso 
+
+
+        if(PlayerStats.LvlStats.VilarejoFantasma < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            valeDoDesespero.interactable = false;
+
+        }if(PlayerStats.LvlStats.ValeDoDesespero < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            pantanoDosMortos.interactable = false;
+             
+        }if(PlayerStats.LvlStats.PantanoDosMortos < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            minaAbandonada.interactable = false;
+
+        }if(PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            cidadela.interactable = false;
+
+        }if(PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            florestaNoturna.interactable = false;
+
+        }if(PlayerStats.LvlStats.FlorestaNoturna < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            montanhasDoSul.interactable = false;
+
+        }if(PlayerStats.LvlStats.MontanhasDoSul < PlayerStats.LvlStats.MaxLvlRepeat)
+        {
+            desertoSilencioso.interactable = false;
+        }
+
+
+
+        /*
+
+
         if (PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat)
         {
             montanhasDoSul.interactable = false;
@@ -115,6 +160,8 @@ public class DataControler : MonoBehaviour
         {
             valeDoDesespero.interactable = false;
         }
+
+       */
     }
 
     public void BuyTrap()

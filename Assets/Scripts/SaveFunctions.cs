@@ -171,14 +171,17 @@ public class SaveFunctions : MonoBehaviour
         }
         */
 
-        PlayerStats.LvlStats.Cidadela = CloudVariables.Cidadela;
-        PlayerStats.LvlStats.DesertoSilencioso = CloudVariables.DesertoSilencioso;
-        PlayerStats.LvlStats.FlorestaNoturna = CloudVariables.FlorestaNoturna;
-        PlayerStats.LvlStats.MinaAbandonada = CloudVariables.MinaAbandonada;
-        PlayerStats.LvlStats.MontanhasDoSul = CloudVariables.MontanhasDoSul;
-        PlayerStats.LvlStats.PantanoDosMortos = CloudVariables.PantanoDosMortos;
-        PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
+
         PlayerStats.LvlStats.VilarejoFantasma = CloudVariables.VilarejoFantasma;
+        PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
+        PlayerStats.LvlStats.PantanoDosMortos = CloudVariables.PantanoDosMortos;
+        PlayerStats.LvlStats.MinaAbandonada = CloudVariables.MinaAbandonada;
+        PlayerStats.LvlStats.Cidadela = CloudVariables.Cidadela;
+        PlayerStats.LvlStats.FlorestaNoturna = CloudVariables.FlorestaNoturna;
+        PlayerStats.LvlStats.MontanhasDoSul = CloudVariables.MontanhasDoSul;
+        PlayerStats.LvlStats.DesertoSilencioso = CloudVariables.DesertoSilencioso;
+
+
 
 
     }

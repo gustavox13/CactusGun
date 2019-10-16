@@ -1325,7 +1325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.28177735, y: 0}
   m_AnchorMax: {x: 0.37100002, y: 0.9165738}
-  m_AnchoredPosition: {x: 0.2000122, y: 2.0700073}
+  m_AnchoredPosition: {x: 0.19995117, y: 2.0700073}
   m_SizeDelta: {x: -1.0126953, y: -2.8000488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &371825819
@@ -1921,7 +1921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8086114, y: 0.11119129}
   m_AnchorMax: {x: 0.9332227, y: 0.9165738}
-  m_AnchoredPosition: {x: 0.07098389, y: -0.642395}
+  m_AnchoredPosition: {x: 0.07092285, y: -0.642395}
   m_SizeDelta: {x: 0.42999268, y: 1.1999998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445630823
@@ -2852,7 +2852,7 @@ GameObject:
   - component: {fileID: 615900342}
   - component: {fileID: 615900341}
   m_Layer: 5
-  m_Name: Deserto Silencioso
+  m_Name: Vale do Desespero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2937,7 +2937,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: deserto silencioso
+          m_StringArgument: vale do desespero
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5864,7 +5864,7 @@ GameObject:
   - component: {fileID: 1260748935}
   - component: {fileID: 1260748934}
   m_Layer: 5
-  m_Name: Vale do Desespero
+  m_Name: Deserto Silencioso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5949,7 +5949,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: vale do desespero
+          m_StringArgument: deserto silencioso
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8086,7 +8086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.3057579, y: 0}
-  m_AnchoredPosition: {x: -4.289978, y: -19.699997}
+  m_AnchoredPosition: {x: -4.289963, y: -19.699997}
   m_SizeDelta: {x: -1.4700003, y: 38.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707021672
@@ -8863,7 +8863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.107136786, y: 0.0374986}
   m_AnchorMax: {x: 0.731, y: 0.274274}
-  m_AnchoredPosition: {x: -0.2999878, y: 0.07720184}
+  m_AnchoredPosition: {x: -0.2999878, y: 0.07720947}
   m_SizeDelta: {x: 0.39999962, y: -1.2999992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823998779
@@ -9804,9 +9804,9 @@ MonoBehaviour:
   cidadela: {fileID: 722519280}
   florestaNoturna: {fileID: 1267885512}
   pantanoDosMortos: {fileID: 1768537576}
-  desertoSilencioso: {fileID: 2007534215}
+  desertoSilencioso: {fileID: 264443032}
   vilarejoFantasma: {fileID: 275050393}
-  valeDoDesespero: {fileID: 264443032}
+  valeDoDesespero: {fileID: 2007534215}
   Coiote: {fileID: 210546230}
   BicoDeAco: {fileID: 2052703694}
   Zilda: {fileID: 1239826677}
@@ -10027,9 +10027,9 @@ MonoBehaviour:
   cidadela: {fileID: 1047099366}
   florestaNoturna: {fileID: 523411847}
   pantanoDosMortos: {fileID: 46121419}
-  desertoSilencioso: {fileID: 615900341}
+  desertoSilencioso: {fileID: 1260748934}
   vilarejoFantasma: {fileID: 1725379550}
-  valeDoDesespero: {fileID: 1260748934}
+  valeDoDesespero: {fileID: 615900341}
 --- !u!114 &2097904207
 MonoBehaviour:
   m_ObjectHideFlags: 0
