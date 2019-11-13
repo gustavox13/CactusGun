@@ -28,7 +28,7 @@ public class SaveFunctions : MonoBehaviour
     void CloudOnceLoadComplete(bool success)
     {
         
-       
+  
     }
 
     void Save()
@@ -55,7 +55,7 @@ public class SaveFunctions : MonoBehaviour
         CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
         CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         Save();
-        //LoadInventory();//Teste Carregar Inventario  Jean
+      
         
     }
 
@@ -189,7 +189,7 @@ public class SaveFunctions : MonoBehaviour
     public void DeleteAllCloud()
     {
         Cloud.Storage.DeleteAll();
-     
+    
 
     }
 
