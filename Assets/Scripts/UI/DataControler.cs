@@ -67,14 +67,14 @@ public class DataControler : MonoBehaviour
     //--------------------- Resgatar valores salvos ------------------------
     private void LoadValues()
     {
-        //Cloud.Storage.Load();//Teste
+        Cloud.Storage.Load();//Teste
 
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
 
 
-        
 
+  
         moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
         tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
         trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
@@ -168,8 +168,12 @@ public class DataControler : MonoBehaviour
     {
         if (PlayerStats.PlayerItens.Coins >= trapPrice)
         {
-            PlayerStats.PlayerItens.Coins -= trapPrice;
-            PlayerStats.PlayerItens.Trap += trapQuant;
+
+            CloudVariables.Coins -= trapPrice;//Jean
+            CloudVariables.Trap += trapQuant;//Jean
+
+            //PlayerStats.PlayerItens.Coins -= trapPrice;
+            //PlayerStats.PlayerItens.Trap += trapQuant;
             SaveInventory();
             
 
@@ -181,8 +185,11 @@ public class DataControler : MonoBehaviour
     {
         if (PlayerStats.PlayerItens.Coins >= tntPrice)
         {
-            PlayerStats.PlayerItens.Coins -= tntPrice;
-            PlayerStats.PlayerItens.Tnt += tntQuant;
+            CloudVariables.Coins -= tntPrice;// Jean
+            CloudVariables.Tnt += tntQuant;//Jean
+
+         //   PlayerStats.PlayerItens.Coins -= tntPrice;
+          //  PlayerStats.PlayerItens.Tnt += tntQuant;
             SaveInventory();
         }
         LoadValues();
@@ -192,10 +199,15 @@ public class DataControler : MonoBehaviour
     {
         if (PlayerStats.PlayerItens.Coins >= kitPrice)
         {
-            PlayerStats.PlayerItens.Coins -= kitPrice;
-            
-            PlayerStats.PlayerItens.Trap += kitQuant;
-            PlayerStats.PlayerItens.Tnt += kitQuant;
+
+            CloudVariables.Coins -= kitPrice;//Jean
+            CloudVariables.Trap += kitQuant;//Jean
+            CloudVariables.Tnt += kitQuant;//Jean
+
+          //  PlayerStats.PlayerItens.Coins -= kitPrice; 
+          //  PlayerStats.PlayerItens.Trap += kitQuant;
+          //  PlayerStats.PlayerItens.Tnt += kitQuant;
+
             SaveInventory();
         }
         LoadValues();
@@ -203,8 +215,8 @@ public class DataControler : MonoBehaviour
 
     public void BuyMoneyMin()
     {
-        PlayerStats.PlayerItens.Coins += moneyMin;
-       
+      //  PlayerStats.PlayerItens.Coins += moneyMin;
+        CloudVariables.Coins += moneyMin; //Jean
         SaveInventory();
         LoadValues();
         
@@ -212,7 +224,8 @@ public class DataControler : MonoBehaviour
 
     public void BuyMoneyMed()
     {
-        PlayerStats.PlayerItens.Coins += moneyMed;
+        // PlayerStats.PlayerItens.Coins += moneyMed;
+        CloudVariables.Coins += moneyMed; //Jean
         
         SaveInventory();
         LoadValues();
@@ -220,8 +233,9 @@ public class DataControler : MonoBehaviour
 
     public void BuyMoneyMax()
     {
-        PlayerStats.PlayerItens.Coins += moneyMax;
-        
+        //PlayerStats.PlayerItens.Coins += moneyMax;
+        CloudVariables.Coins = moneyMax; //Jean
+
         SaveInventory();
         LoadValues();
     }

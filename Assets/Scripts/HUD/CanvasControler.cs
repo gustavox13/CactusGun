@@ -194,12 +194,14 @@ public class CanvasControler : MonoBehaviour
             {
                 if (PlayerStats.LvlStats.TimeToBoss == true)
                 {
-                    PlayerStats.PlayerItens.Coins += (moneyGold * 2);
+                    //PlayerStats.PlayerItens.Coins += (moneyGold * 2);
+                     CloudVariables.Coins += moneyGold * 2; //Jean
                     goldText.text = (moneyGold * 2).ToString();
                 }
                 else
                 {
-                    PlayerStats.PlayerItens.Coins += moneyGold;
+                    //PlayerStats.PlayerItens.Coins += moneyGold;
+                    CloudVariables.Coins += moneyGold;
                     goldText.text = moneyGold.ToString();
                 }
                 endLvl = true;
@@ -216,12 +218,14 @@ public class CanvasControler : MonoBehaviour
             {
                 if (PlayerStats.LvlStats.TimeToBoss == true)
             {
-                PlayerStats.PlayerItens.Coins += (moneySilver * 2);
+                CloudVariables.Coins += moneySilver * 2; //Jean
+               // PlayerStats.PlayerItens.Coins += (moneySilver * 2);
                 silverText.text = (moneySilver * 2).ToString();
             }
             else
             {
-                PlayerStats.PlayerItens.Coins += moneySilver;
+                 CloudVariables.Coins = moneySilver;
+               // PlayerStats.PlayerItens.Coins += moneySilver;
                 silverText.text = moneySilver.ToString();
             }
                 endLvl = true;
@@ -238,12 +242,14 @@ public class CanvasControler : MonoBehaviour
             {
                 if (PlayerStats.LvlStats.TimeToBoss == true)
             {
-                PlayerStats.PlayerItens.Coins += (moneyBronze * 2);
+                 CloudVariables.Coins += moneyBronze * 2;//Jean
+              //  PlayerStats.PlayerItens.Coins += (moneyBronze * 2);
                 bronzeText.text = (moneyBronze * 2).ToString();
             }
             else
             {
-                PlayerStats.PlayerItens.Coins += moneyBronze;
+                  CloudVariables.Coins += moneyBronze; //Jean
+                //PlayerStats.PlayerItens.Coins += moneyBronze;
                 bronzeText.text = moneyBronze.ToString();
             }
                 endLvl = true;
@@ -263,8 +269,8 @@ public class CanvasControler : MonoBehaviour
             case "cidadela":
                 if (PlayerStats.LvlStats.Cidadela < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.Cidadela += 1;
-                    //CloudVariables.Cidadela++;
+                  //PlayerStats.LvlStats.Cidadela += 1;
+                    CloudVariables.Cidadela++;
                     
                 }
 
@@ -273,8 +279,8 @@ public class CanvasControler : MonoBehaviour
             case "deserto silencioso":
                 if (PlayerStats.LvlStats.DesertoSilencioso < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.DesertoSilencioso += 1;
-                   // CloudVariables.DesertoSilencioso++;
+                  // PlayerStats.LvlStats.DesertoSilencioso += 1;
+                    CloudVariables.DesertoSilencioso++;
                 }
 
                 break;
@@ -283,8 +289,8 @@ public class CanvasControler : MonoBehaviour
             case "floresta noturna":
                 if (PlayerStats.LvlStats.FlorestaNoturna < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.FlorestaNoturna += 1;
-                   // CloudVariables.FlorestaNoturna++;
+                    //PlayerStats.LvlStats.FlorestaNoturna += 1;
+                    CloudVariables.FlorestaNoturna++;
                 }
 
                 break;
@@ -292,8 +298,8 @@ public class CanvasControler : MonoBehaviour
             case "mina abandonada":
                 if (PlayerStats.LvlStats.MinaAbandonada < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.MinaAbandonada += 1;
-                    //CloudVariables.MinaAbandonada++;
+                    //PlayerStats.LvlStats.MinaAbandonada += 1;
+                    CloudVariables.MinaAbandonada++;
                 }
 
                 break;
@@ -301,8 +307,8 @@ public class CanvasControler : MonoBehaviour
             case "montanhas do sul":
                 if (PlayerStats.LvlStats.MontanhasDoSul < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                   PlayerStats.LvlStats.MontanhasDoSul += 1;
-                   // CloudVariables.MontanhasDoSul++;
+                   //PlayerStats.LvlStats.MontanhasDoSul += 1;
+                   CloudVariables.MontanhasDoSul++;
                 }
 
                 break;
@@ -310,8 +316,8 @@ public class CanvasControler : MonoBehaviour
             case "pantano dos mortos":
                 if (PlayerStats.LvlStats.PantanoDosMortos < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.PantanoDosMortos += 1;
-                    //CloudVariables.PantanoDosMortos++;
+                    //PlayerStats.LvlStats.PantanoDosMortos += 1;
+                   CloudVariables.PantanoDosMortos++;
                 }
 
                 break;
@@ -319,8 +325,8 @@ public class CanvasControler : MonoBehaviour
             case "vale do desespero":
                 if (PlayerStats.LvlStats.ValeDoDesespero < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.ValeDoDesespero += 1;
-                    //CloudVariables.ValeDoDesespero++;
+                   //PlayerStats.LvlStats.ValeDoDesespero += 1;
+                   CloudVariables.ValeDoDesespero++;
                 }
 
                 break;
@@ -328,8 +334,8 @@ public class CanvasControler : MonoBehaviour
             case "vilarejo fantasma":
                 if (PlayerStats.LvlStats.VilarejoFantasma < PlayerStats.LvlStats.MaxLvlRepeat)
                 {
-                    PlayerStats.LvlStats.VilarejoFantasma += 1;
-                    //CloudVariables.VilarejoFantasma++;
+                   //PlayerStats.LvlStats.VilarejoFantasma += 1;
+                   CloudVariables.VilarejoFantasma++;
                 }
                 break;
 

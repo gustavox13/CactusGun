@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class GoToLvl : MonoBehaviour
 {
@@ -58,6 +59,9 @@ public class GoToLvl : MonoBehaviour
 
     public void LoadLvlStats()
     {
+
+       
+
 
         vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
         valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();

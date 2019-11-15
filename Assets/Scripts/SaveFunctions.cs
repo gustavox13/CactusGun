@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SaveFunctions : MonoBehaviour
 {
 
-    public Text statusDoBang;
+    //public Text statusDoBang;
 
 
 
@@ -26,12 +26,14 @@ public class SaveFunctions : MonoBehaviour
         Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
         Cloud.Storage.Load();
 
+
+
         
     }
 
     void CloudOnceLoadComplete(bool success)
     {
-        statusDoBang.text = success.ToString();
+       // statusDoBang.text = success.ToString();
         
     }
 
@@ -55,10 +57,16 @@ public class SaveFunctions : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.COINS, PlayerStats.PlayerItens.Coins);
         */
 
-        CloudVariables.Tnt = PlayerStats.PlayerItens.Tnt;
+       
+        //Verificar Aqui Jean Inverter 
+
+
+        /*CloudVariables.Tnt = PlayerStats.PlayerItens.Tnt;
         CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
         CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
+        */
         Save();
+
       
         
     }
@@ -76,20 +84,24 @@ public class SaveFunctions : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
         */
 
-        
 
-        CloudVariables.Cidadela = PlayerStats.LvlStats.Cidadela;
+        //Verificar aqui Inverter
+
+        //Jean
+       // CloudVariables.ValeDoDesespero =  CloudVariables.ValeDoDesespero;
+       // CloudVariables.VilarejoFantasma = CloudVariables.VilarejoFantasma;
+
+       /* CloudVariables.Cidadela = PlayerStats.LvlStats.Cidadela;
         CloudVariables.DesertoSilencioso = PlayerStats.LvlStats.DesertoSilencioso;
         CloudVariables.FlorestaNoturna = PlayerStats.LvlStats.FlorestaNoturna; 
         CloudVariables.MinaAbandonada = PlayerStats.LvlStats.MinaAbandonada;
         CloudVariables.MontanhasDoSul = PlayerStats.LvlStats.MontanhasDoSul;
         CloudVariables.PantanoDosMortos = PlayerStats.LvlStats.PantanoDosMortos;
         CloudVariables.ValeDoDesespero = PlayerStats.LvlStats.ValeDoDesespero;
-        CloudVariables.VilarejoFantasma = PlayerStats.LvlStats.VilarejoFantasma;
+        CloudVariables.VilarejoFantasma = PlayerStats.LvlStats.VilarejoFantasma;*/
         Save();
 
 
-     
         
         
     }
@@ -122,9 +134,12 @@ public class SaveFunctions : MonoBehaviour
         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
         PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
-        
 
-       
+        //Jean
+       // CloudVariables.Coins = CloudVariables.Coins;
+
+
+
 
     }
 
@@ -176,6 +191,10 @@ public class SaveFunctions : MonoBehaviour
         */
 
 
+
+        //CloudVariables.VilarejoFantasma = CloudVariables.VilarejoFantasma;//Jean
+       // CloudVariables.ValeDoDesespero = CloudVariables.ValeDoDesespero;//Jean
+
         PlayerStats.LvlStats.VilarejoFantasma = CloudVariables.VilarejoFantasma;
         PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
         PlayerStats.LvlStats.PantanoDosMortos = CloudVariables.PantanoDosMortos;
@@ -194,7 +213,6 @@ public class SaveFunctions : MonoBehaviour
     {
         Cloud.Storage.DeleteAll();
     
-
     }
 
    
