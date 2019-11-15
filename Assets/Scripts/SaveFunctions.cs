@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CloudOnce;
+using UnityEngine.UI;
 
 public class SaveFunctions : MonoBehaviour
 {
+
+    public Text statusDoBang;
+
+
 
     private void Start()
     {
@@ -21,14 +26,13 @@ public class SaveFunctions : MonoBehaviour
         Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
         Cloud.Storage.Load();
 
-        //LoadLevel();// carregar variaveis apos initialização completa  -Jean
-        //LoadInventory();// // carregar variaveis - Jean
+        
     }
 
     void CloudOnceLoadComplete(bool success)
     {
+        statusDoBang.text = success.ToString();
         
-  
     }
 
     void Save()
