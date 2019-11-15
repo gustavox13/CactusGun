@@ -61,7 +61,8 @@ public class SaveFunctions : MonoBehaviour
         //Verificar Aqui Jean Inverter 
 
 
-        /*CloudVariables.Tnt = PlayerStats.PlayerItens.Tnt;
+        /*
+        CloudVariables.Tnt = PlayerStats.PlayerItens.Tnt;
         CloudVariables.Trap = PlayerStats.PlayerItens.Trap;
         CloudVariables.Coins = PlayerStats.PlayerItens.Coins;
         */

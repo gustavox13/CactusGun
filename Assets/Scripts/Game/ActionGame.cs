@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CloudOnce;
 
 public class ActionGame : MonoBehaviour
 {
@@ -125,8 +126,9 @@ public class ActionGame : MonoBehaviour
     private void UpdatePlayerItens()
     {
         if (playerSkill == 0)
-        { 
-            PlayerStats.PlayerItens.Tnt -= 1;
+        {
+            CloudVariables.Tnt -= 1;
+            //PlayerStats.PlayerItens.Tnt -= 1;
             quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
 
             SaveInventory();
@@ -134,7 +136,8 @@ public class ActionGame : MonoBehaviour
 
         if (playerSkill == 2)
         {
-            PlayerStats.PlayerItens.Trap -= 1;
+            CloudVariables.Trap -= 1;
+            //PlayerStats.PlayerItens.Trap -= 1;
             quantItens.text = PlayerStats.PlayerItens.Trap.ToString();
 
             SaveInventory();

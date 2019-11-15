@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using CloudOnce;
 
 public class TamborRotate : MonoBehaviour {
 
@@ -113,7 +113,7 @@ public class TamborRotate : MonoBehaviour {
             {
                 haveItens = false;
             }
-            quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
+            quantItens.text = CloudVariables.Tnt.ToString(); //PlayerStats.PlayerItens.Tnt.ToString();
         }
         if(currentAtk == 1)
         {
@@ -130,7 +130,7 @@ public class TamborRotate : MonoBehaviour {
             {
                 haveItens = false;
             }
-            quantItens.text = PlayerStats.PlayerItens.Trap.ToString();
+            quantItens.text = CloudVariables.Trap.ToString(); //PlayerStats.PlayerItens.Trap.ToString();
         }
     }
 

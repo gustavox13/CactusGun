@@ -224,7 +224,7 @@ public class CanvasControler : MonoBehaviour
             }
             else
             {
-                 CloudVariables.Coins = moneySilver;
+                 CloudVariables.Coins += moneySilver;
                // PlayerStats.PlayerItens.Coins += moneySilver;
                 silverText.text = moneySilver.ToString();
             }
