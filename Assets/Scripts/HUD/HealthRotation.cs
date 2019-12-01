@@ -15,6 +15,7 @@ public class HealthRotation : MonoBehaviour {
     private void Start()
     {
         health = GetComponent<Health>();
+        
     }
 
     private void Update()

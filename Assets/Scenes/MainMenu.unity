@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 46121421}
   - component: {fileID: 46121420}
   - component: {fileID: 46121419}
+  - component: {fileID: 46121422}
   m_Layer: 5
   m_Name: Pantano dos Mortos
   m_TagString: Untagged
@@ -253,6 +254,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46121417}
   m_CullTransparentMesh: 0
+--- !u!114 &46121422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46121417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &58101681
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.3057579, y: 0}
-  m_AnchoredPosition: {x: -3.3221588, y: -19.699997}
+  m_AnchoredPosition: {x: -3.322174, y: -19.699997}
   m_SizeDelta: {x: -1.453948, y: 38.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58101683
@@ -928,6 +942,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 258077507}
+  - component: {fileID: 258077510}
+  - component: {fileID: 258077509}
   m_Layer: 5
   m_Name: MapButtons
   m_TagString: Untagged
@@ -962,6 +978,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &258077509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258077506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
+--- !u!114 &258077510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258077506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &264443030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1409,7 @@ GameObject:
   - component: {fileID: 306216585}
   - component: {fileID: 306216584}
   - component: {fileID: 306216583}
+  - component: {fileID: 306216586}
   m_Layer: 5
   m_Name: Back(Button)
   m_TagString: Untagged
@@ -1454,6 +1526,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306216581}
   m_CullTransparentMesh: 0
+--- !u!114 &306216586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306216581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 178f2a00099176044a04f39993e52e65, type: 3}
 --- !u!1 &340184142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,7 +2401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26932883, y: 0.078419656}
   m_AnchorMax: {x: 0.72549325, y: 0.47762948}
-  m_AnchoredPosition: {x: 1.5, y: 3.5005379}
+  m_AnchoredPosition: {x: 1.5, y: 3.5006218}
   m_SizeDelta: {x: -13.899994, y: -8.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450612319
@@ -2369,6 +2454,7 @@ GameObject:
   - component: {fileID: 451722190}
   - component: {fileID: 451722189}
   - component: {fileID: 451722188}
+  - component: {fileID: 451722192}
   m_Layer: 5
   m_Name: Go(Button)
   m_TagString: Untagged
@@ -2504,6 +2590,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451722186}
   m_CullTransparentMesh: 0
+--- !u!114 &451722192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451722186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 6a2f65d396daf224e8e9d9df8f2a19a5, type: 3}
 --- !u!1 &460503326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2868,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 06dc952cab83cb649984bbce62a6e02b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06dc952cab83cb649984bbce62a6e02b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2821,12 +2920,21 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1570f8566696ff94f8b710171ab07716, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06dc952cab83cb649984bbce62a6e02b, type: 3}
---- !u!4 &513521878 stripped
+--- !u!4 &513521878
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400000, guid: 06dc952cab83cb649984bbce62a6e02b,
     type: 3}
   m_PrefabInstance: {fileID: 513521877}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888431692}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -5.6151, y: 0.0057713985, z: 0.045550346}
+  m_LocalScale: {x: 55.108147, y: 55.10815, z: 55.10815}
+  m_Children: []
+  m_Father: {fileID: 1853669670}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523411845
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +2947,7 @@ GameObject:
   - component: {fileID: 523411849}
   - component: {fileID: 523411848}
   - component: {fileID: 523411847}
+  - component: {fileID: 523411850}
   m_Layer: 5
   m_Name: Floresta Noturna
   m_TagString: Untagged
@@ -2967,6 +3076,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523411845}
   m_CullTransparentMesh: 0
+--- !u!114 &523411850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523411845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &543287437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1394843, y: 0.0374986}
   m_AnchorMax: {x: 0.7632735, y: 0.27859458}
-  m_AnchoredPosition: {x: 1.1999817, y: 1.8999863}
+  m_AnchoredPosition: {x: 1.1999817, y: 1.8999939}
   m_SizeDelta: {x: 0.39999962, y: -0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543287439
@@ -3171,6 +3293,7 @@ GameObject:
   - component: {fileID: 615900343}
   - component: {fileID: 615900342}
   - component: {fileID: 615900341}
+  - component: {fileID: 615900344}
   m_Layer: 5
   m_Name: Vale do Desespero
   m_TagString: Untagged
@@ -3299,6 +3422,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615900339}
   m_CullTransparentMesh: 0
+--- !u!114 &615900344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615900339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &650734091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4182,6 +4318,7 @@ GameObject:
   - component: {fileID: 796293067}
   - component: {fileID: 796293066}
   - component: {fileID: 796293069}
+  - component: {fileID: 796293070}
   m_Layer: 5
   m_Name: shop(Button)
   m_TagString: Untagged
@@ -4317,6 +4454,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &796293070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796293064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &830848129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,6 +5038,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874967173}
   m_CullTransparentMesh: 0
+--- !u!1 &888431692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 06dc952cab83cb649984bbce62a6e02b,
+    type: 3}
+  m_PrefabInstance: {fileID: 513521877}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 513521878}
+  - component: {fileID: 888431694}
+  - component: {fileID: 888431693}
+  m_Layer: 0
+  m_Name: barrel_Low
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!23 &888431693
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: 06dc952cab83cb649984bbce62a6e02b,
+    type: 3}
+  m_PrefabInstance: {fileID: 513521877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888431692}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1570f8566696ff94f8b710171ab07716, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &888431694
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 3300000, guid: 06dc952cab83cb649984bbce62a6e02b,
+    type: 3}
+  m_PrefabInstance: {fileID: 513521877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888431692}
+  m_Mesh: {fileID: 4300000, guid: 06dc952cab83cb649984bbce62a6e02b, type: 3}
 --- !u!1 &917472413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,7 +5749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18.204}
   m_AnchorMin: {x: 0, y: 0.83678764}
   m_AnchorMax: {x: 0.4581395, y: 1}
-  m_AnchoredPosition: {x: -16.9, y: 23.5}
+  m_AnchoredPosition: {x: -16.900024, y: 23.499998}
   m_SizeDelta: {x: 34.3, y: 50.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1016633525
@@ -5664,6 +5880,7 @@ GameObject:
   - component: {fileID: 1047099368}
   - component: {fileID: 1047099367}
   - component: {fileID: 1047099366}
+  - component: {fileID: 1047099369}
   m_Layer: 5
   m_Name: Cidadela
   m_TagString: Untagged
@@ -5792,6 +6009,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047099364}
   m_CullTransparentMesh: 0
+--- !u!114 &1047099369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047099364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &1049020027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6505,6 +6735,7 @@ GameObject:
   - component: {fileID: 1260748936}
   - component: {fileID: 1260748935}
   - component: {fileID: 1260748934}
+  - component: {fileID: 1260748937}
   m_Layer: 5
   m_Name: Deserto Silencioso
   m_TagString: Untagged
@@ -6633,6 +6864,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260748932}
   m_CullTransparentMesh: 0
+--- !u!114 &1260748937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260748932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &1267885510
 GameObject:
   m_ObjectHideFlags: 0
@@ -6915,6 +7159,7 @@ GameObject:
   - component: {fileID: 1311640674}
   - component: {fileID: 1311640673}
   - component: {fileID: 1311640676}
+  - component: {fileID: 1311640677}
   m_Layer: 5
   m_Name: Back(Button)
   m_TagString: Untagged
@@ -6992,6 +7237,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1311640677}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1311640674
@@ -7050,6 +7306,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1311640677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311640671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 178f2a00099176044a04f39993e52e65, type: 3}
 --- !u!1 &1354513815
 GameObject:
   m_ObjectHideFlags: 0
@@ -8707,8 +8976,8 @@ Camera:
   m_GameObject: {fileID: 1669698123}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.16037738, g: 0.1505051, b: 0.13843897, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -8783,7 +9052,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7be79f29557faa646bcc7cf413addd1c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 66e981d4aef71524690f3fd14e69e1fc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.75
   m_Pitch: 1
@@ -9113,7 +9382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1689639573
 Transform:
   m_ObjectHideFlags: 0
@@ -9532,6 +9801,7 @@ GameObject:
   - component: {fileID: 1725379552}
   - component: {fileID: 1725379551}
   - component: {fileID: 1725379550}
+  - component: {fileID: 1725379553}
   m_Layer: 5
   m_Name: Vilarejo Fantasma
   m_TagString: Untagged
@@ -9660,6 +9930,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725379548}
   m_CullTransparentMesh: 0
+--- !u!114 &1725379553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725379548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &1738138652
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10592,7 @@ GameObject:
   - component: {fileID: 1851429645}
   - component: {fileID: 1851429644}
   - component: {fileID: 1851429643}
+  - component: {fileID: 1851429646}
   m_Layer: 5
   m_Name: Montanhas do Sul
   m_TagString: Untagged
@@ -10437,6 +10721,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851429641}
   m_CullTransparentMesh: 0
+--- !u!114 &1851429646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851429641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}
 --- !u!1 &1853669669
 GameObject:
   m_ObjectHideFlags: 0
@@ -11591,6 +11888,7 @@ GameObject:
   - component: {fileID: 2123605694}
   - component: {fileID: 2123605693}
   - component: {fileID: 2123605692}
+  - component: {fileID: 2123605695}
   m_Layer: 5
   m_Name: Mina Abandonada
   m_TagString: Untagged
@@ -11719,3 +12017,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123605690}
   m_CullTransparentMesh: 0
+--- !u!114 &2123605695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123605690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34214ec878d0c8438fe13f1a9fd62f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 54989bdb7eb669647981e41a770276a9, type: 3}

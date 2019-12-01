@@ -23,8 +23,9 @@ public class ClickSound : MonoBehaviour
         source.volume = 0.8f;
 	}
 	
-    void PlaySound()
+    public void PlaySound()
     {
+ 
         source.PlayOneShot(sound);
     }
 

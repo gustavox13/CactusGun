@@ -64,14 +64,18 @@ public class AnimationsButtonMenu : MonoBehaviour {
 
     public void LevelSelectAnim()
     {
+        StartCoroutine(TimeLevelSelectAnim());
+        /*
         mapButtons.SetActive(false);
         map.SetBool("OpenMap", false);
         wantedScreen.SetBool("WantedMapFade", true);
         goButton.SetBool("ButtonFade", true);
+        */
     }
 
     public void BackButton()
     {
+
         //WANTED SCREEN ACTIONS
         wantedScreen.SetBool("WantedMapFade", false);
         goButton.SetBool("ButtonFade", false);
@@ -92,10 +96,30 @@ public class AnimationsButtonMenu : MonoBehaviour {
         storeScreen.SetActive(true);
     }
 
+
+
     public void StoreBackButton()
     {
+        StartCoroutine(TimeStoreBackButton());
+       // storeScreen.SetActive(false);
+       
+    }
+
+    private IEnumerator TimeStoreBackButton()
+    {
+        yield return new WaitForSeconds(0.3f);
         storeScreen.SetActive(false);
     }
-   
+
+    private IEnumerator TimeLevelSelectAnim()
+    {
+        yield return new WaitForSeconds(0.3f);
+        mapButtons.SetActive(false);
+        map.SetBool("OpenMap", false);
+        wantedScreen.SetBool("WantedMapFade", true);
+        goButton.SetBool("ButtonFade", true);
+
+    }
+
 
 }

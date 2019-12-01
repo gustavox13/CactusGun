@@ -171,7 +171,7 @@ public class ActionGame : MonoBehaviour
             newPosition = new Vector3(1, y, z);
         }
 
-        enemy.transform.position = Vector3.Lerp(enemy.transform.position, newPosition, Time.deltaTime * 4);
+        enemy.transform.position = Vector3.Lerp(enemy.transform.position, newPosition, Time.deltaTime * 3);
     }
 
     private void MovePlayer(float y, float z)
