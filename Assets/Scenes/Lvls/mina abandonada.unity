@@ -259,6 +259,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.6999512
       objectReference: {fileID: 0}
+    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_Name
+      value: QuantItens
+      objectReference: {fileID: 0}
     - target: {fileID: 5123777856880993491, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_IsActive
@@ -299,11 +304,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_Name
-      value: QuantItens
-      objectReference: {fileID: 0}
     - target: {fileID: 5123777856610657346, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -328,7 +328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 911184d94e686d74ab7e2ac033e5a953, type: 3}
+      objectReference: {fileID: 8300000, guid: 63e973af49a7e58459ca9f1350d6f2c2, type: 3}
     - target: {fileID: 3496735957157694143, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x

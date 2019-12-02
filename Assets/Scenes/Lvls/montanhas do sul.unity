@@ -431,16 +431,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.1200256
       objectReference: {fileID: 0}
-    - target: {fileID: 5123777857353537184, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.45
-      objectReference: {fileID: 0}
     - target: {fileID: 5123777856147229662, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
       objectReference: {fileID: 0}
+    - target: {fileID: 5123777857353537184, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c549f124d6bb4f40b519378e2a6bb5e, type: 3}
     - target: {fileID: 5123777855841813623, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_Color.r
@@ -930,11 +935,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7382192244026377369, guid: 02af370fe4090c9479eab5007982e25e,
-        type: 3}
-      propertyPath: basicAtk
-      value: -25
-      objectReference: {fileID: 0}
     - target: {fileID: 7382192244075540502, guid: 02af370fe4090c9479eab5007982e25e,
         type: 3}
       propertyPath: gameControler
@@ -955,6 +955,11 @@ PrefabInstance:
       propertyPath: plataforms.Array.data[2]
       value: 
       objectReference: {fileID: 312509027}
+    - target: {fileID: 7382192244026377369, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: basicAtk
+      value: -25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02af370fe4090c9479eab5007982e25e, type: 3}
 --- !u!33 &4568761611753695258

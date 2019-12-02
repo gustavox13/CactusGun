@@ -1648,6 +1648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuantIten
       objectReference: {fileID: 0}
+    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c319275f458239418955506c4219b0a, type: 3}
     m_RemovedComponents:
     - {fileID: 5123777856984944966, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}
     - {fileID: 5123777856956859347, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}

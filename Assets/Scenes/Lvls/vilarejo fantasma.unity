@@ -3185,16 +3185,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4900406043818751467, guid: 4d2294c91d06ce64fab5e530863170e9,
-        type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7339950068674784796, guid: 4d2294c91d06ce64fab5e530863170e9,
-        type: 3}
-      propertyPath: basicAtk
-      value: -25
-      objectReference: {fileID: 0}
     - target: {fileID: 4900406044157728924, guid: 4d2294c91d06ce64fab5e530863170e9,
         type: 3}
       propertyPath: gameControler
@@ -3215,6 +3205,16 @@ PrefabInstance:
       propertyPath: plataforms.Array.data[2]
       value: 
       objectReference: {fileID: 9969294}
+    - target: {fileID: 4900406043818751467, guid: 4d2294c91d06ce64fab5e530863170e9,
+        type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339950068674784796, guid: 4d2294c91d06ce64fab5e530863170e9,
+        type: 3}
+      propertyPath: basicAtk
+      value: -25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d2294c91d06ce64fab5e530863170e9, type: 3}
 --- !u!1 &4900406042623159546 stripped
@@ -3360,6 +3360,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.9999962
       objectReference: {fileID: 0}
+    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ae74fa36cd60844e82b3dda4a689378, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}
 --- !u!1 &5286441833231728800
