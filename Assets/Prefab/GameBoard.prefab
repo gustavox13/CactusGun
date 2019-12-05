@@ -4869,9 +4869,9 @@ MonoBehaviour:
   emblemG: {fileID: 5123777856814446427}
   audios:
   - {fileID: 8300000, guid: 90c3c681dd4ed6041bb973d46368f929, type: 3}
-  - {fileID: 8300000, guid: 55ceb44016efdf84c8a54cb99d881cc7, type: 3}
-  - {fileID: 8300000, guid: 4a27d446eca923848a47d1d057afb60f, type: 3}
-  - {fileID: 8300000, guid: c83137a3b86912b4ebe3c24b8da48a77, type: 3}
+  - {fileID: 8300000, guid: 65b19828edffdcb44ba21b1de79a91fc, type: 3}
+  - {fileID: 8300000, guid: 07a743cea6bf2844db60c6df3ada866b, type: 3}
+  - {fileID: 8300000, guid: 53c6ca0184de38d478902055ab1c4fe4, type: 3}
 --- !u!82 &5123777856956859346
 AudioSource:
   m_ObjectHideFlags: 0

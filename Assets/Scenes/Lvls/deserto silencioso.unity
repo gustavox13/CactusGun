@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: plataforms.Array.data[2]
       value: 
       objectReference: {fileID: 1367425396}
+    - target: {fileID: 7763690590998380220, guid: 4b6d686fb1b63904fa806e1fb6ea534f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 63880d7a44685624e9fe7a14a11b8273, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6d686fb1b63904fa806e1fb6ea534f, type: 3}
 --- !u!1001 &861950268
@@ -288,6 +293,36 @@ PrefabInstance:
       propertyPath: gameControler
       value: 
       objectReference: {fileID: 1367425402}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ef9443134b65da42bb1634bb0be4ec7, type: 3}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: Priority
+      value: 168
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.33888888
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 525.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382192244026377348, guid: 02af370fe4090c9479eab5007982e25e,
+        type: 3}
+      propertyPath: MinDistance
+      value: 6.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02af370fe4090c9479eab5007982e25e, type: 3}
 --- !u!1 &942775735 stripped
@@ -387,11 +422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 571c23f885bdca9428f5f811d3fa5b3b, type: 3}
+      objectReference: {fileID: 8300000, guid: 7ef9443134b65da42bb1634bb0be4ec7, type: 3}
     - target: {fileID: 6119524438508752188, guid: dd792329c58dffb4f9c60530b5719347,
         type: 3}
       propertyPath: m_Volume
-      value: 0.741
+      value: 0.956
       objectReference: {fileID: 0}
     - target: {fileID: 6119524438508752179, guid: dd792329c58dffb4f9c60530b5719347,
         type: 3}
@@ -558,21 +593,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3
       objectReference: {fileID: 0}
-    - target: {fileID: 4841974147331447426, guid: ffbe80aae94d19a469ec4775287459f4,
+    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.0998535
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b55519f86b08e848854a8680e1c948f, type: 3}
+    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.844
       objectReference: {fileID: 0}
     - target: {fileID: 5123777856147229662, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.33
       objectReference: {fileID: 0}
-    - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
+    - target: {fileID: 4841974147331447426, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 2b55519f86b08e848854a8680e1c948f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.0998535
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}
 --- !u!4 &1367425396 stripped

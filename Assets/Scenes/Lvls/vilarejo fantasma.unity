@@ -3028,6 +3028,16 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2879811475145130268, guid: 93d95d0440387d64cae247a144f779ae,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 238edda92028d104d9b6a9e4b9902302, type: 3}
+    - target: {fileID: 2879811475145130268, guid: 93d95d0440387d64cae247a144f779ae,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.797
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d95d0440387d64cae247a144f779ae, type: 3}
 --- !u!1 &2798097964799113636 stripped
@@ -3205,6 +3215,11 @@ PrefabInstance:
       propertyPath: plataforms.Array.data[2]
       value: 
       objectReference: {fileID: 9969294}
+    - target: {fileID: 4900406043818751469, guid: 4d2294c91d06ce64fab5e530863170e9,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 812712433d7c5f747bc7e21c883c919a, type: 3}
     - target: {fileID: 4900406043818751467, guid: 4d2294c91d06ce64fab5e530863170e9,
         type: 3}
       propertyPath: maxHealth
@@ -3324,17 +3339,19 @@ PrefabInstance:
         type: 3}
       propertyPath: weapons.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1299319975290900, guid: 76fb57fb20c666f4e81a21ec80de5c00,
+        type: 3}
     - target: {fileID: 5123777856956859358, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: weapons.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 100004, guid: 6461d98a0eab06d4eac2f48c247db987, type: 3}
     - target: {fileID: 5123777856956859358, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: weapons.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1934792585168978, guid: 5412c5536c283f84e8665ba7a87fecb9,
+        type: 3}
     - target: {fileID: 5123777855841813609, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x

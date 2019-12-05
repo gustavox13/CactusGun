@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
     public void TakeDamange(int amount)
     {
         currentHealth += amount;
-        
+        GetComponent<AudioSource>().Play();
 
         float currentHealthPct = (float)currentHealth / (float)maxHealth;
         OnHealthPctChanged(currentHealthPct);
