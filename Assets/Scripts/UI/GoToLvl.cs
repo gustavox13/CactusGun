@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using CloudOnce;
+using UnityEngine.Advertisements;
 
 public class GoToLvl : MonoBehaviour
 {
@@ -54,6 +55,10 @@ public class GoToLvl : MonoBehaviour
     private GameObject EsqueletoNvl1;
     [SerializeField]
     private GameObject EsqueletoNvl2;
+
+    //ADS
+    private string adid = "3388768";
+    private string videoad = "video";
 
 
 
@@ -108,7 +113,10 @@ public class GoToLvl : MonoBehaviour
 
     public void GoPress()
     {
-        SceneManager.LoadScene(nameScene);
+
+        Adshower();
+
+        //SceneManager.LoadScene(nameScene);
 
     }
 
@@ -238,4 +246,39 @@ public class GoToLvl : MonoBehaviour
 
         }
     }
+
+    void Adshower()
+    {
+        if (Advertisement.IsReady(videoad))
+        {
+            var options = new ShowOptions { resultCallback = HandleShowResult };
+            Advertisement.Show(videoad, options);
+
+        }
+
+        
+
+    }
+
+    private void HandleShowResult(ShowResult result)
+    {
+        switch(result)
+        {
+            case ShowResult.Finished:
+                SceneManager.LoadScene(nameScene);
+                Debug.Log("Slaaaayer");
+                break;
+
+            case ShowResult.Skipped:
+                SceneManager.LoadScene(nameScene);
+
+                break;
+
+
+        }
+    }
+
+  
 }
+
+
