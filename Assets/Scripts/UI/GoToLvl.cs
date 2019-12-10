@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using CloudOnce;
-using UnityEngine.Advertisements;
+
 
 public class GoToLvl : MonoBehaviour
 {
@@ -56,17 +56,13 @@ public class GoToLvl : MonoBehaviour
     [SerializeField]
     private GameObject EsqueletoNvl2;
 
-    //ADS
-    private string adid = "3388768";
-    private string videoad = "video";
-
+  
 
 
     public void LoadLvlStats()
     {
 
        
-
 
         vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
         valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
@@ -104,36 +100,26 @@ public class GoToLvl : MonoBehaviour
 
     public void LevelPresses(string currentLvl)
     {
+
         nameScene = currentLvl;
         SetCurrentEnemy();
         PlayerStats.LvlStats.CurrentMap = nameScene;
-       // UpdateTextLvl();//Adicionado para atualizar texto Jean
+      
      
     }
 
     public void GoPress()
     {
 
-        Adshower();
+        //Adshower();
+        gameObject.GetComponent<Adcaller>().Adshower();
+        
 
         //SceneManager.LoadScene(nameScene);
 
     }
 
-    //Teste rotina para atualizar texto Jean
-   /* private void UpdateTextLvl()
-    {
-        minaAbandonada.text = PlayerStats.LvlStats.MinaAbandonada + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        montanhasDoSul.text = PlayerStats.LvlStats.MontanhasDoSul + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        cidadela.text = PlayerStats.LvlStats.Cidadela + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        florestaNoturna.text = PlayerStats.LvlStats.FlorestaNoturna + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        pantanoDosMortos.text = PlayerStats.LvlStats.PantanoDosMortos + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        desertoSilencioso.text = PlayerStats.LvlStats.DesertoSilencioso + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        vilarejoFantasma.text = PlayerStats.LvlStats.VilarejoFantasma + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-        valeDoDesespero.text = PlayerStats.LvlStats.ValeDoDesespero + "/" + (PlayerStats.LvlStats.MaxLvlRepeat).ToString();
-    }*/
-
-
+  
 
     private void SetCurrentEnemy()
     {
@@ -247,36 +233,7 @@ public class GoToLvl : MonoBehaviour
         }
     }
 
-    void Adshower()
-    {
-        if (Advertisement.IsReady(videoad))
-        {
-            var options = new ShowOptions { resultCallback = HandleShowResult };
-            Advertisement.Show(videoad, options);
-
-        }
-
-        
-
-    }
-
-    private void HandleShowResult(ShowResult result)
-    {
-        switch(result)
-        {
-            case ShowResult.Finished:
-                SceneManager.LoadScene(nameScene);
-                Debug.Log("Slaaaayer");
-                break;
-
-            case ShowResult.Skipped:
-                SceneManager.LoadScene(nameScene);
-
-                break;
-
-
-        }
-    }
+   
 
   
 }

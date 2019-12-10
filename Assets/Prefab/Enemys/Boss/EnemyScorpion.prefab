@@ -358,7 +358,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.003508025, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6807212741994256612}
   m_Father: {fileID: 6119524438078491974}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1389,7 +1390,7 @@ GameObject:
   - component: {fileID: 6119524438508752181}
   - component: {fileID: 6119524438508752180}
   m_Layer: 0
-  m_Name: EnemyScorpion 1
+  m_Name: EnemyScorpion
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1407,7 +1408,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6119524437329372042}
-  - {fileID: 6807212741994256612}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2195,18 +2195,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6807212741994256613}
-  m_LocalRotation: {x: 2.8421589e-14, y: 1, z: -3.353328e-11, w: 1.2301271e-13}
-  m_LocalPosition: {x: 0, y: 0, z: -0.379}
-  m_LocalScale: {x: 0.0059599997, y: 0.0059599997, z: 0.0059599997}
+  m_LocalRotation: {x: 0.07572819, y: -0.0075630797, z: 0.0005744569, w: -0.99709964}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0002}
+  m_LocalScale: {x: 0.00007436546, y: 0.00009460656, z: 0.00009460657}
   m_Children:
   - {fileID: 6807212743034894967}
   - {fileID: 6807212742982847329}
-  m_Father: {fileID: 6119524438508752190}
-  m_RootOrder: 1
+  m_Father: {fileID: 6119524437240151440}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.08468927, y: 2.1153808}
+  m_AnchoredPosition: {x: -0.0004, y: 0.0035}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6807212741994256617

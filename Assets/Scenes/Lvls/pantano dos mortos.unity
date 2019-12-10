@@ -213,17 +213,17 @@ PrefabInstance:
         type: 3}
       propertyPath: weapons.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2064153281}
     - target: {fileID: 5123777856956859358, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: weapons.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2064153282}
     - target: {fileID: 5123777856956859358, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: weapons.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2064153280}
     - target: {fileID: 5123777855841813609, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -402,6 +402,24 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 63880d7a44685624e9fe7a14a11b8273, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6d686fb1b63904fa806e1fb6ea534f, type: 3}
+--- !u!1 &2064153280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8482641651688693908, guid: 4b6d686fb1b63904fa806e1fb6ea534f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064153279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2064153281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3063032955658887581, guid: 4b6d686fb1b63904fa806e1fb6ea534f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064153279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2064153282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7763690589728844239, guid: 4b6d686fb1b63904fa806e1fb6ea534f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2064153279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1162678415451808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5303528765034935549, guid: 0081cf28ad1f13c45bc6f02b2a0d5046,

@@ -2401,7 +2401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26932883, y: 0.078419656}
   m_AnchorMax: {x: 0.72549325, y: 0.47762948}
-  m_AnchoredPosition: {x: 1.5, y: 3.500698}
+  m_AnchoredPosition: {x: 1.5, y: 3.5007439}
   m_SizeDelta: {x: -13.899994, y: -8.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450612319
@@ -8369,49 +8369,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514986836}
   m_CullTransparentMesh: 0
---- !u!1 &1515210571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1515210573}
-  - component: {fileID: 1515210572}
-  m_Layer: 0
-  m_Name: Ad
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1515210572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515210571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ebdf9f08eb7af743ab377ccad1366f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1515210573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515210571}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525308504
 GameObject:
   m_ObjectHideFlags: 0
@@ -10931,7 +10888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18.204}
   m_AnchorMin: {x: 0, y: 0.837}
   m_AnchorMax: {x: 0.43986323, y: 1}
-  m_AnchoredPosition: {x: 2.5, y: 40.4}
+  m_AnchoredPosition: {x: 2.5, y: 40.400005}
   m_SizeDelta: {x: 66.7, y: 66.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914220789
@@ -11576,6 +11533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2078226663}
   - component: {fileID: 2078226664}
+  - component: {fileID: 2078226665}
   m_Layer: 0
   m_Name: LvlControler
   m_TagString: Untagged
@@ -11628,6 +11586,18 @@ MonoBehaviour:
   Espantalho: {fileID: 657990444}
   EsqueletoNvl1: {fileID: 1059568906}
   EsqueletoNvl2: {fileID: 864911945}
+--- !u!114 &2078226665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078226662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ebdf9f08eb7af743ab377ccad1366f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083919020
 GameObject:
   m_ObjectHideFlags: 0

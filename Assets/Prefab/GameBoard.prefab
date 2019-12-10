@@ -4599,7 +4599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5123777856885544784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4802,9 +4802,9 @@ MonoBehaviour:
   tamborAnim: {fileID: 5123777857057578875}
   SwipeField: {fileID: 5123777857351373653}
   weapons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1299319975290900, guid: 76fb57fb20c666f4e81a21ec80de5c00, type: 3}
+  - {fileID: 100004, guid: 6461d98a0eab06d4eac2f48c247db987, type: 3}
+  - {fileID: 1934792585168978, guid: 5412c5536c283f84e8665ba7a87fecb9, type: 3}
 --- !u!114 &5123777856956859359
 MonoBehaviour:
   m_ObjectHideFlags: 0

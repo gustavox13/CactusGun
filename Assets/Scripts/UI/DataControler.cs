@@ -72,8 +72,6 @@ public class DataControler : MonoBehaviour
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
 
-
-
   
         moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
         tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
