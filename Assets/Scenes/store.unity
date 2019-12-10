@@ -193,7 +193,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1093095524}
         m_MethodName: BuyTNT
         m_Mode: 1
         m_Arguments:
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1093095524}
         m_MethodName: BuyKit
         m_Mode: 1
         m_Arguments:
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1093095524}
         m_MethodName: BuyTrap
         m_Mode: 1
         m_Arguments:
@@ -932,9 +932,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: BuyProductID
-        m_Mode: 5
+      - m_Target: {fileID: 1093095524}
+        m_MethodName: BuyRemoveADS
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1056,10 +1056,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093095525}
-  - component: {fileID: 1093095524}
   - component: {fileID: 1093095523}
+  - component: {fileID: 1093095524}
   m_Layer: 0
-  m_Name: DataControler
+  m_Name: StoreControler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,29 +1086,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093095522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ca990ba4521cfc42af4f3028c1cce1b, type: 3}
+  m_Script: {fileID: 11500000, guid: da5a48fb8320a5e4abcb6d368819ff54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moneyMin: 100
   moneyMed: 700
   moneyMax: 2000
-  tntPrice: 10
-  trapPrice: 10
-  kitPrice: 10
+  tntPrice: 500
+  trapPrice: 500
+  kitPrice: 900
   tntQuant: 5
   trapQuant: 5
   kitQuant: 10
-  moneyInfo: {fileID: 0}
-  tntInfo: {fileID: 0}
-  trapInfo: {fileID: 0}
-  minaAbandonada: {fileID: 0}
-  montanhasDoSul: {fileID: 0}
-  cidadela: {fileID: 0}
-  florestaNoturna: {fileID: 0}
-  pantanoDosMortos: {fileID: 0}
-  desertoSilencioso: {fileID: 0}
-  vilarejoFantasma: {fileID: 0}
-  valeDoDesespero: {fileID: 0}
+  moneyInfo: {fileID: 1694638343}
+  tntInfo: {fileID: 1301362244}
+  trapInfo: {fileID: 1458937378}
 --- !u!4 &1093095525
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,9 +1196,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: BuyProductID
-        m_Mode: 5
+      - m_Target: {fileID: 1093095524}
+        m_MethodName: BuyMoneyMed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2385,7 +2377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.84186333, y: 0.0374986}
-  m_AnchoredPosition: {x: -4, y: -23.823471}
+  m_AnchoredPosition: {x: -4.0000076, y: -23.823471}
   m_SizeDelta: {x: -0.91000366, y: 44.70259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726116680
@@ -2462,7 +2454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.3057579, y: 0}
-  m_AnchoredPosition: {x: -4.2900085, y: -19.699997}
+  m_AnchoredPosition: {x: -4.290024, y: -19.699997}
   m_SizeDelta: {x: -1.4700003, y: 38.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779168393
@@ -2611,7 +2603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.3057579, y: 0}
-  m_AnchoredPosition: {x: -3.322174, y: -19.699997}
+  m_AnchoredPosition: {x: -3.3221817, y: -19.699997}
   m_SizeDelta: {x: -1.453948, y: 38.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790133397
@@ -2879,9 +2871,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: BuyProductID
-        m_Mode: 5
+      - m_Target: {fileID: 1093095524}
+        m_MethodName: BuyMoneyMax
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3234,7 +3226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17186323, y: 0}
   m_AnchorMax: {x: 0.84186333, y: 0.0374986}
-  m_AnchoredPosition: {x: -3, y: -23.823486}
+  m_AnchoredPosition: {x: -3.0000076, y: -23.823486}
   m_SizeDelta: {x: -0.8296814, y: 44.70259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988352594
@@ -3369,8 +3361,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StoreBackButton
+      - m_Target: {fileID: 1093095524}
+        m_MethodName: ExitStore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3645,9 +3637,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: BuyProductID
-        m_Mode: 5
+      - m_Target: {fileID: 1093095524}
+        m_MethodName: BuyMoneyMin
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

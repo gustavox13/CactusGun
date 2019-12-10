@@ -93,7 +93,7 @@ public class AnimationsButtonMenu : MonoBehaviour {
 
     public void StoreButton()
     {
-        storeScreen.SetActive(true);
+        SceneManager.LoadScene("store");
     }
 
 
