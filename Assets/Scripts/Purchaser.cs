@@ -66,6 +66,7 @@ using UnityEngine.Purchasing;
             builder.AddProduct("coins100", ProductType.Consumable);
             builder.AddProduct("coins700", ProductType.Consumable);
             builder.AddProduct("coins2000", ProductType.Consumable);
+           builder.AddProduct("removeads", ProductType.Consumable);
         // And finish adding the subscription product. Notice this uses store-specific IDs, illustrating
         // if the Product ID was configured differently between Apple and Google stores. Also note that
         // one uses the general kProductIDSubscription handle inside the game - the store-specific IDs 
@@ -249,6 +250,15 @@ using UnityEngine.Purchasing;
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             DC.gameObject.GetComponent<DataControler>().BuyMoneyMax();
+            // TODO: The subscription item has been successfully purchased, grant this to the player.
+        }
+        // Or ... an unknown product has been purchased by this user. Fill in additional products here....
+
+        else if (String.Equals(args.purchasedProduct.definition.id, "removeads", StringComparison.Ordinal))
+        {
+            Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+            DC.gameObject.GetComponent<DataControler>().BuyRemoveADS();
+            Debug.Log("REMOVE ADS");
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....

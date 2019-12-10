@@ -100,5 +100,13 @@ namespace CloudOnce
             get { return s_vilarejoFantasma.Value; }
             set { s_vilarejoFantasma.Value = value; }
         }
+
+        private static readonly CloudCurrencyInt s_ads = new CloudCurrencyInt("Ads", 0, false);
+
+        public static int Ads
+        {
+            get { return s_ads.Value; }
+            set { s_ads.Value = value; }
+        }
     }
 }

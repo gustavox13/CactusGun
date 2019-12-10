@@ -29,6 +29,8 @@ public class DataControler : MonoBehaviour
     [SerializeField]
     private int kitQuant;
 
+    
+
 
     [SerializeField]
     private Text moneyInfo;
@@ -233,6 +235,14 @@ public class DataControler : MonoBehaviour
     {
         //PlayerStats.PlayerItens.Coins += moneyMax;
         CloudVariables.Coins = moneyMax; //Jean
+
+        SaveInventory();
+        LoadValues();
+    }
+
+    public void BuyRemoveADS()
+    {
+        CloudVariables.Ads = 1;
 
         SaveInventory();
         LoadValues();

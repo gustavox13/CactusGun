@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 using UnityEngine.SceneManagement;
+using CloudOnce;
 
 public class Adcaller : MonoBehaviour
 {
 
 
     private string adid = "3388768";
-    private string videoad = "video";
+    private string videoad = "rewardedVideo";
     private int count = 0;
     
     // Start is called before the first frame update
@@ -21,11 +22,11 @@ public class Adcaller : MonoBehaviour
 
     public void Adshower()
     {
-        if (Advertisement.IsReady(videoad) && count % 2 == 0)
+        if (Advertisement.IsReady(videoad) && count % 2 == 0 && CloudVariables.Ads == 0)
         {
             
             count++;
-            Debug.Log("CCCCCC" + count);
+            Debug.Log("ADS = " + CloudVariables.Ads);
 
             
             var options = new ShowOptions { resultCallback = HandleShowResult};

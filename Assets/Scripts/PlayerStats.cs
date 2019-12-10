@@ -31,6 +31,7 @@ public class PlayerStats : MonoBehaviour
         public static int Trap = 0;
         public static int Tnt = 0;
         public static int Coins = 0;
+        public static int removeADS = 0;
 
     }
 

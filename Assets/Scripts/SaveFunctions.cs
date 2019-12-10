@@ -14,9 +14,9 @@ public class SaveFunctions : MonoBehaviour
     private void Start()
     {
 
-        Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
-        Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
-        Cloud.Initialize(true, true);
+       // Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
+      // Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
+      //  Cloud.Initialize(true, true);
 
  
     }
@@ -33,8 +33,11 @@ public class SaveFunctions : MonoBehaviour
 
     void CloudOnceLoadComplete(bool success)
     {
-       // statusDoBang.text = success.ToString();
-        
+        // statusDoBang.text = success.ToString();
+        LoadInventory();
+        LoadLevel();
+        Save();
+
     }
 
     void Save()
@@ -45,6 +48,7 @@ public class SaveFunctions : MonoBehaviour
     public void Load()
     {
         Cloud.Storage.Load();
+        
     }
 
 
@@ -135,6 +139,8 @@ public class SaveFunctions : MonoBehaviour
         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
         PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
+
+        PlayerStats.PlayerItens.removeADS = CloudVariables.Ads;
 
         //Jean
        // CloudVariables.Coins = CloudVariables.Coins;
