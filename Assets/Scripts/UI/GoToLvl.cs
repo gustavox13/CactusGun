@@ -56,8 +56,11 @@ public class GoToLvl : MonoBehaviour
     [SerializeField]
     private GameObject EsqueletoNvl2;
 
-  
 
+    public void Awake()
+    {
+        LoadLvlStats();
+    }
 
     public void LoadLvlStats()
     {

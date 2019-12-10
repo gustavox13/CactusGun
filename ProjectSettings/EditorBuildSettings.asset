@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 67e67bf707169d64287e607804ee91a0
   - enabled: 1
+    path: Assets/Scenes/SelectLevel.unity
+    guid: 6e575a0cedd8a434c8d15f5969f05a71
+  - enabled: 1
+    path: Assets/Scenes/store.unity
+    guid: f9fe6b3854b4db04abde8ff8a5a21a14
+  - enabled: 1
     path: Assets/Scenes/Lvls/vilarejo fantasma.unity
     guid: 9e9ea17482e1c614b82ed2ff0cdd0234
   - enabled: 1
