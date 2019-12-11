@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CloudOnce;
+using UnityEngine.SceneManagement;
 
 public class MapScreenControler : MonoBehaviour
 {
@@ -113,5 +114,20 @@ public class MapScreenControler : MonoBehaviour
 
     }
 
+
+    public void BackMapButton()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+
+    public void BackWantedButton()
+    {
+        //WANTED SCREEN ACTIONS
+        wantedScreen.SetBool("WantedMapFade", false);
+        goButton.SetBool("ButtonFade", false);
+
+    }
 
 }
