@@ -40,19 +40,42 @@ public class TimerAnimation : MonoBehaviour {
     [SerializeField]
     private Animator shotTransition;
 
+
+    [SerializeField]
+    public AudioClip sound;
+    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+
+
+
+
     private void Awake()
     {
         DesactiveAllTracks();
         ConvertTimerTracks();
     }
 
+    private void Start()
+    {
+        PlaySound();
+    }
+
+
     private void FixedUpdate () {
         Timer();
         ShowTracks();
 	}
 
+
+    public void PlaySound()
+    {
+
+        source.PlayOneShot(sound);
+    }
+
+
     private void ShowTracks()
     {
+
         if (currentTime < timeTrack1)
         {
             ActiveTrack(Track1);

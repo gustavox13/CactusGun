@@ -1018,6 +1018,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1867585284398220, guid: a6deef909c6437e42908dfe33712c937,
         type: 3}
+    - target: {fileID: 7339950068674784796, guid: 4d2294c91d06ce64fab5e530863170e9,
+        type: 3}
+      propertyPath: basicAtk
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d2294c91d06ce64fab5e530863170e9, type: 3}
 --- !u!1 &1084901713 stripped
@@ -2118,7 +2123,7 @@ PrefabInstance:
     - target: {fileID: 1265324514498299003, guid: 360f0748765ae4744940e0f4b37935af,
         type: 3}
       propertyPath: maxHealth
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6738895046139000613, guid: 360f0748765ae4744940e0f4b37935af,
         type: 3}

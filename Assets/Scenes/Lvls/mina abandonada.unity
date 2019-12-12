@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -264,6 +264,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.6999512
       objectReference: {fileID: 0}
+    - target: {fileID: 5123777857188138921, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777855454249887, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777857057578877, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -108.499756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856550639845, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496735957157694143, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.22999573
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 14.593002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_Name
+      value: QuantItens
+      objectReference: {fileID: 0}
     - target: {fileID: 5123777856880993491, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_IsActive
@@ -294,20 +334,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.0999756
       objectReference: {fileID: 0}
-    - target: {fileID: 5123777857057578877, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -108.499756
-      objectReference: {fileID: 0}
     - target: {fileID: 2613933216228840822, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_Name
-      value: QuantItens
       objectReference: {fileID: 0}
     - target: {fileID: 5123777856610657346, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
@@ -329,21 +359,6 @@ PrefabInstance:
       propertyPath: quantItens
       value: 
       objectReference: {fileID: 1590546519}
-    - target: {fileID: 3496735957157694143, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.22999573
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2000046
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 14.593002
-      objectReference: {fileID: 0}
     - target: {fileID: 212592237786582792, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_Text
@@ -617,7 +632,7 @@ PrefabInstance:
     - target: {fileID: 7170841845568566578, guid: 93d95d0440387d64cae247a144f779ae,
         type: 3}
       propertyPath: basicAtk
-      value: -50
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 2829281277570043688, guid: 93d95d0440387d64cae247a144f779ae,
         type: 3}
@@ -762,7 +777,7 @@ PrefabInstance:
     - target: {fileID: 4945119699546671182, guid: 06ac9cebc5b2c284fbc2f3158a161207,
         type: 3}
       propertyPath: maxHealth
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7278706906995887344, guid: 06ac9cebc5b2c284fbc2f3158a161207,
         type: 3}
@@ -797,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 7249466357377430543, guid: 06ac9cebc5b2c284fbc2f3158a161207,
         type: 3}
       propertyPath: basicAtk
-      value: -30
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ac9cebc5b2c284fbc2f3158a161207, type: 3}

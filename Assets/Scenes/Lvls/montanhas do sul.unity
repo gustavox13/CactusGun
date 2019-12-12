@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44308224, g: 0.4922899, b: 0.5720001, a: 1}
+  m_IndirectSpecularColor: {r: 0.44308257, g: 0.49229056, b: 0.57200086, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -459,15 +459,45 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.1200256
       objectReference: {fileID: 0}
-    - target: {fileID: 5123777857353537184, guid: ffbe80aae94d19a469ec4775287459f4,
+    - target: {fileID: 5123777857188138921, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.45
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777855454249887, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856550639845, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496735957157694143, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.093002
       objectReference: {fileID: 0}
     - target: {fileID: 5123777856147229662, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777857353537184, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 5123777855841813623, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
@@ -727,6 +757,16 @@ PrefabInstance:
       propertyPath: bulletSpawn
       value: 
       objectReference: {fileID: 541895059}
+    - target: {fileID: 7679157922384821298, guid: 7b4792035d4cd714d9abde7ada474382,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679157922384821299, guid: 7b4792035d4cd714d9abde7ada474382,
+        type: 3}
+      propertyPath: basicAtk
+      value: -40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b4792035d4cd714d9abde7ada474382, type: 3}
 --- !u!1 &762895443 stripped
@@ -1227,8 +1267,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 1
@@ -1301,8 +1339,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 763a9e8ea0bea9545b8f9deaea63b9c3, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
