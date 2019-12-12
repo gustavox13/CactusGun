@@ -96,7 +96,7 @@ public class MapScreenControler : MonoBehaviour
 
     public void LevelSelectAnim()
     {
-        //coloque a animação do mapa aqui
+      
 
         //MOVE A TELA WANTED
         StartCoroutine(TimeLevelSelectAnim());

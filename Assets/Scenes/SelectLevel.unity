@@ -362,7 +362,7 @@ RectTransform:
   m_Children:
   - {fileID: 1402979063}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.41250005, y: 0.6081226}
   m_AnchorMax: {x: 0.5098333, y: 0.6547807}
@@ -477,6 +477,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: pantano dos mortos
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &269666525
@@ -743,6 +754,17 @@ MonoBehaviour:
           m_StringArgument: deserto silencioso
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &374835298
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1019,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: apearsButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &418681654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,13 +1167,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 859826786}
+  - {fileID: 1700243876}
+  - {fileID: 262179787}
   - {fileID: 1580274429}
-  - {fileID: 880770722}
   - {fileID: 1406342126}
   - {fileID: 1934490858}
-  - {fileID: 262179787}
-  - {fileID: 1700243876}
-  - {fileID: 859826786}
+  - {fileID: 880770722}
   - {fileID: 372112796}
   m_Father: {fileID: 1362219074}
   m_RootOrder: 3
@@ -1248,8 +1281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.066656254}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1.6299992}
-  m_SizeDelta: {x: 80.6, y: 2.540001}
+  m_AnchoredPosition: {x: -3.040039, y: 0}
+  m_SizeDelta: {x: 80.6, y: -40.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614944182
 MonoBehaviour:
@@ -1924,7 +1957,7 @@ RectTransform:
   m_Children:
   - {fileID: 1678850396}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.68216676, y: 0.784342}
   m_AnchorMax: {x: 0.7848333, y: 0.8332194}
@@ -2041,6 +2074,17 @@ MonoBehaviour:
           m_StringArgument: vilarejo fantasma
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &880770721
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,7 +2118,7 @@ RectTransform:
   m_Children:
   - {fileID: 416867948}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.79455566, y: 0.26700002}
   m_AnchorMax: {x: 0.8918333, y: 0.3136581}
@@ -2191,6 +2235,17 @@ MonoBehaviour:
           m_StringArgument: montanhas do sul
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &898559398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,6 +2257,7 @@ GameObject:
   - component: {fileID: 898559399}
   - component: {fileID: 898559402}
   - component: {fileID: 898559401}
+  - component: {fileID: 898559400}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -2225,9 +2281,28 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.1113125}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.399902, y: 2.899994}
-  m_SizeDelta: {x: 161.2, y: 63.9}
+  m_AnchoredPosition: {x: 14.399902, y: 596.23}
+  m_SizeDelta: {x: 161.2, y: -1122.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &898559400
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898559398}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17b4e63938426354c93365a641027909, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &898559401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2470,6 +2545,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1001374238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001374239}
+  - component: {fileID: 1001374240}
+  m_Layer: 0
+  m_Name: Anim Controler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001374239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001374238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1087.1486, y: -151.17157, z: 1842.7563}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001374240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001374238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4590c084f08b54aba0388ba3313409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapOpen: {fileID: 898559400}
+  buttonsMap: {fileID: 589669773}
+  buttonBack: {fileID: 1140307846}
 --- !u!1 &1070142215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,7 +3473,7 @@ RectTransform:
   m_Children:
   - {fileID: 1909766952}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.416}
   m_AnchorMax: {x: 0.5945557, y: 0.46241295}
@@ -3467,6 +3588,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: cidadela
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1441891732
@@ -3820,7 +3952,7 @@ RectTransform:
   m_Children:
   - {fileID: 738701660}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23900001, y: 0.24558705}
   m_AnchorMax: {x: 0.33061114, y: 0.28953552}
@@ -3935,6 +4067,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: mina abandonada
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1583200337
@@ -4386,6 +4529,17 @@ MonoBehaviour:
           m_StringArgument: vale do desespero
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1700243876
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4399,7 +4553,7 @@ RectTransform:
   m_Children:
   - {fileID: 1844872797}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.63077784, y: 0.697342}
   m_AnchorMax: {x: 0.72638893, y: 0.7442194}
@@ -4786,7 +4940,7 @@ RectTransform:
   m_Children:
   - {fileID: 1201926456}
   m_Father: {fileID: 589669774}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80011123, y: 0.404}
   m_AnchorMax: {x: 0.8918333, y: 0.453}
@@ -4901,6 +5055,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: floresta noturna
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1001374240}
+        m_MethodName: OcultButtonsMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2127988062

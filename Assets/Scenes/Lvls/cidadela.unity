@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45135093, g: 0.50034183, b: 0.5696082, a: 1}
+  m_IndirectSpecularColor: {r: 0.45135093, g: 0.50034183, b: 0.569608, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1757,6 +1757,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.1200104
       objectReference: {fileID: 0}
+    - target: {fileID: 926288715216146191, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 5123777856985231967, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_audioClip
@@ -1767,20 +1772,55 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 1.0998535
       objectReference: {fileID: 0}
-    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
-        type: 3}
-      propertyPath: m_Name
-      value: QuantIten
-      objectReference: {fileID: 0}
     - target: {fileID: 1192998832839111555, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2.1200256
       objectReference: {fileID: 0}
-    - target: {fileID: 926288715216146191, guid: ffbe80aae94d19a469ec4775287459f4,
+    - target: {fileID: 5123777857188138921, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777855454249887, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777857057578877, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: -108.49988
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856550639845, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496735957157694143, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902695761724442536, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414419740325758389, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_Name
+      value: QuantIten
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856956859345, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: moneySilver
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777856956859345, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: moneyGold
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5123777856984944966, guid: ffbe80aae94d19a469ec4775287459f4, type: 3}

@@ -185,7 +185,7 @@ public class CanvasControler : MonoBehaviour
 
     private void PlayerRank()
     {
-        if (player.GetComponent<Health>().CurrentHealth == 100) //GOLD TIER
+        if (player.GetComponent<Health>().CurrentHealth >= 100) //GOLD TIER
         {
             moneyG.SetActive(true);
             emblemG.SetActive(true);

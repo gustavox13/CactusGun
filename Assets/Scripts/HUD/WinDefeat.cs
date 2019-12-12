@@ -8,7 +8,7 @@ public class WinDefeat : MonoBehaviour {
 
 	public void MenuPress()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("SelectLevel");
     }
 
     public void AgainPress()
