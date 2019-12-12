@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44973958, g: 0.49980438, b: 0.5756251, a: 1}
+  m_IndirectSpecularColor: {r: 0.44973975, g: 0.49980444, b: 0.57562584, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -666,6 +666,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 18.093002
       objectReference: {fileID: 0}
+    - target: {fileID: 5123777857437364888, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.4998474
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123777857335980605, guid: ffbe80aae94d19a469ec4775287459f4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.4998474
+      objectReference: {fileID: 0}
     - target: {fileID: 5123777856147229662, guid: ffbe80aae94d19a469ec4775287459f4,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -839,6 +849,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1856200849447700654, guid: 3658fae08ec563e468e12ad27b218b2f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856200849447700654, guid: 3658fae08ec563e468e12ad27b218b2f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856200849447700654, guid: 3658fae08ec563e468e12ad27b218b2f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856200849447700654, guid: 3658fae08ec563e468e12ad27b218b2f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5690.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856200849447700649, guid: 3658fae08ec563e468e12ad27b218b2f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27d43f6a4c86a134391f88791628b15f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3658fae08ec563e468e12ad27b218b2f, type: 3}
 --- !u!4 &1856200849906488214 stripped

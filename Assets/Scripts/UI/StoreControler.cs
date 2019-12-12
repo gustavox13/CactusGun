@@ -126,7 +126,7 @@ public class StoreControler : MonoBehaviour
     public void BuyMoneyMax()
     {
         //PlayerStats.PlayerItens.Coins += moneyMax;
-        CloudVariables.Coins = moneyMax; 
+        CloudVariables.Coins += moneyMax; 
 
         SaveInventory();
         LoadValues();
