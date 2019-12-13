@@ -16,6 +16,8 @@ public class Adcaller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Advertisement.Initialize(adid);
+
         count = 0;
         count = PlayerPrefs.GetInt("Count");
     }
