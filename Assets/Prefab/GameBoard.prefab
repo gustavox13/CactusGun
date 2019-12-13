@@ -2484,7 +2484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5123777856880993490}
-        m_MethodName: AgainPress
+        m_MethodName: MenuPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4799,7 +4799,7 @@ MonoBehaviour:
   myTime: 0
   tempoTiro: 0
   animWeapons:
-  - {fileID: 1794589054809232, guid: 745090245aede06469f3e34968441c2b, type: 3}
+  - {fileID: 1299319975290900, guid: 76fb57fb20c666f4e81a21ec80de5c00, type: 3}
   - {fileID: 1523315837886260, guid: 16ffb6ce2f60e1f4ab79f9f5c7ae0b6f, type: 3}
   Explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
   plataforms:
@@ -6466,6 +6466,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5123777856778321645}
     m_Modifications:
+    - target: {fileID: 95752013995757110, guid: 95112debb13dda7428ce466f84e97a5e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 224557582454954650, guid: 95112debb13dda7428ce466f84e97a5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6555,11 +6560,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 95752013995757110, guid: 95112debb13dda7428ce466f84e97a5e,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95112debb13dda7428ce466f84e97a5e, type: 3}

@@ -10,7 +10,7 @@ public class Adcaller : MonoBehaviour
 
 
     private string adid = "3388768";
-    private string videoad = "rewardedVideo";
+    private string videoad = "video";
     private int count = 0;
     
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class Adcaller : MonoBehaviour
         {
             
             count++;
-            Debug.Log("ADS = " + CloudVariables.Ads);
+            
 
             
             var options = new ShowOptions { resultCallback = HandleShowResult};
@@ -51,7 +51,7 @@ public class Adcaller : MonoBehaviour
         {
             case ShowResult.Finished:
                 SceneManager.LoadScene(PlayerStats.LvlStats.CurrentMap);
-                Debug.Log("Slaaaayer");
+              
                 break;
 
             case ShowResult.Skipped:
