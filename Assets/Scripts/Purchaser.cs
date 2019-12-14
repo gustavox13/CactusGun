@@ -25,6 +25,9 @@ using UnityEngine.Purchasing;
         public static string kProductIDConsumable = "consumable";
         public static string kProductIDNonConsumable = "nonconsumable";
         public static string kProductIDSubscription = "subscription";
+        public static string g1 = "coins100";
+        public static string g2 = "coins700";
+        public static string g3 = "coins2000";
 
         // Apple App Store-specific product identifier for the subscription product.
         private static string kProductNameAppleSubscription = "com.unity3d.subscription.new";
@@ -235,7 +238,7 @@ using UnityEngine.Purchasing;
         else if (String.Equals(args.purchasedProduct.definition.id, "coins100", StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            DC.gameObject.GetComponent<DataControler>().BuyMoneyMin();
+            DC.gameObject.GetComponent<StoreControler>().BuyMoneyMin();
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
@@ -243,13 +246,13 @@ using UnityEngine.Purchasing;
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // TODO: The subscription item has been successfully purchased, grant this to the player.
-            DC.gameObject.GetComponent<DataControler>().BuyMoneyMed();
+            DC.gameObject.GetComponent<StoreControler>().BuyMoneyMed();
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
         else if (String.Equals(args.purchasedProduct.definition.id, "coins2000", StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            DC.gameObject.GetComponent<DataControler>().BuyMoneyMax();
+            DC.gameObject.GetComponent<StoreControler>().BuyMoneyMax();
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
@@ -257,7 +260,7 @@ using UnityEngine.Purchasing;
         else if (String.Equals(args.purchasedProduct.definition.id, "removeads", StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            DC.gameObject.GetComponent<DataControler>().BuyRemoveADS();
+            DC.gameObject.GetComponent<StoreControler>().BuyRemoveADS();
             Debug.Log("REMOVE ADS");
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }

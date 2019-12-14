@@ -115,10 +115,10 @@ public class GoToLvl : MonoBehaviour
     {
 
         //Adshower();
-        gameObject.GetComponent<Adcaller>().Adshower();
+       // gameObject.GetComponent<Adcaller>().Adshower();
         
 
-        //SceneManager.LoadScene(nameScene);
+        SceneManager.LoadScene(nameScene);
 
     }
 
