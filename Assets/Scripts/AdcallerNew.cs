@@ -8,26 +8,40 @@ public class AdcallerNew : MonoBehaviour
 
     private string adid = "3388768";
     private string videoad = "video";
-
+    private int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        count = PlayerPrefs.GetInt("Count");
         Monetization.Initialize(adid, true);
 
-        if(Monetization.IsReady(videoad))
+        ShowVideo();
+       
+    }
+
+    
+    void ShowVideo()
+    {
+        if (Monetization.IsReady(videoad) && count % 2 == 0)
         {
+            count++;
             ShowAdPlacementContent ad = null;
             ad = Monetization.GetPlacementContent(videoad) as ShowAdPlacementContent;
-            if(ad != null)
+            if (ad != null)
             {
                 ad.Show();
 
             }
         }
+        else
+        {
+            count++;
+        }
+
+        PlayerPrefs.SetInt("Count", count);
     }
 
-    
 
 
 }

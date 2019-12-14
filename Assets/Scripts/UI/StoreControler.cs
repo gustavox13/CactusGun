@@ -48,9 +48,12 @@ public class StoreControler : MonoBehaviour
 
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
 
-        moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
-        tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
-        trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
+        // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
+        // tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
+        // trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
+        moneyInfo.text = CloudVariables.Coins.ToString();
+        tntInfo.text = CloudVariables.Tnt.ToString();
+        trapInfo.text = CloudVariables.Trap.ToString();
 
     }
 
