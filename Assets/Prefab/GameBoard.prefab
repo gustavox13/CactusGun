@@ -2484,7 +2484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5123777856880993490}
-        m_MethodName: MenuPress
+        m_MethodName: AgainPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2807,7 +2807,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 72c619af711f7a84d9ee158995ec7c70, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -5724,7 +5724,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 72c619af711f7a84d9ee158995ec7c70, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -6083,7 +6083,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 72c619af711f7a84d9ee158995ec7c70, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -6466,11 +6466,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5123777856778321645}
     m_Modifications:
-    - target: {fileID: 95752013995757110, guid: 95112debb13dda7428ce466f84e97a5e,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 224557582454954650, guid: 95112debb13dda7428ce466f84e97a5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6560,6 +6555,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 95752013995757110, guid: 95112debb13dda7428ce466f84e97a5e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95112debb13dda7428ce466f84e97a5e, type: 3}

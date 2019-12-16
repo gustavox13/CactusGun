@@ -21,7 +21,7 @@ namespace CloudOnce
             set { s_coins.Value = value; }
         }
 
-        private static readonly CloudCurrencyInt s_trap = new CloudCurrencyInt("Trap", 0, false);
+        private static readonly CloudCurrencyInt s_trap = new CloudCurrencyInt("Trap", 3, false);
 
         public static int Trap
         {
@@ -29,7 +29,7 @@ namespace CloudOnce
             set { s_trap.Value = value; }
         }
 
-        private static readonly CloudCurrencyInt s_tnt = new CloudCurrencyInt("Tnt", 0, false);
+        private static readonly CloudCurrencyInt s_tnt = new CloudCurrencyInt("Tnt", 3, false);
 
         public static int Tnt
         {

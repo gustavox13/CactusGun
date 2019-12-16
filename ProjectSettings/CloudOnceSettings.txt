@@ -12,14 +12,14 @@
 		{
 			"Key":"Trap",
 			"Type":"1",
-			"DefaultValue":"0",
+			"DefaultValue":"3",
 			"PersistenceType":"1",
 			"AllowNegative":false
 		},
 		{
 			"Key":"Tnt",
 			"Type":"1",
-			"DefaultValue":"0",
+			"DefaultValue":"3",
 			"PersistenceType":"1",
 			"AllowNegative":false
 		},

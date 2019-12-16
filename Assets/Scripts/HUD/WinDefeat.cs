@@ -8,13 +8,14 @@ public class WinDefeat : MonoBehaviour {
 
 	public void MenuPress()
     {
-        SceneManager.LoadScene("SelectLevel");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void AgainPress()
     {
-        
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("SelectLevel");
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
    

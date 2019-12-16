@@ -14,9 +14,9 @@ public class SaveFunctions : MonoBehaviour
     private void Start()
     {
 
-       // Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
-      // Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
-      //  Cloud.Initialize(true, true);
+       Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
+      Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
+      Cloud.Initialize(true, true);
 
  
     }
@@ -135,6 +135,7 @@ public class SaveFunctions : MonoBehaviour
 
 
         */
+        
 
         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
@@ -200,7 +201,9 @@ public class SaveFunctions : MonoBehaviour
 
 
         //CloudVariables.VilarejoFantasma = CloudVariables.VilarejoFantasma;//Jean
-       // CloudVariables.ValeDoDesespero = CloudVariables.ValeDoDesespero;//Jean
+        // CloudVariables.ValeDoDesespero = CloudVariables.ValeDoDesespero;//Jean
+
+       
 
         PlayerStats.LvlStats.VilarejoFantasma = CloudVariables.VilarejoFantasma;
         PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
