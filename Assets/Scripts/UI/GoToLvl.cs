@@ -56,6 +56,9 @@ public class GoToLvl : MonoBehaviour
     [SerializeField]
     private GameObject EsqueletoNvl2;
 
+    [SerializeField]
+    private Button btnGo;
+
 
     public void Awake()
     {
@@ -115,6 +118,7 @@ public class GoToLvl : MonoBehaviour
     {
 
         //Adshower();
+       btnGo.GetComponent<Button>().enabled = false;
         gameObject.GetComponent<Adcaller>().Adshower();
         
 

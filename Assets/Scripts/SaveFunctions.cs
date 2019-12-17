@@ -14,19 +14,17 @@ public class SaveFunctions : MonoBehaviour
     private void Start()
     {
 
-       Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
-      Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
-      Cloud.Initialize(true, true);
+      Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
+     Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
+     Cloud.Initialize(true, true);
 
  
     }
 
     void CloudOnceInitializeComplete()
     {
-        Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
-        Cloud.Storage.Load();
-
-
+       Cloud.OnInitializeComplete -= CloudOnceInitializeComplete;
+       Cloud.Storage.Load();
 
         
     }
@@ -34,9 +32,9 @@ public class SaveFunctions : MonoBehaviour
     void CloudOnceLoadComplete(bool success)
     {
         // statusDoBang.text = success.ToString();
-        LoadInventory();
-        LoadLevel();
-        Save();
+       LoadInventory();
+       LoadLevel();
+       Save();
 
     }
 

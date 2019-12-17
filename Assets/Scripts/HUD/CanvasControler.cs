@@ -196,7 +196,7 @@ public class CanvasControler : MonoBehaviour
                 {
                     //PlayerStats.PlayerItens.Coins += (moneyGold * 2);
                      CloudVariables.Coins += moneyGold * 2; //Jean
-                    goldText.text = (moneyGold * 2).ToString();
+                    goldText.text = (moneyGold + 5).ToString();
                 }
                 else
                 {
@@ -220,7 +220,7 @@ public class CanvasControler : MonoBehaviour
             {
                 CloudVariables.Coins += moneySilver * 2; //Jean
                // PlayerStats.PlayerItens.Coins += (moneySilver * 2);
-                silverText.text = (moneySilver * 2).ToString();
+                silverText.text = (moneySilver + 5).ToString();
             }
             else
             {
@@ -244,7 +244,7 @@ public class CanvasControler : MonoBehaviour
             {
                  CloudVariables.Coins += moneyBronze * 2;//Jean
               //  PlayerStats.PlayerItens.Coins += (moneyBronze * 2);
-                bronzeText.text = (moneyBronze * 2).ToString();
+                bronzeText.text = (moneyBronze + 5).ToString();
             }
             else
             {

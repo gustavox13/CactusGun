@@ -18,6 +18,13 @@ public class WinDefeat : MonoBehaviour {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void Again()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
+ 
    
 
   

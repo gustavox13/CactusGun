@@ -71,17 +71,16 @@ public class DataControler : MonoBehaviour
     {
         Cloud.Storage.Load();//Teste
 
-       // gameObject.GetComponent<SaveFunctions>().LoadInventory();
+        gameObject.GetComponent<SaveFunctions>().LoadInventory();
         gameObject.GetComponent<SaveFunctions>().LoadLevel();
 
   
-       // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
-        //tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
+      // moneyInfo.text = PlayerStats.PlayerItens.Coins.ToString();
+       //tntInfo.text = PlayerStats.PlayerItens.Tnt.ToString();
         //trapInfo.text = PlayerStats.PlayerItens.Trap.ToString();
 
 
     }
-
 
 
 

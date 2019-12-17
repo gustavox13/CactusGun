@@ -65,7 +65,7 @@ public class StoreControler : MonoBehaviour
 
             CloudVariables.Coins -= trapPrice;
             CloudVariables.Trap += trapQuant;
-            Cloud.Storage.Save();
+          
 
             //PlayerStats.PlayerItens.Coins -= trapPrice;
             //PlayerStats.PlayerItens.Trap += trapQuant;
@@ -82,7 +82,7 @@ public class StoreControler : MonoBehaviour
         {
             CloudVariables.Coins -= tntPrice;
             CloudVariables.Tnt += tntQuant;
-            Cloud.Storage.Save();
+            
 
             //   PlayerStats.PlayerItens.Coins -= tntPrice;
             //  PlayerStats.PlayerItens.Tnt += tntQuant;
@@ -100,7 +100,7 @@ public class StoreControler : MonoBehaviour
             CloudVariables.Coins -= kitPrice;
             CloudVariables.Trap += kitQuant;
             CloudVariables.Tnt += kitQuant;
-            Cloud.Storage.Save();
+         
 
             //  PlayerStats.PlayerItens.Coins -= kitPrice; 
             //  PlayerStats.PlayerItens.Trap += kitQuant;
@@ -115,7 +115,7 @@ public class StoreControler : MonoBehaviour
     {
         //  PlayerStats.PlayerItens.Coins += moneyMin;
         CloudVariables.Coins += moneyMin;
-        Cloud.Storage.Save();
+       
         SaveInventory();
         LoadValues();
 
@@ -125,7 +125,7 @@ public class StoreControler : MonoBehaviour
     {
         // PlayerStats.PlayerItens.Coins += moneyMed;
         CloudVariables.Coins += moneyMed;
-        Cloud.Storage.Save();
+        
 
         SaveInventory();
         LoadValues();
