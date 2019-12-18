@@ -44,7 +44,7 @@ public class StoreControler : MonoBehaviour
     //--------------------- Resgatar valores salvos ------------------------
     private void LoadValues()
     {
-       // Cloud.Storage.Load();//Teste
+        Cloud.Storage.Load();//Teste
 
         gameObject.GetComponent<SaveFunctions>().LoadInventory();
 
@@ -117,6 +117,7 @@ public class StoreControler : MonoBehaviour
         CloudVariables.Coins += moneyMin;
        
         SaveInventory();
+        moneyInfo.text = CloudVariables.Coins.ToString();
         LoadValues();
 
     }
@@ -128,6 +129,7 @@ public class StoreControler : MonoBehaviour
         
 
         SaveInventory();
+        moneyInfo.text = CloudVariables.Coins.ToString();
         LoadValues();
     }
 
@@ -137,6 +139,7 @@ public class StoreControler : MonoBehaviour
         CloudVariables.Coins += moneyMax; 
 
         SaveInventory();
+        moneyInfo.text = CloudVariables.Coins.ToString();
         LoadValues();
     }
 

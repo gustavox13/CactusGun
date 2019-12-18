@@ -47,6 +47,8 @@ public class CanvasControler : MonoBehaviour
     private GameObject emblemG;
 
     private bool addVictoryPoint;
+
+    
     
     private AudioSource source;
     [SerializeField]
@@ -137,12 +139,13 @@ public class CanvasControler : MonoBehaviour
         if(value == true )
         {
            
+
             Victory();
          
         } else 
         {
-           
           
+
             Defeat();
         }
 
@@ -159,6 +162,7 @@ public class CanvasControler : MonoBehaviour
         PlayerRank();
         if (addVictoryPoint == false)
         {
+           
             source.PlayOneShot(audios[1]);
             SetLvlSave();
           
@@ -174,6 +178,7 @@ public class CanvasControler : MonoBehaviour
     {
         if (!somVitoria)
         {
+           
             somVitoria = true;
             source.PlayOneShot(audios[2]);
             Hud.SetActive(false);
@@ -366,5 +371,8 @@ public class CanvasControler : MonoBehaviour
         PlayerPrefs.SetInt(PlayerStats.DataBaseInfo.VILAREJO_FANTASMA, PlayerStats.LvlStats.VilarejoFantasma);
         */
     }
+
+  
+
 
 }

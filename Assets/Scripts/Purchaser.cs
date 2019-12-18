@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
 
+
 // Placing the Purchaser class in the CompleteProject namespace allows it to interact with ScoreManager, 
 // one of the existing Survival Shooter scripts.
 
@@ -35,7 +36,11 @@ using UnityEngine.Purchasing;
     [SerializeField]
     private GameObject DC;
 
-        void Start()
+
+
+   
+
+    void Start()
         {
             // If we haven't set up the Unity Purchasing reference
             if (m_StoreController == null)
@@ -236,6 +241,8 @@ using UnityEngine.Purchasing;
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             DC.gameObject.GetComponent<StoreControler>().BuyMoneyMin();
+            
+
             // TODO: The subscription item has been successfully purchased, grant this to the player.
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....

@@ -33,6 +33,7 @@ public class ButtonLock : MonoBehaviour {
             buttons[6].interactable = false;
         }
  
+        
     }
 
 
@@ -50,6 +51,8 @@ public class ButtonLock : MonoBehaviour {
         {
             StartCoroutine("EnableButtons");
         }
+
+       
 
     }
 

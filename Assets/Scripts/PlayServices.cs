@@ -17,9 +17,6 @@ public class PlayServices : MonoBehaviour
         Social.localUser.Authenticate(succes => { });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+    
 }

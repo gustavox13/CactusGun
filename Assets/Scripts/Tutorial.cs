@@ -10,12 +10,15 @@ public class Tutorial : MonoBehaviour
     private Button btnClose;
     [SerializeField]
     private Canvas canvTuto;
+    [SerializeField]
+    private Image finger;
     private int tutorial = 0;
 
 
     void Start()
     {
-        
+
+     
 
         tutorial = PlayerPrefs.GetInt("Tutorial");
         if (tutorial != 0)
@@ -23,6 +26,7 @@ public class Tutorial : MonoBehaviour
             
             canvTuto.GetComponent<Canvas>().enabled = false;
             btnClose.GetComponent<Image>().enabled = false;
+            finger.GetComponent<Image>().enabled = false;
         }
        
        
@@ -36,7 +40,7 @@ public class Tutorial : MonoBehaviour
 
         GetComponent<Image>().enabled = false;
         btnClose.GetComponent<Image>().enabled = false;
+        finger.GetComponent<Image>().enabled = false;
 
-
-  }
+    }
 }

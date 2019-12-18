@@ -4833,6 +4833,7 @@ MonoBehaviour:
   emblemB: {fileID: 5123777855454249872}
   emblemP: {fileID: 5123777857188138922}
   emblemG: {fileID: 5123777856814446427}
+  btnConfirma: {fileID: 5123777856465273614}
   audios:
   - {fileID: 8300000, guid: 90c3c681dd4ed6041bb973d46368f929, type: 3}
   - {fileID: 8300000, guid: 65b19828edffdcb44ba21b1de79a91fc, type: 3}
@@ -5673,7 +5674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.40138888, y: 0.051375}
   m_AnchorMax: {x: 0.61111116, y: 0.14731249}
-  m_AnchoredPosition: {x: -1.4999847, y: 1.4998474}
+  m_AnchoredPosition: {x: -1.4999847, y: 1.4997864}
   m_SizeDelta: {x: -1.699997, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5123777857335980602
@@ -6032,7 +6033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.40138888, y: 0.051375}
   m_AnchorMax: {x: 0.61111116, y: 0.14731249}
-  m_AnchoredPosition: {x: -1.5, y: 1.4998474}
+  m_AnchoredPosition: {x: -1.5, y: 1.4997864}
   m_SizeDelta: {x: -1.699997, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5123777857437364965
