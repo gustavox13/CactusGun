@@ -20,9 +20,9 @@ public class HealthRotation : MonoBehaviour {
 
     private void Update()
     {
-        // transform.LookAt(mainCamera);
+         transform.LookAt(mainCamera);
 
-      // transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.back, mainCamera.transform.rotation * Vector3.up);
+       transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.back, mainCamera.transform.rotation * Vector3.up);
 
     }
 

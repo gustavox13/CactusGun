@@ -83,7 +83,7 @@ public class TamborRotate : MonoBehaviour {
                 {
                     RightMove();
                     source.Play();
-                    //UmDebug();
+                    UmDebug();
                   
 
 
@@ -94,7 +94,7 @@ public class TamborRotate : MonoBehaviour {
                     LeftMove();
                     source.Play();
                     
-                   // UmDebug();
+                   UmDebug();
                 }
             }
         }
@@ -105,7 +105,7 @@ public class TamborRotate : MonoBehaviour {
     {
         if(currentAtk == 0)
         {
-            if(PlayerStats.PlayerItens.Tnt > 0)
+            if(CloudVariables.Tnt > 0)
             {
                 haveItens = true;
             }
@@ -122,7 +122,7 @@ public class TamborRotate : MonoBehaviour {
         }
         if(currentAtk == 2)
         {
-            if(PlayerStats.PlayerItens.Trap > 0)
+            if(CloudVariables.Trap > 0)
             {
                 haveItens = true;
             }
@@ -148,7 +148,8 @@ public class TamborRotate : MonoBehaviour {
             currentAtk = firstHability;
         }
         tamborAnim.SetTrigger("right");
-        //CheckItens();
+        CheckItens();
+        UmDebug();
         Debug.Log(haveItens);
     }
 
@@ -163,7 +164,8 @@ public class TamborRotate : MonoBehaviour {
             currentAtk = lastHability;
         }
         tamborAnim.SetTrigger("left");
-       // CheckItens();
+       CheckItens();
+        UmDebug();
         Debug.Log(haveItens);
     }
 
@@ -174,24 +176,18 @@ public class TamborRotate : MonoBehaviour {
 
         if (currentAtk == 0)
         {
-            Debug.Log("bomba");
+           
             weapons[0].SetActive(true);
-            //qtd[1].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraDinamite);
-            //qtd[1].enabled = true;
-            //item.transform. = itens[0];
+            
         }
         if (currentAtk == 1)
         {
-           //// qtd[2].enabled = true;
-            Debug.Log("atk basico");
+           
             weapons[1].SetActive(true);
         }
         if (currentAtk == 2)
         {
-           // qtd[2].enabled = true;
-           // qtd[2].text = ("" + GameObject.Find("ADS").GetComponentInChildren<AcountController>().CompraArmadilha);
-
-            Debug.Log("armadilha");
+           
             weapons[2].SetActive(true);
         }
     }

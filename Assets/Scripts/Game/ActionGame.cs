@@ -55,11 +55,12 @@ public class ActionGame : MonoBehaviour
 
 
 
-    private void Start()
-    {
-      
 
-        LoadResources();
+
+    private void Awake()
+    {
+        
+       LoadResources();
     }
 
     private void LoadResources()
@@ -127,6 +128,7 @@ public class ActionGame : MonoBehaviour
     {
         if (playerSkill == 0)
         {
+
             CloudVariables.Tnt -= 1;
             //PlayerStats.PlayerItens.Tnt -= 1;
             quantItens.text = PlayerStats.PlayerItens.Tnt.ToString();
@@ -286,6 +288,7 @@ public class ActionGame : MonoBehaviour
         cloneTNT.transform.Rotate(new Vector3(180f, 36.066f, -1.52f));
         yield return new WaitForSeconds(2f);
          Instantiate(Explosion, new Vector3(plataforms[PlayerLocalToAtk].transform.position.x, 1.0f, 1.7f), Quaternion.identity); //falta destruir
+       
         if (playerLocalToAtk == enemyLocalToJump)
         {
             animEnemy.SetBool("Dano", true);

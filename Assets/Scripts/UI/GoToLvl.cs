@@ -57,6 +57,11 @@ public class GoToLvl : MonoBehaviour
 
 
 
+    public void Awake()
+    {
+        LoadLvlStats();
+    }
+
     public void LoadLvlStats()
     {
 
