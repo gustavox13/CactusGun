@@ -644,6 +644,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 772246753}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1066059266 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5123777856985231964, guid: ffbe80aae94d19a469ec4775287459f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 772246753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!45 &1066059267
 Skybox:
   m_ObjectHideFlags: 0
@@ -945,6 +951,11 @@ PrefabInstance:
       propertyPath: basicAtk
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 7640203080151249099, guid: 4ea6f37e51d11e6419eb5141570e9df1,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1066059266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ea6f37e51d11e6419eb5141570e9df1, type: 3}
 --- !u!4 &1487932085377584070
