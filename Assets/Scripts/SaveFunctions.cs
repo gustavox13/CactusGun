@@ -135,15 +135,16 @@ public class SaveFunctions : MonoBehaviour
 
         */
 
-        PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
-        PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
+
+         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
+         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;
         PlayerStats.PlayerItens.Coins = CloudVariables.Coins;
-       
+
 
         //Jean
-       // CloudVariables.Coins = CloudVariables.Coins;
+        // CloudVariables.Coins = CloudVariables.Coins;
 
-
+       // Load();
 
 
     }
@@ -198,7 +199,9 @@ public class SaveFunctions : MonoBehaviour
 
 
         //CloudVariables.VilarejoFantasma = CloudVariables.VilarejoFantasma;//Jean
-       // CloudVariables.ValeDoDesespero = CloudVariables.ValeDoDesespero;//Jean
+        // CloudVariables.ValeDoDesespero = CloudVariables.ValeDoDesespero;//Jean
+
+       // Load(); 
 
         PlayerStats.LvlStats.VilarejoFantasma = CloudVariables.VilarejoFantasma;
         PlayerStats.LvlStats.ValeDoDesespero = CloudVariables.ValeDoDesespero;
