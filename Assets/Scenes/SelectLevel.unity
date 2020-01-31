@@ -181,125 +181,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &194517825
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4600523531164687742, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_Name
-      value: MapControler
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 69.48469
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1929.2771
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.869772
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687739, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: goButton
-      value: 
-      objectReference: {fileID: 5200869935734510629}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: wantedScreen
-      value: 
-      objectReference: {fileID: 5200869936543773357}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: minaAbandonada
-      value: 
-      objectReference: {fileID: 5200869936000705740}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: montanhasDoSul
-      value: 
-      objectReference: {fileID: 5200869935560706411}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: cidadela
-      value: 
-      objectReference: {fileID: 5200869936225231935}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: florestaNoturna
-      value: 
-      objectReference: {fileID: 5200869936752773923}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: pantanoDosMortos
-      value: 
-      objectReference: {fileID: 5200869935219555330}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: desertoSilencioso
-      value: 
-      objectReference: {fileID: 5200869935060372077}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: vilarejoFantasma
-      value: 
-      objectReference: {fileID: 5200869935682313643}
-    - target: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-        type: 3}
-      propertyPath: valeDoDesespero
-      value: 
-      objectReference: {fileID: 5200869936921189998}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e330a3567149a3749803217f233157f2, type: 3}
 --- !u!1 &373167839
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,18 +644,72 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1348902093 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4600523531164687738, guid: e330a3567149a3749803217f233157f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 194517825}
+--- !u!4 &4600523531241752122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4600523531241752127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.48469, y: 1929.2771, z: -10.869772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4600523531241752123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600523531241752127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5086d3a77f315e043b1d898a240adc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wantedScreen: {fileID: 5200869936543773357}
+  goButton: {fileID: 5200869935734510629}
+  minaAbandonada: {fileID: 5200869936000705740}
+  montanhasDoSul: {fileID: 5200869935560706411}
+  cidadela: {fileID: 5200869936225231935}
+  florestaNoturna: {fileID: 5200869936752773923}
+  pantanoDosMortos: {fileID: 5200869935219555330}
+  desertoSilencioso: {fileID: 5200869935060372077}
+  vilarejoFantasma: {fileID: 5200869935682313643}
+  valeDoDesespero: {fileID: 5200869936921189998}
+--- !u!114 &4600523531241752124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600523531241752127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fd9dfa174b9d84e992ccf8aaeb400b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4600523531241752127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4600523531241752122}
+  - component: {fileID: 4600523531241752124}
+  - component: {fileID: 4600523531241752123}
+  m_Layer: 0
+  m_Name: MapControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!222 &5200869934893963532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -888,7 +823,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: BackWantedButton
         m_Mode: 1
         m_Arguments:
@@ -1276,7 +1211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -1503,7 +1438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -1949,7 +1884,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -2202,7 +2137,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -2999,7 +2934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -3749,7 +3684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -4397,7 +4332,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: BackMapButton
         m_Mode: 1
         m_Arguments:
@@ -4770,7 +4705,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
@@ -5190,7 +5125,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348902093}
+      - m_Target: {fileID: 4600523531241752123}
         m_MethodName: LevelSelectAnim
         m_Mode: 1
         m_Arguments:
