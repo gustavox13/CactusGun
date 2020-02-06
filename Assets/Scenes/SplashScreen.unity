@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 66971941}
   - component: {fileID: 66971940}
   - component: {fileID: 66971939}
-  - component: {fileID: 66971944}
   - component: {fileID: 66971943}
   m_Layer: 0
   m_Name: Main Camera
@@ -219,19 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cloudSaveEnabled: 1
   autoSignIn: 1
-  autoCloudLoad: 0
---- !u!114 &66971944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66971938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4fdc3d6e4f434340b22be632838723a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  autoCloudLoad: 1
 --- !u!1 &179358970
 GameObject:
   m_ObjectHideFlags: 0

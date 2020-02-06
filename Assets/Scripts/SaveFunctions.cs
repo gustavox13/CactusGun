@@ -13,7 +13,7 @@ public class SaveFunctions : MonoBehaviour
 
     private void Start()
     {
-
+      
        Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
       Cloud.OnCloudLoadComplete += CloudOnceLoadComplete;
       Cloud.Initialize(true, true);
@@ -135,7 +135,8 @@ public class SaveFunctions : MonoBehaviour
 
 
         */
-        
+
+      
 
         PlayerStats.PlayerItens.Tnt = CloudVariables.Tnt;
         PlayerStats.PlayerItens.Trap = CloudVariables.Trap;

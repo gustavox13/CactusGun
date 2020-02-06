@@ -2819,7 +2819,7 @@ MonoBehaviour:
   kitPrice: 400
   tntQuant: 5
   trapQuant: 5
-  kitQuant: 10
+  kitQuant: 12
   moneyInfo: {fileID: 1694638343}
   tntInfo: {fileID: 1301362244}
   trapInfo: {fileID: 1458937378}

@@ -60,12 +60,15 @@ public class StoreControler : MonoBehaviour
     //COMPRA TRAP
     public void BuyTrap()
     {
-        if (PlayerStats.PlayerItens.Coins >= trapPrice)
+        if (CloudVariables.Coins >= trapPrice)
         {
 
             CloudVariables.Coins -= trapPrice;
             CloudVariables.Trap += trapQuant;
-            Cloud.Storage.Save();
+
+            trapInfo.text = CloudVariables.Trap.ToString();
+
+           // Cloud.Storage.Save();
 
             //PlayerStats.PlayerItens.Coins -= trapPrice;
             //PlayerStats.PlayerItens.Trap += trapQuant;
@@ -78,11 +81,14 @@ public class StoreControler : MonoBehaviour
     //COMPRA TNT
     public void BuyTNT()
     {
-        if (PlayerStats.PlayerItens.Coins >= tntPrice)
+        if (CloudVariables.Coins >= tntPrice)
         {
             CloudVariables.Coins -= tntPrice;
             CloudVariables.Tnt += tntQuant;
-            Cloud.Storage.Save();
+
+            tntInfo.text = CloudVariables.Tnt.ToString();
+
+            //Cloud.Storage.Save();
 
             //   PlayerStats.PlayerItens.Coins -= tntPrice;
             //  PlayerStats.PlayerItens.Tnt += tntQuant;
@@ -94,13 +100,19 @@ public class StoreControler : MonoBehaviour
     //COMPRA KIT
     public void BuyKit()
     {
-        if (PlayerStats.PlayerItens.Coins >= kitPrice)
+        if (CloudVariables.Coins >= kitPrice)
         {
 
             CloudVariables.Coins -= kitPrice;
             CloudVariables.Trap += kitQuant;
             CloudVariables.Tnt += kitQuant;
-            Cloud.Storage.Save();
+
+            //Atualiza Text
+            moneyInfo.text = CloudVariables.Coins.ToString();
+            tntInfo.text = CloudVariables.Tnt.ToString();
+            trapInfo.text = CloudVariables.Trap.ToString();
+
+            // Cloud.Storage.Save();
 
             //  PlayerStats.PlayerItens.Coins -= kitPrice; 
             //  PlayerStats.PlayerItens.Trap += kitQuant;
@@ -115,7 +127,9 @@ public class StoreControler : MonoBehaviour
     {
         //  PlayerStats.PlayerItens.Coins += moneyMin;
         CloudVariables.Coins += moneyMin;
-        Cloud.Storage.Save();
+        moneyInfo.text = CloudVariables.Coins.ToString();
+
+        //Cloud.Storage.Save();
         SaveInventory();
         LoadValues();
 
@@ -125,7 +139,8 @@ public class StoreControler : MonoBehaviour
     {
         // PlayerStats.PlayerItens.Coins += moneyMed;
         CloudVariables.Coins += moneyMed;
-        Cloud.Storage.Save();
+        moneyInfo.text = CloudVariables.Coins.ToString();
+        //Cloud.Storage.Save();
 
         SaveInventory();
         LoadValues();
@@ -134,7 +149,8 @@ public class StoreControler : MonoBehaviour
     public void BuyMoneyMax()
     {
         //PlayerStats.PlayerItens.Coins += moneyMax;
-        CloudVariables.Coins += moneyMax; 
+        CloudVariables.Coins += moneyMax;
+        moneyInfo.text = CloudVariables.Coins.ToString();
 
         SaveInventory();
         LoadValues();
