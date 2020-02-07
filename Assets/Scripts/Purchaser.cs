@@ -244,6 +244,7 @@ using UnityEngine.Purchasing;
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // TODO: The subscription item has been successfully purchased, grant this to the player.
             DC.gameObject.GetComponent<StoreControler>().BuyMoneyMed();
+            
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....
         else if (String.Equals(args.purchasedProduct.definition.id, "coins2000", StringComparison.Ordinal))

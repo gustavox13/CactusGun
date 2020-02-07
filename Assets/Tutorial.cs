@@ -19,6 +19,11 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         tutorial = PlayerPrefs.GetInt("Tutorial");
+
+        if(tutorial == 1)
+        {
+            CloseButton();
+        }
     }
 
    

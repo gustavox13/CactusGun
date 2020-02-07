@@ -73,7 +73,7 @@ public class StoreControler : MonoBehaviour
             //PlayerStats.PlayerItens.Coins -= trapPrice;
             //PlayerStats.PlayerItens.Trap += trapQuant;
             SaveInventory();
-
+            LoadValues();
         }
         LoadValues();
     }
@@ -93,6 +93,7 @@ public class StoreControler : MonoBehaviour
             //   PlayerStats.PlayerItens.Coins -= tntPrice;
             //  PlayerStats.PlayerItens.Tnt += tntQuant;
             SaveInventory();
+            LoadValues();
         }
         LoadValues();
     }
@@ -119,6 +120,7 @@ public class StoreControler : MonoBehaviour
             //  PlayerStats.PlayerItens.Tnt += kitQuant;
 
             SaveInventory();
+            LoadValues();
         }
         LoadValues();
     }
