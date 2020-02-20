@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
         public static string CurrentMap;
 
         //Numero de repeticoes por nivel
-        public static int MaxLvlRepeat = 10;
+        public static int MaxLvlRepeat = 2;
 
 
         public static int Cidadela = 0;
