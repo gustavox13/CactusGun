@@ -25,6 +25,12 @@ public class MainMenuControler : MonoBehaviour
         SceneManager.LoadScene("store");
     }
 
+    public void multiplayer()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+
     public void MapButton()
     {
 

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SplashScreen.unity
     guid: b06828a43d158bf46a678c3ea8a871df
   - enabled: 1
+    path: Assets/multiplayer assets/Scenes/GamePlay.unity
+    guid: e82d8c319f21c04488d2dfaa36e51bf6
+  - enabled: 1
     path: Assets/Animations/trailer/animationScene.unity
     guid: 5b1b388ba1867c04e8537ee48a60b8de
   - enabled: 1
@@ -44,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvls/deserto silencioso.unity
     guid: 0ebda73de8bc4bd408427e125a9422c8
+  - enabled: 1
+    path: Assets/multiplayer assets/Scenes/MainScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
