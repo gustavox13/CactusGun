@@ -5,7 +5,8 @@ using Photon.Pun;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject playerPrefab;
+    [SerializeField]
+    private GameObject playerPrefab;
 
 
     //tentando diferentes chars

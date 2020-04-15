@@ -18,6 +18,8 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
     private GameObject spawn1;
     private GameObject spawn2;
 
+    [SerializeField]
+    private GameObject revolver;
 
 
 
@@ -28,10 +30,15 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
 
         if (photonView.IsMine)
          {
-             playerCamera.SetActive(true);
-         }
 
-    
+             playerCamera.SetActive(true);
+
+         }
+        else
+        {
+            revolver.SetActive(false);
+
+        }
 
         if (photonView.IsMine)
         {
