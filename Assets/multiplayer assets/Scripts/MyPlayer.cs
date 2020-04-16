@@ -39,15 +39,16 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
 
         if (!photonView.IsMine)
         {
-            SmoothMovement();
+           // SmoothMovement();
         }
     }
 
-    private void SmoothMovement()
+  /*  private void SmoothMovement()
     {
         transform.position = Vector3.Lerp(transform.position, smoothMove, Time.deltaTime * 10);
         transform.rotation = Quaternion.Lerp(transform.rotation, smootRotate, Time.deltaTime * 10);
     }
+  */
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
