@@ -6,7 +6,9 @@ using Photon.Pun;
 public class Manager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject playerPrefab;
+    private GameObject spawn1;
+    [SerializeField]
+    private GameObject spawn2;
 
 
     //tentando diferentes chars
@@ -15,48 +17,35 @@ public class Manager : MonoBehaviour
     public GameObject char3prefab;
 
 
-    private void Awake()
+    private void Start()
     {
-        //SpawnPlayer();
 
         switch (SelectChar.CurrentChar)
         {
             case SelectChar.CHAR1:
-                SpawnChar1();
+                Spawn(char1prefab.name); 
                 break;
 
             case SelectChar.CHAR2:
-                SpawnChar2();
+                Spawn(char2prefab.name);
                 break;
 
             case SelectChar.CHAR3:
-                SpawnChar3();
+                Spawn(char3prefab.name);
                 break;
 
 
         }
 
-
     }
 
-    void SpawnChar1()
+    void Spawn(string prefabName)
     {
-        PhotonNetwork.Instantiate(char1prefab.name, playerPrefab.transform.position, playerPrefab.transform.rotation);
-    }
-    void SpawnChar2()
-    {
-        PhotonNetwork.Instantiate(char2prefab.name, playerPrefab.transform.position, playerPrefab.transform.rotation);
-    }
-    void SpawnChar3()
-    {
-        PhotonNetwork.Instantiate(char3prefab.name, playerPrefab.transform.position, playerPrefab.transform.rotation);
+        GameObject spawnLocal = (UIhandler.myID == 0) ? spawn1 : spawn2; //isso aqui é um IF/switch, se chama operador ternário, se o ID for 0 vc vai nascer no spawn 1, se id for outra coisa diferente de 0, nasce no spawn 2
+
+        PhotonNetwork.Instantiate(prefabName, spawnLocal.transform.position, spawnLocal.transform.rotation); // spawna o player selecionado no local indicado acima 
     }
 
 
-    /*
-    void SpawnPlayer()
-    {
-        PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, playerPrefab.transform.rotation);
-    }*/
 
 }
