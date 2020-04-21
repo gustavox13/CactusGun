@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
+
 public class MyPlayer : MonoBehaviourPun, IPunObservable
 {
     //CONFIGURACOES DO PHOTON
@@ -22,15 +23,22 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
     [SerializeField]
     private GameObject HUDcanvas;
 
+
+
+
     private void Start()
     {
         if (photonView.IsMine)
         {
+
+      
             playerCamera.SetActive(true);
             revolver.SetActive(true);
            
             slotsToMove.SetActive(true); 
             HUDcanvas.SetActive(true);
+
+            
         }
     }
 
@@ -39,7 +47,8 @@ public class MyPlayer : MonoBehaviourPun, IPunObservable
 
         if (!photonView.IsMine)
         {
-           // SmoothMovement();
+            
+            // SmoothMovement();
         }
     }
 

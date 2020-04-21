@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class SetLocalToMove : MonoBehaviourPun, IPunObservable
 {
@@ -19,8 +19,34 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
     [SerializeField]
     private GameObject PlayerBody;
 
+    public bool playerReadyToMove = false; 
+ 
 
-    //SELECIONA O SLOT
+    private void Start()
+    {
+        if (photonView.IsMine)
+        {
+            //atualiza as informacoes do servidor
+            PlayerInfoReady();
+        }
+    }
+
+    public void Update()
+    {
+        if (photonView.IsMine)
+        {
+            //se start turn (qu define o inicio do duelo) for verdadeiro ele define o novo local e o player se move
+            if (GamePlayInfo.StartTurn == true) 
+            {
+                currentLocal = localToMove;
+                playerReadyToMove = false;
+                PlayerInfoReady();
+            }
+            MovePlayer(PlayerBody.transform.position.y, PlayerBody.transform.position.z);
+        }
+    }
+
+    //quando o player seleciona um slot de movimento
     public void slotSelected(string local)
     {
         if (photonView.IsMine)
@@ -30,25 +56,44 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         }
     }
 
-
-
-    public void Update()
-    {
-        if (photonView.IsMine)
-        {
-            MovePlayer(PlayerBody.transform.position.y, PlayerBody.transform.position.z);
-        }
-    }
-
+    // quando o player clica no botão duelo
     public void ReadyToMove()
     {
         if (photonView.IsMine)
         {
-            currentLocal = localToMove;
+            playerReadyToMove = true;
+            PlayerInfoReady(); 
         }
     }
 
+    //informa que o player esta pronto para se movimentar
+    private void PlayerInfoReady()
+    {
+        PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToMove"] = playerReadyToMove;       
+        PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
 
+        CheckToReady();
+    }
+
+    //verifica se o player esta pronto para se mover e atacar, se sim o player esta pronto para o duelo
+    private void CheckToReady()
+    {
+        if (photonView.IsMine)
+        {
+            if ((bool)PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToMove"] == true && (bool)PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToAtack"] == true)
+            {
+                PlayerPhotonVariables.PlayerCustomProperties["PlayerReady"] = true;
+                PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
+            }
+            else
+            {
+                PlayerPhotonVariables.PlayerCustomProperties["PlayerReady"] = false;
+                PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
+            }
+        }
+    }
+
+    //move o player
     private void MovePlayer(float y, float z)
     {
         if (photonView.IsMine)
@@ -75,10 +120,6 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
             PlayerBody.transform.position = Vector3.Lerp(PlayerBody.transform.position, newPosition, Time.deltaTime * 4);
         }
     }
-
-
-
-
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

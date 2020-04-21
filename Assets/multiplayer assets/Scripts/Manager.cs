@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class Manager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class Manager : MonoBehaviour
     public GameObject char2prefab;
     public GameObject char3prefab;
 
+    private GameObject player1;
+
+    //public static bool StartTurn = false;
 
     private void Start()
     {
@@ -39,11 +43,14 @@ public class Manager : MonoBehaviour
 
     }
 
+        //SPAWN PLAYERS
     void Spawn(string prefabName)
     {
-        GameObject spawnLocal = (UIhandler.myID == 0) ? spawn1 : spawn2; //isso aqui é um IF/switch, se chama operador ternário, se o ID for 0 vc vai nascer no spawn 1, se id for outra coisa diferente de 0, nasce no spawn 2
+        GameObject spawnLocal = (UIhandler.myID == 0) ? spawn1 : spawn2; 
 
-        PhotonNetwork.Instantiate(prefabName, spawnLocal.transform.position, spawnLocal.transform.rotation); // spawna o player selecionado no local indicado acima 
+        PhotonNetwork.Instantiate(prefabName, spawnLocal.transform.position, spawnLocal.transform.rotation); 
+
+       
     }
 
 
