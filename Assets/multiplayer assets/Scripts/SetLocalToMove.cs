@@ -31,6 +31,7 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         }
     }
 
+
     public void Update()
     {
         if (photonView.IsMine)
@@ -52,7 +53,7 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         if (photonView.IsMine)
         {
             localToMove = local;
-            Debug.Log(local);
+            //Debug.Log(local); //mostra o local que vc clicou
         }
     }
 
@@ -65,6 +66,17 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
             PlayerInfoReady(); 
         }
     }
+
+    //funcao para TESTE apenas, depois pode apagar
+    public void CheckPosition()
+    {
+        if (photonView.IsMine)
+        {
+            Debug.Log("o player esta em: " + currentLocal);
+        }
+        
+    }
+
 
     //informa que o player esta pronto para se movimentar
     private void PlayerInfoReady()
