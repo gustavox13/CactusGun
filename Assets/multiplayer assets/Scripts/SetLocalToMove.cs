@@ -81,6 +81,7 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
     //informa que o player esta pronto para se movimentar
     private void PlayerInfoReady()
     {
+        PlayerPhotonVariables.PlayerCustomProperties["PlayerCurrentLocal"] = localToMove;
         PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToMove"] = playerReadyToMove;       
         PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
 

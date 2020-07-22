@@ -14,7 +14,9 @@ public class PlayerPhotonVariables : MonoBehaviour
         PlayerCustomProperties.Add("PlayerReadyToMove", false);
         PlayerCustomProperties.Add("PlayerReadyToAtack", false);
         PlayerCustomProperties.Add("PlayerReady", false);
-      
+        PlayerCustomProperties.Add("PlayerCurrentLocal", "A2");
+        PlayerCustomProperties.Add("PlayerCurrentLocalToAtk", "B2");
+        PlayerCustomProperties.Add("HP", 100);
     }
     
     

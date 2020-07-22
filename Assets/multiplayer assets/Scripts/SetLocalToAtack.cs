@@ -33,6 +33,7 @@ public class SetLocalToAtack : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
+            PlayerPhotonVariables.PlayerCustomProperties["PlayerCurrentLocalToAtk"] = currentLocalToAtk;
             //diz que o player esta pronto para atacar
             PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToAtack"] = true;
             PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
