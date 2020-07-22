@@ -15,12 +15,15 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
     private GameObject A2Slot;
     [SerializeField]
     private GameObject A3Slot;
-
     [SerializeField]
     private GameObject PlayerBody;
+    public bool playerReadyToMove = false;
 
-    public bool playerReadyToMove = false; 
- 
+    //controlar animacoes
+    private Animator animPlayer;
+    [SerializeField]
+    private GameObject playerBodyAnim;
+
 
     private void Start()
     {
@@ -28,6 +31,9 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         {
             //atualiza as informacoes do servidor
             PlayerInfoReady();
+
+            //carregar animacao
+            animPlayer = playerBodyAnim.GetComponentInChildren<Animator>();
         }
     }
 
@@ -36,16 +42,65 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
-            //se start turn (qu define o inicio do duelo) for verdadeiro ele define o novo local e o player se move
+            //se start turn (que define o inicio do duelo) for verdadeiro ele define o novo local e o player se move
             if (GamePlayInfo.StartTurn == true) 
             {
                 currentLocal = localToMove;
                 playerReadyToMove = false;
                 PlayerInfoReady();
+
+                StartCoroutine("MoveStepIn");
             }
             MovePlayer(PlayerBody.transform.position.y, PlayerBody.transform.position.z);
         }
     }
+
+    //INICIA E DESATIVA ANIMACAO DE MOVIMENTO
+    IEnumerator MoveStepIn()
+    {
+        animPlayer.SetBool("Desviando", true); //DESVIANDO FAZ O PERSONAGEM PULAR E ATIRAR
+        
+        //Pegar tempo animação Desviando
+        Animator myAnimator = animPlayer;
+
+
+        yield return new WaitForSeconds(0.8f); 
+
+        animPlayer.SetBool("Desviando", false); 
+
+
+        
+        StartCoroutine("TakeDamangeStep"); //VAI PARA ANIMACAO DE DANO
+
+
+
+    }
+
+    // AQUI O PERSONAGEM VERIFICA SE TOMOU DANO E EXECUTA A ANIMACAO
+    IEnumerator TakeDamangeStep()
+    {
+        if (UIhandler.myID == 0 && GamePlayInfo.Player0TakeDamange == true)
+        {
+            animPlayer.SetBool("Dano", true);
+            Debug.Log("eu, jogador 0 tomei dano e takedamange eh true");
+            GamePlayInfo.Player0TakeDamange = false;
+        }
+
+
+        if (UIhandler.myID == 1 && GamePlayInfo.Player1TakeDamange == true)
+        {
+            animPlayer.SetBool("Dano", true);
+            Debug.Log("eu, jogador 1 tomei dano e takedamange eh true");
+            GamePlayInfo.Player1TakeDamange = false;
+        }
+
+        yield return new WaitForSeconds(0.3f); // espera e desativa animacao
+
+
+        animPlayer.SetBool("Dano", false);
+
+    }
+
 
     //quando o player seleciona um slot de movimento
     public void slotSelected(string local)
@@ -67,15 +122,7 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         }
     }
 
-    //funcao para TESTE apenas, depois pode apagar
-    public void CheckPosition()
-    {
-        if (photonView.IsMine)
-        {
-            Debug.Log("o player esta em: " + currentLocal);
-        }
-        
-    }
+
 
 
     //informa que o player esta pronto para se movimentar

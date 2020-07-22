@@ -41,15 +41,6 @@ public class SetLocalToAtack : MonoBehaviourPun, IPunObservable
     }
 
 
-    //funcao para TESTE apenas, depois pode apagar
-    public void CheckPosition()
-    {
-        if (photonView.IsMine)
-        {
-            Debug.Log("o player vai atacar em: " + currentLocalToAtk);
-        }
-
-    }
 
 
 

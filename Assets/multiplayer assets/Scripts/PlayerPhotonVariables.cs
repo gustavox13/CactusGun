@@ -17,6 +17,7 @@ public class PlayerPhotonVariables : MonoBehaviour
         PlayerCustomProperties.Add("PlayerCurrentLocal", "A2");
         PlayerCustomProperties.Add("PlayerCurrentLocalToAtk", "B2");
         PlayerCustomProperties.Add("HP", 100);
+        
     }
     
     

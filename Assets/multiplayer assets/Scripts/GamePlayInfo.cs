@@ -7,8 +7,9 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 public class GamePlayInfo : MonoBehaviour
 {
     public static bool StartTurn = false;
+    public static bool Player0TakeDamange = false;
+    public static bool Player1TakeDamange = false;
 
-    
 
 
     private void Update()
@@ -26,6 +27,7 @@ public class GamePlayInfo : MonoBehaviour
         else
         {
             StartTurn = false;
+
         }
     }
 
@@ -37,16 +39,23 @@ public class GamePlayInfo : MonoBehaviour
             ((string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocalToAtk"] == "B3" && (string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocal"] == "A3"))
         {
             Debug.Log("jogador 1 tomou dano");
+            Player1TakeDamange = true;
+            
         }
         else {
             Debug.Log("jogador 1 NAO tomou dano");
+
         }
 
+
+        //jogador 0 toma dano se: 
         if (((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B1" && (string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocal"] == "A1") ||
             ((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B2" && (string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocal"] == "A2") ||
             ((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B3" && (string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocal"] == "A3"))
         {
             Debug.Log("jogador 0 tomou dano");
+            Player0TakeDamange = true;
+            
         }
         else
         {
