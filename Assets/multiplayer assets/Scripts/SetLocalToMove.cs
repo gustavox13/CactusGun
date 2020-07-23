@@ -66,16 +66,16 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
 
         yield return new WaitForSeconds(0.8f); 
 
-        animPlayer.SetBool("Desviando", false); 
+        animPlayer.SetBool("Desviando", false);
 
 
+
+        // StartCoroutine("TakeDamangeStep"); //VAI PARA ANIMACAO DE DANO
+        GetComponent<HealthPlayerControler>().GoToTakeDamangeStep();
         
-        StartCoroutine("TakeDamangeStep"); //VAI PARA ANIMACAO DE DANO
-
-
 
     }
-
+    /*
     // AQUI O PERSONAGEM VERIFICA SE TOMOU DANO E EXECUTA A ANIMACAO
     IEnumerator TakeDamangeStep()
     {
@@ -100,7 +100,7 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         animPlayer.SetBool("Dano", false);
 
     }
-
+    */
 
     //quando o player seleciona um slot de movimento
     public void slotSelected(string local)
