@@ -29,7 +29,7 @@ public class UIhandler : MonoBehaviourPunCallbacks {
         
         myID = PhotonNetwork.CountOfPlayersInRooms; // se vc entrar na sala primeiro Ganha 0, se for o segundo, ganha 1
        
-        Debug.Log(myID);
+        Debug.Log("meu id: " + myID);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
