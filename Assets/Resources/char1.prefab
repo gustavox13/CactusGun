@@ -1222,6 +1222,7 @@ GameObject:
   - component: {fileID: 4359571345174373552}
   - component: {fileID: 5037327663173705877}
   - component: {fileID: 4266908622534015996}
+  - component: {fileID: 7712985881510036688}
   m_Layer: 0
   m_Name: char1
   m_TagString: Player
@@ -1364,6 +1365,26 @@ MonoBehaviour:
   endScreen: {fileID: 2797634855618984931}
   loseCanvas: {fileID: 6138122546422512672}
   winCanvas: {fileID: 9094457285037483531}
+--- !u!114 &7712985881510036688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3947007522481894727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7142b0178ef354f4383833f70ca8f1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 209386887863365806}
+  - {fileID: 4041343326952331963}
+  - {fileID: 5256161157032645317}
+  - {fileID: 5724086295807773054}
+  - {fileID: 5307742218342494455}
+  - {fileID: 5972909710033620450}
+  startTurn: {fileID: 3162818561836827901}
 --- !u!1 &4545356875741930306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,6 +4418,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4359571345174373552}
         m_MethodName: ReadyToMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7712985881510036688}
+        m_MethodName: DisableButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

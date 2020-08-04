@@ -108,7 +108,11 @@ public class SetLocalToMove : MonoBehaviourPun, IPunObservable
         PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
 
         CheckToReady();
+
+       
     }
+
+    
 
     //verifica se o player esta pronto para se mover e atacar, se sim o player esta pronto para o duelo
     private void CheckToReady()

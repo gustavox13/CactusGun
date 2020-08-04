@@ -28,6 +28,9 @@ public class GamePlayInfo : MonoBehaviour
                 StartTurn = true;
 
                 SearchDamangeArea();
+                
+
+
             }
             else
             {
@@ -58,11 +61,6 @@ public class GamePlayInfo : MonoBehaviour
 
         }
     }
-
- 
-
-
-
 
     private void SearchDamangeArea()
     {
