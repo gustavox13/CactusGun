@@ -9,11 +9,9 @@ public class SetLocalToAtack : MonoBehaviourPun, IPunObservable
     private string currentLocalToAtk = "B2";
     private string localToAtk = null;
 
-
-    private void Start()
-    {
-
-    }
+    [SerializeField]
+    private GameObject HUDGame;
+    private int typeAtk;
 
 
     //quando o player seleciona um slot de movimento
@@ -28,11 +26,25 @@ public class SetLocalToAtack : MonoBehaviourPun, IPunObservable
         }
     }
 
+    //QUANDO DA 'GO' ELE PEGA O TIPO DE ATK E MANDA PARA O SERVER
+    public void ReadyToUseSkill()
+    {
+        if (photonView.IsMine)
+        {
+
+            typeAtk = HUDGame.GetComponent<RevolverHUD>().CurrentSkill;
+
+            PlayerPhotonVariables.PlayerCustomProperties["TypeSkill"] = typeAtk;
+            PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
+        }
+    }
+
 
     private void PlayerSetLocalToAtk()
     {
         if (photonView.IsMine)
         {
+            
             PlayerPhotonVariables.PlayerCustomProperties["PlayerCurrentLocalToAtk"] = currentLocalToAtk;
             //diz que o player esta pronto para atacar
             PlayerPhotonVariables.PlayerCustomProperties["PlayerReadyToAtack"] = true;

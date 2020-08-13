@@ -1858,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498b87434576b6542ba8215758d4cef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDGame: {fileID: 6830265105608328759}
 --- !u!114 &4266908622534015996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2586,6 +2587,7 @@ MonoBehaviour:
   basicSkill: {fileID: 8734945191846271690}
   tntSkill: {fileID: 2759429068007706200}
   trapSkill: {fileID: 3130786436520797063}
+  CurrentSkill: 1
 --- !u!1 &7010336633857002107
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,6 +5095,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7712985881510036688}
         m_MethodName: DisableButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5037327663173705877}
+        m_MethodName: ReadyToUseSkill
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

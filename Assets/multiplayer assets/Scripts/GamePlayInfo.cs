@@ -14,6 +14,11 @@ public class GamePlayInfo : MonoBehaviour
     public static bool Player1Win = false;
     public static bool Empate = false;
 
+
+    //HABILIDADE QUE O JOGADOR SELECIONOU
+    public static int Player0Skill;
+    public static int Player1Skill;
+
     private void Update()
     {
         if (PhotonNetwork.PlayerList.Length == 2)
@@ -26,6 +31,12 @@ public class GamePlayInfo : MonoBehaviour
                 //Debug.Log("o player 0 esta em: " + PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocal"]);
                 //Debug.Log("o player 0 vai atacar em: " + PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocalToAtk"]);
                 StartTurn = true;
+
+
+                Player0Skill = (int)PhotonNetwork.PlayerList[0].CustomProperties["TypeSkill"];
+                Player1Skill = (int)PhotonNetwork.PlayerList[1].CustomProperties["TypeSkill"];
+
+                Debug.Log("jogador 0 usou: " + Player0Skill + "  e jogador 1 usou: " + Player1Skill);
 
                 SearchDamangeArea();
                 

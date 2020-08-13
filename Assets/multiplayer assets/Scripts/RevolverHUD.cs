@@ -21,7 +21,7 @@ public class RevolverHUD : MonoBehaviour
     [SerializeField]
     private GameObject trapSkill; // codigo 3
 
-    private int currentSkill;
+    public int CurrentSkill;
 
 
     private void Start()
@@ -29,7 +29,7 @@ public class RevolverHUD : MonoBehaviour
         tntSkill.SetActive(false);
         trapSkill.SetActive(false);
 
-        currentSkill = 1;
+        CurrentSkill = 1;
     }
 
 
@@ -74,9 +74,9 @@ public class RevolverHUD : MonoBehaviour
 
     public void RightMove()
     {
-        if (currentSkill == 1)
+        if (CurrentSkill == 1)
         {
-            currentSkill = 2;
+            CurrentSkill = 2;
             
             //ATIVA
             tntSkill.SetActive(true);
@@ -84,12 +84,12 @@ public class RevolverHUD : MonoBehaviour
             basicSkill.SetActive(false);
             trapSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
 
         }
-        else if(currentSkill == 2)
+        else if(CurrentSkill == 2)
         {
-            currentSkill = 3;
+            CurrentSkill = 3;
 
             //ATIVA
             trapSkill.SetActive(true);
@@ -97,11 +97,11 @@ public class RevolverHUD : MonoBehaviour
             basicSkill.SetActive(false);
             tntSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
         }
-        else if (currentSkill == 3)
+        else if (CurrentSkill == 3)
         {
-            currentSkill = 1;
+            CurrentSkill = 1;
 
             //ATIVA
             basicSkill.SetActive(true);
@@ -109,7 +109,7 @@ public class RevolverHUD : MonoBehaviour
             trapSkill.SetActive(false);
             tntSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
         }
         
 
@@ -119,9 +119,9 @@ public class RevolverHUD : MonoBehaviour
 
     public void LeftMove()
     {
-        if (currentSkill == 1)
+        if (CurrentSkill == 1)
         {
-            currentSkill = 3;
+            CurrentSkill = 3;
 
             //ATIVA
             trapSkill.SetActive(true);
@@ -129,12 +129,12 @@ public class RevolverHUD : MonoBehaviour
             basicSkill.SetActive(false);
             tntSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
 
         }
-        else if (currentSkill == 3)
+        else if (CurrentSkill == 3)
         {
-            currentSkill = 2;
+            CurrentSkill = 2;
 
             //ATIVA
             tntSkill.SetActive(true);
@@ -142,11 +142,11 @@ public class RevolverHUD : MonoBehaviour
             basicSkill.SetActive(false);
             trapSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
         }
-        else if (currentSkill == 2)
+        else if (CurrentSkill == 2)
         {
-            currentSkill = 1;
+            CurrentSkill = 1;
 
             //ATIVA
             basicSkill.SetActive(true);
@@ -154,7 +154,7 @@ public class RevolverHUD : MonoBehaviour
             trapSkill.SetActive(false);
             tntSkill.SetActive(false);
 
-            Debug.Log(currentSkill);
+            Debug.Log(CurrentSkill);
         }
 
         revolverAnim.SetTrigger("right");
