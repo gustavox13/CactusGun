@@ -3448,7 +3448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5814506558017014801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3545,6 +3545,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tamborAnim: {fileID: 2508952376785781651}
   revolverAnim: {fileID: 3806950322581107002}
+  basicSkill: {fileID: 0}
+  tntSkill: {fileID: 0}
+  trapSkill: {fileID: 0}
+  CurrentSkill: 0
 --- !u!1 &8880864048102538257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,6 +3788,7 @@ MonoBehaviour:
   A3Slot: {fileID: 1103586358411336272}
   PlayerBody: {fileID: 5263485413276312592}
   playerReadyToMove: 0
+  playerBodyAnim: {fileID: 0}
 --- !u!114 &114497385911525870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,6 +3801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498b87434576b6542ba8215758d4cef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDGame: {fileID: 8637591447021917659}
 --- !u!1 &8924650233253258231
 GameObject:
   m_ObjectHideFlags: 0

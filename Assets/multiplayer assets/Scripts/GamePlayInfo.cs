@@ -33,8 +33,8 @@ public class GamePlayInfo : MonoBehaviour
                 StartTurn = true;
 
 
-                Player0Skill = (int)PhotonNetwork.PlayerList[0].CustomProperties["TypeSkill"];
-                Player1Skill = (int)PhotonNetwork.PlayerList[1].CustomProperties["TypeSkill"];
+                Player0Skill = (int)PhotonNetwork.PlayerList[0].CustomProperties["TypeSkill"]; //skill 1 = atk basico - skill 2 = tnt - skill 3 = trap
+                Player1Skill = (int)PhotonNetwork.PlayerList[1].CustomProperties["TypeSkill"]; //skill 1 = atk basico - skill 2 = tnt - skill 3 = trap
 
                 Debug.Log("jogador 0 usou: " + Player0Skill + "  e jogador 1 usou: " + Player1Skill);
 

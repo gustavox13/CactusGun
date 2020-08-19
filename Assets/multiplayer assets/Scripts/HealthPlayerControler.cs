@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class HealthPlayerControler : MonoBehaviourPun, IPunObservable
@@ -19,7 +20,10 @@ public class HealthPlayerControler : MonoBehaviourPun, IPunObservable
     [SerializeField]
     private GameObject winCanvas;
 
-    
+    [SerializeField]
+    private GameObject blockHUD;
+
+    private bool Arrested;
 
     private void Start()
     {
@@ -36,8 +40,10 @@ public class HealthPlayerControler : MonoBehaviourPun, IPunObservable
     {
         if (photonView.IsMine)
         {
-            //VerifyVictory();
+          
         }
+
+
     }
 
     public void GoToTakeDamangeStep()
@@ -52,33 +58,74 @@ public class HealthPlayerControler : MonoBehaviourPun, IPunObservable
 
     IEnumerator TakeDamangeStep()
     {
-        if (UIhandler.myID == 0 && GamePlayInfo.Player0TakeDamange == true)
+        if (UIhandler.myID == 0 && GamePlayInfo.Player0TakeDamange == true)  // --------------------------------------------- PLAYER 0 TOMA DANO
         {
             animPlayer.SetBool("Dano", true);
             Debug.Log("eu, jogador 0 tomei dano e takedamange eh true");
             GamePlayInfo.Player0TakeDamange = false;
 
-            currentHP -= 25; // ----------------------------------------------------- tomando 25 de dano
+
+
+            if (GamePlayInfo.Player1Skill == 1)
+            {
+                currentHP -= 25;
+                Arrested = false;
+            } else if (GamePlayInfo.Player1Skill == 2)
+            {
+                currentHP -= 50;
+                Arrested = false;
+            } else if (GamePlayInfo.Player1Skill == 3)
+            {
+                currentHP -= 10;
+                Arrested = true;
+            }
+
+
+
             PlayerPhotonVariables.PlayerCustomProperties["HP"] = currentHP;
             PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
 
-           // Debug.Log("meu hp eh: " + PlayerPhotonVariables.PlayerCustomProperties["HP"]);
+            // Debug.Log("meu hp eh: " + PlayerPhotonVariables.PlayerCustomProperties["HP"]);
         }
+       /* else
+        {
+            Arrested = false;
+            DebuffStatus();
+        }*/
 
 
-        if (UIhandler.myID == 1 && GamePlayInfo.Player1TakeDamange == true)
+        if (UIhandler.myID == 1 && GamePlayInfo.Player1TakeDamange == true) // --------------------------------------------- PLAYER 1 TOMA DANO
         {
             animPlayer.SetBool("Dano", true);
             Debug.Log("eu, jogador 1 tomei dano e takedamange eh true");
             GamePlayInfo.Player1TakeDamange = false;
 
-            currentHP -= 25; // ----------------------------------------------------- tomando 25 de dano
+            if (GamePlayInfo.Player0Skill == 1)
+            {
+                currentHP -= 25;
+                Arrested = false;
+            }
+            else if (GamePlayInfo.Player0Skill == 2)
+            {
+                currentHP -= 50;
+                Arrested = false;
+            }
+            else if (GamePlayInfo.Player0Skill == 3)
+            {
+                currentHP -= 10;
+                Arrested = true;
+            }
+
             PlayerPhotonVariables.PlayerCustomProperties["HP"] = currentHP;
             PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
 
             //Debug.Log("meu hp eh: " + PlayerPhotonVariables.PlayerCustomProperties["HP"]);
         }
-
+       /* else
+        {
+            Arrested = false;
+            DebuffStatus();
+        }*/
 
 
 
@@ -136,10 +183,33 @@ public class HealthPlayerControler : MonoBehaviourPun, IPunObservable
             }
 
         }
+        else
+        {
+            DebuffStatus();
+        }
     }
 
+    private void DebuffStatus()
+    {
+        if (photonView.IsMine)
+        {
+            Debug.Log("ele entrou no debuffstatus e arrested = " + Arrested);
+            if(Arrested == true)
+            {
+                blockHUD.SetActive(true);
+            }
+            else
+            {
+                blockHUD.SetActive(false);
+            }
+        }
+    }
 
-
+    public void isNotArrested()
+    {
+        Arrested = false;
+        blockHUD.SetActive(false);
+    }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

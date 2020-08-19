@@ -34,7 +34,7 @@ public class SetLocalToAtack : MonoBehaviourPun, IPunObservable
 
             typeAtk = HUDGame.GetComponent<RevolverHUD>().CurrentSkill;
 
-            PlayerPhotonVariables.PlayerCustomProperties["TypeSkill"] = typeAtk;
+            PlayerPhotonVariables.PlayerCustomProperties["TypeSkill"] = typeAtk; //skill 1 = atk basico - skill 2 = tnt - skill 3 = trap
             PhotonNetwork.SetPlayerCustomProperties(PlayerPhotonVariables.PlayerCustomProperties);
         }
     }

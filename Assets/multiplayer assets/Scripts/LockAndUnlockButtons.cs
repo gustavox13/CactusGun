@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class LockAndUnlockButtons : MonoBehaviourPun, IPunObservable
 {
+    [SerializeField]
+    private Button[] moveButtons = new Button[3];
 
     [SerializeField]
-    private Button[] buttons = new Button[6];
+    private Button[] atackButtons = new Button[3];
 
     [SerializeField]
     private Button startTurn;
@@ -39,9 +41,15 @@ public class LockAndUnlockButtons : MonoBehaviourPun, IPunObservable
 
         startTurn.interactable = true;
 
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 3; i++) //ATIVA BOTOES DE ATK
         {
-            buttons[i].interactable = true;
+            atackButtons[i].interactable = true;
+        }
+
+        
+        for (int i = 0; i < 3; i++) //ATIVA BOTOES DE MOVIMENTO
+        {
+            moveButtons[i].interactable = true;
         }
     }
 
@@ -51,9 +59,13 @@ public class LockAndUnlockButtons : MonoBehaviourPun, IPunObservable
         {
             startTurn.interactable = false;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 3; i++) //DESATIVA BOTOES DE ATK
             {
-                buttons[i].interactable = false;
+                atackButtons[i].interactable = false;
+            }
+            for (int i = 0; i < 3; i++) //DESATIVA BOTOES DE MOVIMENTO
+            {
+                moveButtons[i].interactable = false;
             }
 
         }
