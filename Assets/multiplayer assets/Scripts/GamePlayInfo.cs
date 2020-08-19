@@ -19,8 +19,21 @@ public class GamePlayInfo : MonoBehaviour
     public static int Player0Skill;
     public static int Player1Skill;
 
+
+    [SerializeField]
+    private GameObject explosion;
+
+    private bool goToExplosion = true;
+
+    [SerializeField]
+    private GameObject[] slot = new GameObject[6];
+
+
+
     private void Update()
     {
+      
+
         if (PhotonNetwork.PlayerList.Length == 2)
         {
 
@@ -40,12 +53,17 @@ public class GamePlayInfo : MonoBehaviour
 
                 SearchDamangeArea();
                 
+               if(Player0Skill == 2 || Player1Skill == 2)
+               {
 
+                    TntExplosion();
+                }
 
             }
             else
             {
                 StartTurn = false;
+                goToExplosion = true;
 
             }
 
@@ -108,4 +126,50 @@ public class GamePlayInfo : MonoBehaviour
 
 
     }
+
+
+    private void TntExplosion()
+    {
+        if (goToExplosion == true)
+        {
+
+            if (Player0Skill == 2)
+            {
+                if ((string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocalToAtk"] == "B1")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[5].transform.position, slot[5].transform.rotation);
+                }
+                else if ((string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocalToAtk"] == "B2")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[4].transform.position, slot[4].transform.rotation);
+                }
+                else if ((string)PhotonNetwork.PlayerList[0].CustomProperties["PlayerCurrentLocalToAtk"] == "B3")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[3].transform.position, slot[3].transform.rotation);
+                }
+            }
+
+            if (Player1Skill == 2)
+            {
+                if ((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B1")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[0].transform.position, slot[0].transform.rotation);
+                }
+                else if ((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B2")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[1].transform.position, slot[1].transform.rotation);
+                }
+                else if ((string)PhotonNetwork.PlayerList[1].CustomProperties["PlayerCurrentLocalToAtk"] == "B3")
+                {
+                    PhotonNetwork.Instantiate(explosion.name, slot[2].transform.position, slot[2].transform.rotation);
+                }
+            }
+
+            goToExplosion = false;
+        }
+    }
+
+
+
+
 }
